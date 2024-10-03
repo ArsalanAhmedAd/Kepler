@@ -11,7 +11,6 @@ import { RiMenu3Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 
-
 const Navbar = ({ locale }: { locale: string }) => {
   const [mounted, setMounted] = useState(false); // To track client-side mounting
   const [isSideMenuOpen, setSideMenu] = useState(false);
@@ -86,6 +85,7 @@ const Navbar = ({ locale }: { locale: string }) => {
       link: "/contact",
     },
   ];
+  
 
   function openSideMenu() {
     setSideMenu(true);
@@ -98,8 +98,8 @@ const Navbar = ({ locale }: { locale: string }) => {
 
   return (
     <div className="container mx-auto w-full -translate-x-2/4 translate-y-3 absolute left-2/4 px-4 z-50">
-      <div ref={animationParent}
-       
+      <div
+        ref={animationParent}
         className="flex justify-between py-4 px-4 items-center bg-nav-transparent text-blue-default rounded-full"
       >
         <div className="main-logo">
@@ -166,8 +166,6 @@ const Navbar = ({ locale }: { locale: string }) => {
               DE
             </option>
           </select>
-
-          
 
           <div className="gap-4 items-center text-white bg-blue-default rounded-full py-2 px-4 hidden lg:flex">
             <Link

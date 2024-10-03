@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import { Plus_Jakarta_Sans } from 'next/font/google';
 // import MainBanner from "@/components/MainBanner";
 import Footer from "@/components/Footer";
+import Mainnav from "@/components/Mainnav";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: ['400', '700'], // Choose the weights you need
@@ -23,7 +24,8 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={plusJakartaSans.className}>
         <NextIntlClientProvider messages={messages}>
-            <Navbar locale={locale} />
+            <Mainnav locale={locale}/>
+            {/* <Navbar locale={locale} /> */}
             {/* <MainBanner/> */}
             {children}
             <Footer  locale={locale} />

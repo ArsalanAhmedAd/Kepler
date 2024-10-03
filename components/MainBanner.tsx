@@ -5,10 +5,11 @@ import React from 'react'
 import bg from "@/public/background-Blue.jpg"
 // import BannerElement from "@/public/BannerElements/mobile in hand.png"
 import BannerElementHome from "@/public/BannerElements/cart with payment-2.png"
-// import BannerElementFaq from "@/public/BannerElements/FAQs People.png"
+import BannerElementFaq from "@/public/BannerElements/FAQs People.png"
 // import BannerIntegration from "@/public/BannerElements/Person mobile group.png"
 // import BannerIntegration2 from "@/public/BannerElements/Person-mobile-group-2.png"
 // import BannerIntegration3 from "@/public/BannerElements/cart with payment.png"
+import BannerIntegration4 from "@/public/BannerElements/main-banner-pos.png"
 import Button from './ButtonCustom'
 
 
@@ -23,7 +24,10 @@ const MainBanner = () => {
   return (
     <div >
        
-        <div style={{ backgroundImage: `url(${bg.src})` }}  className="bg-cover bg-center overflow-hidden xl:min-h-[900px] relative">
+        <div style={{ backgroundImage: `url(${bg.src})` }}  className="bg-cover bg-center overflow-hidden min-h-[900px] relative"></div>
+
+
+          {/* <div className="bg-[#0088FF]">
       
                 <div className='container mx-auto px-4  flex items-center'>
                   <div className='content inline flex-col justify-center'>
@@ -40,9 +44,11 @@ const MainBanner = () => {
                     </div>
                    </div>
                 </div>
-              <Image src={BannerElementHome} alt='' quality={100} className='w-2/4 max-w-[840px] ml-auto pt-20 pb-52 lg:pt-0 -bottom-32 right-0 relative'/>
+              <Image src={BannerIntegration4} alt='' height={950} quality={100} className='w-2/4 py-36  relative'/>
+              {/* <Image src={BannerIntegration4} alt='' quality={100} className='w-2/4 max-w-[840px] ml-auto pt-20 pb-52 lg:pt-0 -bottom-32 right-0 relative'/> */}
+              {/* <Image src={BannerElementHome} alt='' quality={100} className='w-2/4 max-w-[840px] ml-auto pt-20 pb-52 lg:pt-0 -bottom-32 right-0 relative'/> */}
         
-        </div>
+              
     </div>
   )
 }
