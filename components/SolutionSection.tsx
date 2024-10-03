@@ -73,7 +73,7 @@ const SolutionSection = () => {
                 },
               }}
             >
-              {Object.entries(solutionSlides).map(([key, value], i) => (
+              {Object.entries(solutionSlides).map(([key], i) => (
                 <SwiperSlide key={i}>
                   <div className="flex flex-col rounded-20 gap-4 bg-white shadow-lg">
                     <Image
