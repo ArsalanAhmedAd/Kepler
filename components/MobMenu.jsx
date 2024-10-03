@@ -4,6 +4,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
+import Link from "next/link";
 
 // interface SubMenuItem {
 //   name: string;
@@ -20,7 +21,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 //   Menus: MenuItem[];
 // }
 
-export default function MobMenu({ Menus }) {
+export default function MobMenu({ Menus, locale }) {
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(null);
   const toggleDrawer = () => {
@@ -60,7 +61,14 @@ export default function MobMenu({ Menus }) {
                     className="flex-center-between p-3 font-semibold hover:bg-[#E5F2FF] rounded-md cursor-pointer relative"
                     onClick={() => setClicked(isClicked ? null : i)}
                   >
-                    {name}
+                    {/* {name} */}
+                    <Link
+                      // href={menu.link}
+                      href={`/${locale}/${link}`}
+                      className=""
+                    >
+                      {name}
+                    </Link>
                     {hasSubMenu && (
                       <ChevronDown
                         className={`ml-auto ${isClicked && "rotate-180"}`}
@@ -74,13 +82,19 @@ export default function MobMenu({ Menus }) {
                       variants={subMenuDrawer}
                       className="ml-5"
                     >
-                      {subMenu.map(({ name, icon: Icon }) => (
+                      {subMenu.map(({ name, link, icon: Icon }) => (
                         <li
                           key={name}
                           className="p-2 flex-center hover:bg-[#E5F2FF] rounded-md gap-x-2 cursor-pointer"
                         >
                           <Icon size={17} />
-                          {name}
+                          <Link
+                            // href={menu.link}
+                            href={`/${locale}/${link}`}
+                            className=""
+                          >
+                            {name}
+                          </Link>
                         </li>
                       ))}
                     </motion.ul>

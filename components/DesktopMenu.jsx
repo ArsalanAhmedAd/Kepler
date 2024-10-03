@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+// import { usePathname, useRouter } from "next/navigation";
 
 // interface SubMenuItem {
 //   name: string;
@@ -25,9 +25,8 @@ import { usePathname, useRouter } from "next/navigation";
 // }
 
 export default function DesktopMenu({ menu, locale }) {
-  // const Navbar = ({ locale }: { locale: string }) => {
-  const pathname = usePathname();
-  const router = useRouter();
+
+ 
   const [isHover, toggleHover] = useState(false);
   const toggleHoverMenu = () => {
     toggleHover(!isHover);

@@ -2,30 +2,30 @@
 "use client";
 
 import React, { ChangeEvent } from "react";
-import { Menus } from "@/utils";
+// import { Menus } from "@/utils";
 import DesktopMenu from "@/components/DesktopMenu";
 import MobMenu from "@/components/MobMenu";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
-import { Bolt } from "lucide-react";
-import { ShoppingBag } from "lucide-react";
-import { BellDot } from "lucide-react";
-import { BookOpenText } from "lucide-react";
-import { BriefcaseBusiness } from "lucide-react";
-import { CircleHelp } from "lucide-react";
-import { TriangleAlert } from "lucide-react";
+// import { Bolt } from "lucide-react";
+// import { ShoppingBag } from "lucide-react";
+// import { BellDot } from "lucide-react";
+// import { BookOpenText } from "lucide-react";
+// import { BriefcaseBusiness } from "lucide-react";
+// import { CircleHelp } from "lucide-react";
+// import { TriangleAlert } from "lucide-react";
 import { Users } from "lucide-react";
-import { Lock } from "lucide-react";
+// import { Lock } from "lucide-react";
 import { Dessert } from "lucide-react";
 import { ShieldPlus } from "lucide-react";
-import { MessageCircle } from "lucide-react";
-import { Images } from "lucide-react";
-import { Figma } from "lucide-react";
-import { Play } from "lucide-react";
-import { MapPin } from "lucide-react";
-import { Database } from "lucide-react";
-import { PanelsTopLeft } from "lucide-react";
-import { PanelTop } from "lucide-react";
+// import { MessageCircle } from "lucide-react";
+// import { Images } from "lucide-react";
+// import { Figma } from "lucide-react";
+// import { Play } from "lucide-react";
+// import { MapPin } from "lucide-react";
+// import { Database } from "lucide-react";
+// import { PanelsTopLeft } from "lucide-react";
+// import { PanelTop } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -240,7 +240,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
                 </Link>
               </div>
               <div className="xl:hidden">
-                <MobMenu Menus={Menus} />
+                <MobMenu Menus={Menus} locale={locale} />
               
               </div>
             </div>

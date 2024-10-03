@@ -1,16 +1,16 @@
 
-import Image from 'next/image'
+// import Image from 'next/image'
 import React from 'react'
 // import images from "@/public/banner-home.jpg"
 import bg from "@/public/background-Blue.jpg"
 // import BannerElement from "@/public/BannerElements/mobile in hand.png"
-import BannerElementHome from "@/public/BannerElements/cart with payment-2.png"
-import BannerElementFaq from "@/public/BannerElements/FAQs People.png"
+// import BannerElementHome from "@/public/BannerElements/cart with payment-2.png"
+// import BannerElementFaq from "@/public/BannerElements/FAQs People.png"
 // import BannerIntegration from "@/public/BannerElements/Person mobile group.png"
 // import BannerIntegration2 from "@/public/BannerElements/Person-mobile-group-2.png"
 // import BannerIntegration3 from "@/public/BannerElements/cart with payment.png"
-import BannerIntegration4 from "@/public/BannerElements/main-banner-pos.png"
-import Button from './ButtonCustom'
+// import BannerIntegration4 from "@/public/BannerElements/main-banner-pos.png"
+// import Button from './ButtonCustom'
 
 
 type MainBanner = {
