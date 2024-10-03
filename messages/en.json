@@ -1,0 +1,768 @@
+{
+  "NavbarLinks": {
+    "home": "Home",
+    "homeTitle": "Home page",
+    "Price & Features": "Price & Features",
+    "IntegrationsZero": "Integrations",
+    "IntegrationsOne": "Integrations Pos System",
+    "Integrationstwo": "Integrations Accounting",
+    "Integrationsthree": "Integrations 3",
+    "Integrationsfour": "Integrations 4",
+    "Resources": "Resources",
+    "about": "About",
+    "signUp": "Signup",
+    "aboutTitle": "About page",
+    "aboutDescription": "about Description",
+    "contact": "Contact Us",
+    "contactTitle": "contact page"
+  },
+  "HomePage": {
+    "title": "Testing Lang"
+  },
+  "AboutPage": {
+    "Introduction": {
+      "Intro": "Introduction to",
+      "pos": "BrandPOS",
+      "contentOne": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+      "contentTwo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+      "contentThree": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "OurMission": {
+      "Title": "Our mission",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. "
+    },
+    "CredibilitySection": {
+      "Credibility": {
+        "Title": "Credibility",
+        "content": "Lorem Ipsum is simply dummy text of the printing and type setting industry.",
+        "Image": "/AboutCredibility.svg"
+      },
+      "Integrity": {
+        "Title": "Integrity",
+        "content": "Lorem Ipsum is simply dummy text of the printing and type setting industry.",
+        "Image": "/AboutIntegrity.svg"
+      },
+      "Trust": {
+        "Title": "Trust",
+        "content": "Lorem Ipsum is simply dummy text of the printing and type setting industry.",
+        "Image": "/AboutTrust.svg"
+      }
+    },
+    "TeamSection": {
+      "Title": "Our Team",
+      "Members": {
+        "MembersOne": {
+          "Name": "John Doe",
+          "Designation": "Chief Executive Officer",
+          "Description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry.",
+          "Image": "/TeamOne.png",
+          "Social": {
+            "Facebook": {
+              "Icon": "/facebookIcon.svg",
+              "Url": "www.facebook.com"
+            },
+            "Twitter": {
+              "Icon": "/Twitter.svg",
+              "Url": "www.x.com"
+            },
+            "LinkedIn": {
+              "Icon": "/LinkedIn.svg",
+              "Url": "www.linkedin.com"
+            }
+          }
+        },
+        "MembersTwo": {
+          "Name": "John Doe",
+          "Designation": "Chief Executive Officer",
+          "Description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry.",
+          "Image": "/TeamTwo.jpg",
+          "Social": {
+            "Facebook": {
+              "Icon": "/facebookIcon.svg",
+              "Url": "www.facebook.com"
+            },
+            "Twitter": {
+              "Icon": "/Twitter.svg",
+              "Url": "www.x.com"
+            },
+            "LinkedIn": {
+              "Icon": "/LinkedIn.svg",
+              "Url": "www.linkedin.com"
+            }
+          }
+        },
+        "MembersThree": {
+          "Name": "John Doe",
+          "Designation": "Chief Executive Officer",
+          "Description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry.",
+          "Image": "/TeamThree.jpg",
+          "Social": {
+            "Facebook": {
+              "Icon": "/facebookIcon.svg",
+              "Url": "www.facebook.com"
+            },
+            "Twitter": {
+              "Icon": "/Twitter.svg",
+              "Url": "www.x.com"
+            },
+            "LinkedIn": {
+              "Icon": "/LinkedIn.svg",
+              "Url": "www.linkedin.com"
+            }
+          }
+        },
+        "MembersFour": {
+          "Name": "John Doe",
+          "Designation": "Chief Executive Officer",
+          "Description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry.",
+          "Image": "/TeamFour.jpg",
+          "Social": {
+            "Facebook": {
+              "Icon": "/facebookIcon.svg",
+              "Url": "www.facebook.com"
+            },
+            "Twitter": {
+              "Icon": "/Twitter.svg",
+              "Url": "www.x.com"
+            },
+            "LinkedIn": {
+              "Icon": "/LinkedIn.svg",
+              "Url": "www.linkedin.com"
+            }
+          }
+        },
+        "MembersFive": {
+          "Name": "John Doe",
+          "Designation": "Chief Executive Officer",
+          "Description": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry.",
+          "Image": "/TeamOne.png",
+          "Social": {
+            "Facebook": {
+              "Icon": "/facebookIcon.svg",
+              "Url": "www.facebook.com"
+            },
+            "Twitter": {
+              "Icon": "/Twitter.svg",
+              "Url": "www.x.com"
+            },
+            "LinkedIn": {
+              "Icon": "/LinkedIn.svg",
+              "Url": "www.linkedin.com"
+            }
+          }
+        }
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Contact us",
+    "ContactInfo": {
+      "Address": "Max-Planck-Straße 5, 85716",
+      "AddressHalf": "Unterschleißheim, Germany View Map",
+      "PhoneOne": "Support: +91 96000 59360",
+      "PhoneOneLink": "tel:+919600059360",
+      "PhoneTwo": "Marketing: +91 96000 59360",
+      "PhoneTwoLink":  "tel:+919600059360",
+      "EmailOne": "info@brandcrock.com",
+      "EmailOneLink": "mailto:info@brandcrock.com",
+      "EmailTwo": "support@brandcrock.com",
+      "EmailTwoLink": "mailto:support@brandcrock.com"
+    }
+  },
+  "FeatureSectionDiscover": {
+    "title": "Discover the innovative app",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "Image": "/FeatureSectionDiscover.svg",
+    "GooglePlayImage": "/FeatureSectionDiscover.svg",
+    "ApplePlayImage": "/FeatureSectionDiscover.svg",
+    "BtnLabel": "Learn more"
+  },
+  "FeatureSectionNFC": {
+    "title": "NFC-enabled payment",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
+    "Image": "/FeatureSectionNFC.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "about"
+  },
+  "FeatureSectionQR": {
+    "title": "QR scan payment",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "Image": "/FeatureSectionQR.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "about"
+  },
+  "FeatureSectionManagement": {
+    "title": "Management of soft terminals in real time",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "Image": "/FeatureSectionManagment.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "about"
+  },
+  "FeatureSectionVideo": {
+    "title": "Watch a video",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "Image": "/FeatureSectionVideo.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "about"
+  },
+  "Solutions": {
+    "Solution": {
+      "SolutionTitle": "Solutions for every business needs.",
+      "SolutionDescription": "Bringen Sie Ihr Unternehmen in Schwung mit der BrandPOS Payment App, die Ihren Bedürfnissen entspricht.",
+      "solutionSlides": {
+        "solutionSlidesOne": {
+          "solutionSlidesTitle": "Personalized Brand Experience",
+          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        "solutionSlidesTwo": {
+          "solutionSlidesTitle": "Enhanced Mobility",
+          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        },
+        "solutionSlidesThree": {
+          "solutionSlidesTitle": "Real-time Analytics",
+          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        }
+      }
+    }
+  },
+  "OrderPlace": {
+    "title": "Place your order now your order on",
+    "Description": "Send us your contact details and our representative will get back to you within 48 hours.",
+    "ButtonText": "Send"
+  },
+  "WhyBrandPos": {
+    "title": "Why choose BrandPOS",
+    "Description": "Get your business moving with the BrandPOS payment app that meets your needs.",
+    "Image": "/WhyBrandPos.svg",
+    "WhyBrandPosSectionOne": {
+      "title": "No hidden files",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    },
+    "WhyBrandPosSectionTwo": {
+      "title": "Quick start after downloading",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    },
+    "WhyBrandPosSectionThree": {
+      "title": "Accepts any amount",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    },
+    "WhyBrandPosSectionFour": {
+      "title": "Security of company data",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+    }
+  },
+  "personalizedSolution": {
+    "title": "Do you need a personalised solution?",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+    "ButtonLabel": "Learn more"
+  },
+  "MeetOutCustomer": {
+    "title": "Meet our customers",
+    "Description": "Lorem Ipsum ist einfach ein Blindtext der Druck- und Satzindustrie. Lorem Ipsum war der Standard der Industrie."
+  },
+  "footer": {
+    "AddressOne": "Peterberg Street 3 <br/> 47139 Duisburg <br/> Germany",
+    "AddressTwo": "Max Planck Street 5 <br/> 85716 Unterschleißheim <br/> Germany",
+    "PhoneNumber": "+49 (0) 89 2154 7447",
+    "EmailAddress": "info@BrandPos.com",
+    "FooterHeading": "Discover the innovative apps",
+    "Copyright": "Copyright © 2024 brandpos.de all rights reserved",
+    "LinkOne": "Privacy Policy",
+    "LinkTwo": "Terms of Service"
+  },
+  "FeaturesCharacteristics": {
+    "title": "Properties",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    "Image": "/CharacteristicsImage.svg"
+  },
+  "FeaturesPagePaymentsSection": {
+    "title": "Girocard payments and much more",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
+    "Image": "/FeaturesPagePaymentsImg.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "about"
+  },
+  "FeaturesPageWalletPaymentsSection": {
+    "title": "Wallet payments",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
+    "Image": "/FeaturesPageWalletImg.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "/about"
+  },
+  "FeaturesPageBrandposSection": {
+    "title": "BrandPOS combines two payment functions",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
+    "Image": "/FeaturesPageBrandPosImg.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "/about"
+  },
+  "FeaturesPageBankPaySection": {
+    "title": "Bank charges",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
+    "Image": "/FeaturesPageBankPayImg.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "/about"
+  },
+  "FeaturesPageSecuritySection": {
+    "title": "Security Features",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
+    "Image": "/FeaturesPageSecurityFeaturesImg.svg",
+    "BtnLabel": "Learn more",
+    "BtnLink": "/about"
+  },
+  "pricingPlan": {
+    "pricingPlanwhy": {
+      "title": "Pricing Plan",
+      "services": {
+        "Basic": {
+          "pricingPlanLabel": "Basic",
+          "pricingBuyNowLabel": "Buy Now",
+          "pricing": "49",
+          "pricingCurrency": "€",
+          "description": {
+            "descriptionOne": {
+              "service": "Basic €25 min.invoice/month",
+              "isService": "true"
+            },
+            "descriptiontwo": {
+              "service": "Basic No monthly fee",
+              "isService": "true"
+            },
+            "descriptionthree": {
+              "service": "Basic No integration fee",
+              "isService": "true"
+            },
+            "descriptionfour": {
+              "service": "Basic No integration fee",
+              "isService": "false"
+            },
+            "descriptionfive": {
+              "service": "Basic No integration fee",
+              "isService": "true"
+            }
+          }
+        },
+        "Standard": {
+          "pricingPlanLabel": "Standard",
+          "pricingBuyNowLabel": "Buy Now",
+          "pricing": "59",
+          "pricingCurrency": "€",
+          "description": {
+            "descriptionOne": {
+              "service": "€25 min.invoice/month",
+              "isService": "false"
+            },
+            "descriptiontwo": {
+              "service": "No monthly fee",
+              "isService": "true"
+            },
+            "descriptionthree": {
+              "service": "123 No integration fee",
+              "isService": "false"
+            },
+            "descriptionfour": {
+              "service": "No integration fee",
+              "isService": "true"
+            },
+            "descriptionfive": {
+              "service": "No integration fee",
+              "isService": "true"
+            }
+          }
+        },
+        "Premium": {
+          "pricingPlanLabel": "Premium",
+          "pricingBuyNowLabel": "Buy Now",
+          "pricing": "99",
+          "pricingCurrency": "€",
+          "description": {
+            "descriptionOne": {
+              "service": "Premium €25 min.invoice/month",
+              "isService": "true"
+            },
+            "descriptiontwo": {
+              "service": "Premium No monthly fee",
+              "isService": "true"
+            },
+            "descriptionthree": {
+              "service": "Premium No integration fee",
+              "isService": "true"
+            },
+            "descriptionfour": {
+              "service": "Premium No integration fee",
+              "isService": "true"
+            },
+            "descriptionfive": {
+              "service": "No integration fee",
+              "isService": "true"
+            }
+          }
+        },
+        "Custom": {
+          "pricingPlanLabel": "Custom",
+          "pricingBuyNowLabel": "Buy Now",
+          "pricing": "100",
+          "pricingCurrency": "€",
+          "description": {
+            "descriptionOne": {
+              "service": "Custom €25 min.invoice/month",
+              "isService": "false"
+            },
+            "descriptiontwo": {
+              "service": "Custom No monthly fee",
+              "isService": "true"
+            },
+            "descriptionthree": {
+              "service": "No integration fee",
+              "isService": "true"
+            },
+            "descriptionfour": {
+              "service": "No integration fee",
+              "isService": "true"
+            },
+            "descriptionfive": {
+              "service": "No integration fee",
+              "isService": "true"
+            }
+          }
+        }
+      },
+      "enrollNow": "Inscrivez-vous maintenant"
+    }
+  },
+  "AppFeatures": {
+    "points": {
+      "Transaction": {
+        "title": "Transaktionsgebühren",
+        "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+        "Image": "/FeatureAppZero.svg"
+      },
+      "Payment": {
+        "title": "Offline-Zahlungen",
+        "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+        "Image": "/FeatureAppCloud.svg"
+      },
+      "Billing": {
+        "title": "Abrechnung in Echtzeit",
+        "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.",
+        "Image": "/FeatureAppCloud2.svg"
+      }
+    }
+  },
+  "PaymentSection": {
+    "title": "Accept 40+ payment methods"
+  },
+  "WeCanFindSlider": {
+    "title": "Where can we find the",
+    "WeCanFindSliders": {
+      "WeCanFindSliderOne": {
+        "WeCanFindSliderTitle": "Restaurants and cafés"
+      },
+      "WeCanFindSliderTwo": {
+        "WeCanFindSliderTitle": "Delivery services"
+      },
+      "WeCanFindSliderThree": {
+        "WeCanFindSliderTitle": "Retail shops"
+      },
+      "WeCanFindSliderFour": {
+        "WeCanFindSliderTitle": "Retail shops"
+      }
+    }
+  },
+  "Integrations": {
+    "Image": "/PosConnector.svg",
+    "title": "POS Connectors",
+    "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown",
+    "paypal": {
+      "Image": "Integrations/Paypal.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "mollie": {
+      "Image": "Integrations/mollie.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "adyen": {
+      "Image": "Integrations/adyen.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "payone": {
+      "Image": "Integrations/payone.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "Unzer": {
+      "Image": "Integrations/Unzer.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "Wordline": {
+      "Image": "Integrations/Wordline.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "concardis": {
+      "Image": "Integrations/concardis.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "stripe": {
+      "Image": "Integrations/stripe.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "giropay": {
+      "Image": "Integrations/giropay.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "skrill": {
+      "Image": "Integrations/skrill.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "novalnet": {
+      "Image": "Integrations/novalnet.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    }
+  },
+  "IntegrationsPosSystem": {
+    "Image": "/Integrations/PosSystem.svg",
+    "title": "POS system connections in the dashboard profile",
+    "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown",
+    "pickware": {
+      "Image": "/Integrations/pickware.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "Gk": {
+      "Image": "/Integrations/Gk.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "etron": {
+      "Image": "/Integrations/etron.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "Light": {
+      "Image": "/Integrations/Light.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "Ready2Order": {
+      "Image": "/Integrations/Ready2Order.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "possum": {
+      "Image": "/Integrations/possum.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "UCS": {
+      "Image": "/Integrations/concardis.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    },
+    "Vectron": {
+      "Image": "/Integrations/UCS.svg",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
+    }
+  },
+  "IntegrationsAccounting": {
+    "Image": "/Integrations/IntegrationsAccounting.svg",
+    "title": "Accounting  in the dashboard  ",
+    "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown"
+  },
+  "Resources": {
+    "Image": "/Integrations/ResourcesHeader.svg",
+    "title": "Gebrauchte Fälle",
+    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
+    "HowItWorks": {
+      "Title": "How it works.",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.",
+      "BrandPOS": {
+        "Title": "Download Usermanual For Brand POS",
+        "Description": "Click PDF icon to download and for reading online ",
+        "Link": "click here.",
+        "PDFFileLink": "/PDFIcon.svg"
+      },
+      "BrandPOSAdmin": {
+        "Title": "Download Usermanual For Brand POS2",
+        "Description": "Click PDF icon to download and for reading online",
+        "Link": "click here.",
+        "PDFFileLink": "/PDFIcon.svg"
+      }
+    },
+    "APIIntegrations": {
+      "Title": "API Integrations",
+      "Description": "",
+      "PayPal": {
+        "Title": "PayPal <br/> Integration Manual",
+        "Description": "Click PDF icon to download and for reading online ",
+        "Link": "click here.",
+        "PDFFileLink": "/PDFIcon.svg"
+      },
+      "AliPay": {
+        "Title": "AliPay <br/> Integration Manual",
+        "Description": "Click PDF icon to download and for reading online",
+        "Link": "click here.",
+        "PDFFileLink": "/PDFIcon.svg"
+      },
+      "WeChat": {
+        "Title": "WeChat <br/> Integration Manual",
+        "Description": "Click PDF icon to download and for reading online",
+        "Link": "click here.",
+        "PDFFileLink": "/PDFIcon.svg"
+      },
+      "ApplePay": {
+        "Title": "ApplePay <br/> Integration Manual",
+        "Description": "Click PDF icon to download and for reading online",
+        "Link": "click here.",
+        "PDFFileLink": "/PDFIcon.svg"
+      },
+      "SamsungPay": {
+        "Title": "SamsungPay <br/> Integration Manual",
+        "Description": "Click PDF icon to download and for reading online",
+        "Link": "click here.",
+        "PDFFileLink": "/PDFIcon.svg"
+      },
+      "Novalnet": {
+        "Title": "Novalnet <br/> Integration Manual",
+        "Description": "Click PDF icon to download and for reading online",
+        "Link": "click here.",
+        "PDFFileLink": "/PDFIcon.svg"
+      }
+    },
+    "Faqs": {
+      "Title": "If you have any questions, <br /> we have the answer",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      "FaqOne": {
+        "Question": "Was ist BrandPOS App?",
+        "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
+      },
+      "FaqTwo": {
+        "Question": "What is the ‘Brand-POS Plug-in’ and why do I need a second app?",
+        "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
+      },
+      "FaqThree": {
+        "Question": "Was ist BrandPOS App? 3",
+        "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
+      },
+      "FaqFour": {
+        "Question": "Was ist BrandPOS App? 4",
+        "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
+      },
+      "FaqFive": {
+        "Question": "Was ist BrandPOS App? 5",
+        "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
+      },
+      "BtnLink": "Integrations",
+      "BtnLabel": "Learn more"
+    }
+  },
+  "BlogSection": {
+    "Title": "Latest blogs",
+    "LoadMore": "View More",
+    "NoLoadMore": "No More Blogs",
+    "Blogs": {
+      "WebsiteZero": {
+        "BlogTitle": "1 Blog heading with title minimum two lines",
+        "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
+        "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
+        "BlogThumnail": "/Blog/BlogThumbnail.jpg",
+        "BlogLink": "Resources/how-to-create-website",
+        "BlogLabel": "Learn more"
+      },
+      "WebsiteOne": {
+        "BlogTitle": "2 Blog heading with title minimum two lines",
+        "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
+        "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
+        "BlogThumnail": "/Blog/BlogThumbnail.jpg",
+        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLabel": "Learn more"
+      },
+      "WebsiteTwo": {
+        "BlogTitle": "3 Blog heading with title minimum two lines",
+        "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
+        "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
+        "BlogThumnail": "/Blog/BlogThumbnail.jpg",
+        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLabel": "Learn more"
+      },
+      "WebsiteThree": {
+        "BlogTitle": "3 Blog heading with title minimum two lines",
+        "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
+        "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
+        "BlogThumnail": "/Blog/BlogThumbnail.jpg",
+        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLabel": "Learn more"
+      },
+      "WebsiteFour": {
+        "BlogTitle": "3 Blog heading with title minimum two lines",
+        "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
+        "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
+        "BlogThumnail": "/Blog/BlogThumbnail.jpg",
+        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLabel": "Learn more"
+      },
+      "WebsiteFive": {
+        "BlogTitle": "3 Blog heading with title minimum two lines",
+        "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
+        "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
+        "BlogThumnail": "/Blog/BlogThumbnail.jpg",
+        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLabel": "Learn more"
+      },
+      "WebsiteSix": {
+        "BlogTitle": "3 Blog heading with title minimum two lines",
+        "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
+        "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
+        "BlogThumnail": "/Blog/BlogThumbnail.jpg",
+        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLabel": "Learn more"
+      }
+    }
+  },
+  "BlogDetail": {
+    "how-to-create-website": {
+      "Title": "Website Zero",
+      "BlogBody": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. "
+    },
+    "how-to-create-website-one": {
+      "Title": "Website One",
+      "BlogBody": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. "
+    }
+  },
+  "WhyUswrap2": {
+    "WhyUs": {
+      "title": "Why Choose this Course?",
+      "points": {
+        "real-world": {
+          "title": "Real-World Applications",
+          "description": "Students build a production-ready application that includes Ecommerce, Point of Sale, and Inventory Management systems."
+        },
+        "advanced": {
+          "title": "Advanced Yet Accessible",
+          "description": "The course tackles advanced concepts explained step-by-step, making it suitable for all skill levels."
+        },
+        "hands-on": {
+          "title": "Hands-On Learning",
+          "description": "Emphasizes practical, project-based learning rather than just theoretical knowledge."
+        },
+        "comprehensive": {
+          "title": "Comprehensive Curriculum",
+          "description": "Covers fullstack development with Next.js, TypeScript, Prisma, and MongoDB, ensuring a thorough understanding of modern web development."
+        }
+      },
+      "enrollNow": "Enroll Now"
+    }
+  },
+  "ProfilePage": {
+    "title": "Profile"
+  },
+  "FeaturePage": {
+    "title": "FeaturePage en",
+    "description": "This is a description en"
+  },
+  "features": [
+    {
+      "key": "Feature 1",
+      "value": "Description 1"
+    },
+    {
+      "key": "Feature 2",
+      "value": "Description 2"
+    },
+    {
+      "key": "Feature 3",
+      "value": "Description 3"
+    }
+  ]
+}

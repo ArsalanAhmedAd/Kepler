@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.swiper-button-prev.swiper-button-disabled, 
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.swiper-button-prev {
+  margin-left: 18px;
+}
+.swiper-button-prev::after {
+  content: '' !important;
+  display: block;
+  background-image: url('/SwiperLeftIcon.svg'); 
+  background-size: contain; 
+  background-repeat: no-repeat;
+  width: 40px;  
+  height: 40px; 
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  margin-left: 5px; 
+  background-color: #E5F2FF;
+}
+.swiper-button-next {
+  margin-right: 15px;
+}
+.swiper-button-next::after {
+  content: '' !important;
+  display: block;
+  background-image: url('/SwiperRightIcon.svg'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;  
+  height: 40px; 
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  margin-left: 5px; 
+  border-radius: 10px;
+  background-color: #E5F2FF;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .container {
+    max-width: 1420px;
+    width: 100%;
+  }
+
+  .bg-nav-transparent {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .FeatureSectionHeading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333343;
+    line-height: 43px;
+  }
+  .FeatureSectionHeadingResponsvie {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333343;
+    line-height: 30px;
+  }
+  .FeatureSectionContent {
+    color: #575757;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  .FeatureSectionContentResponsvie {
+    color: #575757;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+  .rounded-20 {
+    border-radius: 20px;
+  }
+  .SolutionSwiper {
+    padding: 20px !important;
+  }
+  .TeamSwiper {
+    padding: 20px 50px 20px 20px !important;
+  }
+  .text-16 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .text-18 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .text-22 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .text-3xl {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .text-2xl {
+    font-size: 1.625rem;
+    line-height: 2rem;
+  }
+
+  .text-xl {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+
+  .CustomerSlider {
+    padding: 20px 30px 40px 0px !important;
+  }
+  .box-shadow-custom {
+    box-shadow: 0px 8px 18px 0px rgba(19, 61, 131, 0.16);
+  }
+  .box-shadow-faq {
+    box-shadow: 1px 5px 14px 2px rgba(19, 61, 131, 0.16);
+  }
+  
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
