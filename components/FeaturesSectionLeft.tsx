@@ -44,10 +44,8 @@ export const FeaturesSectionLeft = ({ features, description, ImageDirection, Fea
           {buttonEnabled && (
           <Button type="submit"  icon={IconType} iconPosition="right" variant="secondary" size="md" className="mx-auto sm:mx-0">
                 <Link href={ButtonLink || "#"}>{ButtonLabel}</Link>
-                <br />
-                {ButtonLink}
-                <br />
-              faraz
+               
+          
           </Button>
             )}
         

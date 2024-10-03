@@ -216,15 +216,18 @@
       "solutionSlides": {
         "solutionSlidesOne": {
           "solutionSlidesTitle": "Personalisierte Markenerfahrung",
-          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "Image": "/Solution-1.svg"
         },
         "solutionSlidesTwo": {
           "solutionSlidesTitle": "Erhöhte Mobilität",
-          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+           "Image": "/Solution-2.svg"
         },
         "solutionSlidesThree": {
           "solutionSlidesTitle": "Echtzeit-Analytik",
-          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+           "Image": "/Solution-3.svg"
         }
       }
     }

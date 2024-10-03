@@ -7,24 +7,21 @@ import { useTranslations } from "next-intl";
 import SolutionGg from "@/public/Solution-bg.svg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {  Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const SolutionSection = () => {
   const tSolutions = useTranslations("Solutions");
+  const solutionSlides = tSolutions.raw('Solution.solutionSlides');
+  // const tSolutions = useTranslations.raw("Solutions.solutionSlides");
+  
   // const obj = {
   //   solutionSlidesOne: Solution1,
   //   solutionSlidesTwo: Solution2,
   //   solutionSlidesThree: Solution3,
   // };
-  const obj = {
-    solutionSlidesOne: "",
-    solutionSlidesTwo:  "",
-    solutionSlidesThree: "",
-  };
-
 
   return (
     <div className="relative">
@@ -64,41 +61,35 @@ const SolutionSection = () => {
               breakpoints={{
                 400: {
                   slidesPerView: 1,
-                
                 },
                 640: {
                   slidesPerView: 2,
-                 
                 },
                 768: {
                   slidesPerView: 2,
-                 
                 },
                 1024: {
                   slidesPerView: 3,
-                 
                 },
               }}
             >
-              {Object.entries(obj).map(([key, value], i) => (
+              {Object.entries(solutionSlides).map(([key, value], i) => (
                 <SwiperSlide key={i}>
                   <div className="flex flex-col rounded-20 gap-4 bg-white shadow-lg">
                     <Image
-                      src={value}
+                      src= {tSolutions(`Solution.solutionSlides.${key}.Image`)}
                       alt={`${key}-image`}
                       className="rounded-lg w-full"
+                      width={100}
+                      height={100}
                     />
                   </div>
                   <div className="mt-6">
                     <div className="scroll-m-20 leading-9 text-2xl sm:text-[26px] text-gray-100 font-semibold tracking-tight max-w-[90%]">
-                      {tSolutions(
-                        `Solution.solutionSlides.${key}.solutionSlidesTitle`
-                      )}
+                      {tSolutions(`Solution.solutionSlides.${key}.solutionSlidesTitle` )}
                     </div>
                     <div className="pt-3 text-gray-200">
-                      {tSolutions(
-                        `Solution.solutionSlides.${key}.solutionSlidesDescription`
-                      )}
+                      {tSolutions( `Solution.solutionSlides.${key}.solutionSlidesDescription` )}
                     </div>
                   </div>
                 </SwiperSlide>
