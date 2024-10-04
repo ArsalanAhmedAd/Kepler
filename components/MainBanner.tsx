@@ -11,8 +11,10 @@ import React from "react";
 // import BannerIntegration4 from "@/public/BannerElements/main-banner-pos.png"
 // import Button from './ButtonCustom'
 // import BannerIntegration4 from "@/public/BannerElements/main-banner-pos-new.png";
-// import BannerIntegration5 from "@/public/BannerElements/cart-with-payment--aaa.png";
+import BannerIntegration5 from "@/public/BannerElements/cart-with-payment--aaa.png";
 import BannerIntegration6 from "@/public/BannerElements/cart-with-payment-20.png";
+import BannerIntegration7 from "@/public/BannerElements/cart-with-payment-gradient.png";
+import BannerIntegrationMobile from "@/public/BannerElements/cart-with-payment-gradient-mobile.png";
 import Button from "./ButtonCustom";
 import  IconType  from "@/public/ButtonIconBlue.svg"
 
@@ -25,42 +27,50 @@ type MainBanner = {
 const MainBanner = () => {
   return (
     <div>
-      <div className="mainbanner bg-[#0088FF] relative flex items-center justify-center w-full max-w-full pt-20">
-        <div className="container mx-auto px-4 absolute text-white z-50">
-          <div className="content max-w-[50%] lg:max-w-[80%] ">
-            <div className="text-2xl lg:text-4xl xl:text-6xl font-extrabold text-white flex items-center">
+      <div className="mainbanner bg-[#0088FF] relative flex flex-col lg:flex-row items-center justify-center w-full max-w-full">
+        <div className="container mx-auto px-4 pt-[155px] pb-[20px] lg:pt-[0] lg-pb-[20px] lg:absolute text-white z-50">
+          <div className="content text-center lg:text-start lg:max-w-[80%] ">
+            <div className="text-2xl lg:text-4xl xl:text-6xl font-extrabold text-white flex justify-center lg:justify-start items-center">
               BrandPOS: <br /> Smarter Payments <br />
               for Ambitious Businesses
             </div>
             <ul className="text-white text-16 lg:text-18 font-bold grid gap-2 md:gap-3 lg:max-w-[55%] py-5 lg:py-8">
-              <div className="flex gap-3 items-start">
+              <div className="flex gap-3 items-start justify-center lg:justify-start">
                 <Image src="/WhiteCheckMark.svg" width={20} height={20} alt="" className="mt-1" />
-                <li>Kostengünstig abkassieren</li></div>
-                <div className="flex gap-3 items-start">
+                <li> Streamline your checkout process and enhance customer satisfaction</li></div>
+                {/* <div className="flex gap-3 items-start">
                 <Image src="/WhiteCheckMark.svg" width={20} height={20} alt="" className="mt-1" />
                 <li> Mit dem Smartphone oder Tablet Kartenzahlungen oder Zahlungen
                 mittels QR- und Barcode annehmen</li></div>
                 <div className="flex gap-3 items-start">
-                <Image src="/WhiteCheckMark.svg" width={20} height={20} alt="" className="mt-1" />
-                <li>Einfach und flexibel</li></div>
-
-            
-             
+                  <Image src="/WhiteCheckMark.svg" width={20} height={20} alt="" className="mt-1" />
+                  <li>Einfach und flexibel
+                  </li>
+              </div> */}
             </ul>
-            <div>
+            <div className="flex justify-center lg:justify-start">
                     <Button type="submit"  icon={IconType.src} iconPosition="right" variant="primaryBanner" size="Bannermd">
                         Jetzt App downloaden
                     </Button>
                  </div>
           </div>
         </div>
+        
         <Image
-          src={BannerIntegration6}
+          src={BannerIntegration7}
           alt=""
           height={950}
           quality={100}
-          className="w-full   relative"
+          className="w-full relative hidden lg:flex"
         />
+        <Image
+          src={BannerIntegrationMobile}
+          alt=""
+          height={950}
+          quality={100}
+          className="w-full   relative flex lg:hidden"
+        />
+     
       </div>
 
       {/* <div style={{ backgroundImage: `url(${bg.src})` }}  className="bg-cover bg-center overflow-hidden min-h-[900px] relative"></div> */}

@@ -25,6 +25,9 @@ const config: Config = {
   				'2xl': '6rem'
   			}
   		},
+		 backgroundImage: {
+        'custom-radial': 'radial-gradient(rgba(0, 290, 258, 1) 0%, rgba(0, 136, 255, 1) 32%)',
+      	},
   		colors: {
   			gray: {
   				'100': '#333343',

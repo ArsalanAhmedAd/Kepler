@@ -45,7 +45,7 @@ const Button: React.FC<ButtonProps> = ({
     sm: "px-2 py-1 text-sm",
     md: "px-12 py-2 sm:px-14 sm:py-3 text-base",
     lg: "px-6 py-3 text-lg",
-    Bannermd: "pl-10 pr-5 py-2 sm:pl-9 sm:pr-12 sm:py-3 text-base",
+    Bannermd: "pl-10 pr-12 py-3 sm:pl-9 sm:pr-12 sm:py-3 text-base",
     blueBtnMd: "px-10 py-5 text-lg font-semibold rounded-[14px] w-full sm:min-w-[240px]",
     outlineBtnMd: "px-6 py-1 text-lg w-full sm:min-w-[240px]",
     TransparentMd: "bg-white text-gray-100"
