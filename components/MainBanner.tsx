@@ -11,8 +11,8 @@ import React from "react";
 // import BannerIntegration4 from "@/public/BannerElements/main-banner-pos.png"
 // import Button from './ButtonCustom'
 // import BannerIntegration4 from "@/public/BannerElements/main-banner-pos-new.png";
-import BannerIntegration5 from "@/public/BannerElements/cart-with-payment--aaa.png";
-import BannerIntegration6 from "@/public/BannerElements/cart-with-payment-20.png";
+// import BannerIntegration5 from "@/public/BannerElements/cart-with-payment--aaa.png";
+// import BannerIntegration6 from "@/public/BannerElements/cart-with-payment-20.png";
 import BannerIntegration7 from "@/public/BannerElements/cart-with-payment-gradient.png";
 import BannerIntegrationMobile from "@/public/BannerElements/cart-with-payment-gradient-mobile.png";
 import Button from "./ButtonCustom";
