@@ -70,11 +70,11 @@ const Footer = ({ locale }: { locale: string }) => {
            <Link href="https://www.apple.com/app-store/" target="_blank"> <Image src={AppStore} alt="googleStore" width={120} height={40} /></Link>
           </div>
         </div>
-        <div className="footer-bottom border-t text-center flex-col sm:flex-row flex justify-between border-blue-200 pt-6">
-          <div className="footer-copyright text-center sm:text-start mb-4">
+        <div className="footer-bottom border-t text-center flex-col md:flex-row flex justify-between border-blue-200 pt-6">
+          <div className="footer-copyright text-center md:text-start mb-4">
             {tfooter("Copyright")}
           </div>
-          <div className="footer-nav text-c sm:text-end">
+          <div className="footer-nav text-c md:text-end">
             <ul>
               <Link href={`/${locale}/contact`}>{tfooter("LinkOne")}</Link>
               <span className="border border-gray-400 mx-1"></span>

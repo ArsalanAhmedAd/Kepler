@@ -184,14 +184,14 @@
     "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
     "Image": "/FeatureSectionNFC.svg",
     "BtnLabel": "Mehr erfahren",
-    "BtnLink": "about"
+    "BtnLink": "#"
   },
   "FeatureSectionQR": {
     "title": "QR-Scan-Zahlung ",
     "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
     "Image": "/FeatureSectionQR.svg",
     "BtnLabel": "Mehr erfahren",
-    "BtnLink": "about"
+    "BtnLink": "#"
   },
   "FeatureSectionManagement": {
     "title": "Verwaltung von Soft-Terminals in Echtzeit",
@@ -287,21 +287,21 @@
     "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
     "Image": "/FeaturesPagePaymentsImg.svg",
     "BtnLabel": "Mehr erfahren",
-    "BtnLink": "about"
+    "BtnLink": "#"
   },
   "FeaturesPageWalletPaymentsSection": {
     "title": "Wallet-Zahlungen",
     "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
     "Image": "/FeaturesPageWalletImg.svg",
     "BtnLabel": "Mehr erfahren",
-    "BtnLink": "about"
+    "BtnLink": "#"
   },
   "FeaturesPageBrandposSection": {
     "title": "BrandPOS vereint zwei Bezahlfunktionen",
     "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
     "Image": "/FeaturesPageBrandPosImg.svg",
     "BtnLabel": "Mehr erfahren",
-    "BtnLink": "about"
+    "BtnLink": "#"
   },
   "FeaturesPageBankPaySection": {
     "title": "Bankgebühren",
@@ -478,7 +478,7 @@
     "title": "POS-Anschlüsse",
     "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown",
     "paypal": {
-      "Image": "/Integrations/Paypal.svg",
+      "Image": "/Integrations/paypal.svg",
       "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since."
     },
     "mollie": {

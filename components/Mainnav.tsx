@@ -200,7 +200,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
   ];
 
   return (
-    <div className="container mx-auto w-full -translate-x-2/4 translate-y-3 absolute left-2/4 px-4 z-50">
+    <div className="container mx-auto w-full -translate-x-2/4 translate-y-3 absolute left-2/4 px-4 z-[1000]">
       <header className="flex justify-between py-4 px-4 items-center bg-nav-transparent text-blue-default rounded-full">
         <nav className="px-3.5 flex justify-between w-full container mx-auto">
           <div className="flex items-center gap-x-3 z-[999] relative">

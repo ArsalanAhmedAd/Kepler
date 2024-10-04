@@ -46,7 +46,7 @@ export default function MobMenu({ Menus, locale }) {
       </button>
       <div className="container mx-auto w-full -translate-x-2/4 translate-y-3 absolute left-2/4 px-4 z-50">
         <motion.div
-          className="relative rounded-[32px] mx-auto left-0 right-0 top-12 overflow-y-auto  bg-nav-transparent  text-blue-default p-6 pb-8"
+          className="relative rounded-[32px] mx-auto left-0 right-0 top-12 overflow-y-auto  bg-white  text-blue-default p-6 pb-8"
           initial={{ x: "-125%" }}
           animate={{ x: isOpen ? "0%" : "-125%" }}
         >
