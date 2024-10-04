@@ -11,8 +11,8 @@ interface ButtonProps {
   disabled?: boolean;
   icon?: string; // Type for icon component
   iconPosition?: "left" | "right" | "rightRelative"; // Position of the icon
-  variant?: "primary" | "secondary" | "danger" | "blueBtn"| "outline" | "TransparentBg"; // Color variants
-  size?: "sm" | "md" | "lg" | "blueBtnMd" | "outlineBtnMd" | "TransparentMd"; // Size variants
+  variant?: "primary" | "secondary" | "danger" | "blueBtn"| "outline" | "TransparentBg" | "primaryBanner"; // Color variants
+  size?: "sm" | "md" | "lg" | "blueBtnMd" | "outlineBtnMd" | "TransparentMd" | "Bannermd"; // Size variants
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -32,6 +32,7 @@ const Button: React.FC<ButtonProps> = ({
   // Define variant styles
   const variantStyles = {
     primary: "bg-white text-blue-default justify-center rounded-full border-gray-100 border",
+    primaryBanner: "bg-white text-blue-default justify-center rounded-full border-gray-100",
     secondary: "border border-gray-100 justify-center text-gray-100 rounded-full hover:border-gray-200",
     danger: "bg-red-500 text-white hover:bg-red-600",
     blueBtn: "bg-blue-default text-white justify-center hover:bg-blue-default w-full",
@@ -44,6 +45,7 @@ const Button: React.FC<ButtonProps> = ({
     sm: "px-2 py-1 text-sm",
     md: "px-12 py-2 sm:px-14 sm:py-3 text-base",
     lg: "px-6 py-3 text-lg",
+    Bannermd: "pl-10 pr-5 py-2 sm:pl-9 sm:pr-12 sm:py-3 text-base",
     blueBtnMd: "px-10 py-5 text-lg font-semibold rounded-[14px] w-full sm:min-w-[240px]",
     outlineBtnMd: "px-6 py-1 text-lg w-full sm:min-w-[240px]",
     TransparentMd: "bg-white text-gray-100"

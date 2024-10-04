@@ -84,13 +84,7 @@ export default function DesktopMenu({ menu, locale }) {
           variants={subMenuAnimate}
         >
           <div
-            className={`grid gap-7 ${
-              menu.gridCols === 3
-                ? "grid-cols-3"
-                : menu.gridCols === 2
-                ? "grid-cols-2"
-                : "grid-cols-1"
-            }`}
+            className={`grid gap-7 ${menu.gridCols === 3? "grid-cols-3": menu.gridCols === 2? "grid-cols-2": "grid-cols-1"}`}
           >
             {menu.subMenu.map((submenu, i) => (
               <div className="relative cursor-pointer" key={i}>
