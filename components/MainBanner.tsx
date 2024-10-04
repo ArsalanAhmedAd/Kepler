@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 // import images from "@/public/banner-home.jpg"
-import bg from "@/public/background-Blue.jpg";
+// import bg from "@/public/background-Blue.jpg";
 // import BannerElement from "@/public/BannerElements/mobile in hand.png"
 // import BannerElementHome from "@/public/BannerElements/cart with payment-2.png"
 // import BannerElementFaq from "@/public/BannerElements/FAQs People.png"
