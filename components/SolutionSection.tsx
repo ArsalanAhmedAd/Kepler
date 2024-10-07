@@ -31,7 +31,7 @@ const SolutionSection = () => {
           alt="solution"
           width={300}
           height={300}
-          className="bottom-0 opacity-30 absolute left-1/2 -translate-x-2/4 lg:translate-x-0 lg:left-28"
+          className="bottom-0 opacity-30 absolute left-1/2 -translate-x-2/4 lg:translate-x-0 lg:left-28 "
         />
         <Image
           src={SolutionGg}
@@ -51,7 +51,7 @@ const SolutionSection = () => {
             {tSolutions("Solution.SolutionDescription")}
           </div>
 
-          <div className="pb-0 lg:py-8">
+          <div className="pb-0 lg:pb-8 lg:pt-0">
             <Swiper
               spaceBetween={30}
               slidesPerView={1}

@@ -34,10 +34,10 @@ const MainHeading = bannerMainHeading;
 
 
             
-            {BannerSubHeading && Object.entries(BannerSubHeading).map(([value], i) => {
+            {BannerSubHeading && Object.entries(BannerSubHeading).map(([key,value], i) => {
                 return (
                   <li key={i} className="flex items-start gap-3">
-                    <Image src="/WhiteCheckMark.svg" width={20} height={20} alt="" className="mt-1" />
+                    <Image src="/WhiteCheckMark.svg" width={20} height={20} alt={`${key}-imge`} className="mt-1" />
                     {value}
                   </li>
                 );
@@ -53,7 +53,7 @@ const MainHeading = bannerMainHeading;
                 size="Bannermd"
 
               >
-                <Link href={bannerBtnLink || ""}>
+                <Link href={bannerBtnLink || ""} className="font-bold">
                     {bannerBtnLabel}
                 </Link>
                
@@ -66,7 +66,7 @@ const MainHeading = bannerMainHeading;
         <Image
           src={bannerDesktop || "no image"}
           alt=""
-          height={900}
+          height={1080}
           width={1920}
           quality={100}
           className="w-full relative hidden lg:flex"

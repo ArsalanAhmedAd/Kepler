@@ -20,7 +20,7 @@ const Footer = ({ locale }: { locale: string }) => {
   return (
     <div className="bg-blue-100 pt-16 lg:pt-20 pb-10 mt-0 sm:mt-8">
       <div className="container mx-auto px-4 ">
-        <div className="footer-top border-b border-blue-200 pb-3 flex  flex-col lg:flex-row justify-between items-center lg:items-end">
+        <div className="footer-top border-b border-blue-200 pb-4 flex  flex-col lg:flex-row justify-between items-center lg:items-end">
           <div className="pb-5">
             <Image src={logo} alt="Footer-logo" width={145} height={45} />
           </div>

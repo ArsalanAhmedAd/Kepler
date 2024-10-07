@@ -9,7 +9,7 @@ const PersonalisedSolution = () => {
  
   return (
     <div className='container mx-auto px-4 pt-16 pb-0 '>
-        <div className='bg-blue-default p-8 rounded-20 flex-col md:flex-row flex items-center'>
+        <div className='bg-blue-default px-8 py-9 rounded-20 flex-col md:flex-row flex items-center'>
             <div className='w-1/2 flex justify-center sm:px-5 py-5'>
               <Image src={PersonalizedImage} alt="PersonalizedImage" width={380} height={240} />
             </div>

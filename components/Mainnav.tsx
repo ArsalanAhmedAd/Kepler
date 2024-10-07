@@ -36,6 +36,47 @@ const Mainnav = ({ locale }: { locale: string }) => {
     icon?: React.ElementType; // Icons should refer to a valid React component type
   };
 
+  // const Menus: NavItem[] = [
+  //   {
+  //     name: t("home"),
+  //     link: "/",
+  //   },
+  //   {
+  //     name: t("Price & Features"),
+  //     link: "/Price&Features",
+  //   },
+  //   {
+  //     name: "Integrations",
+  //     link: "/Integrations",
+  //     subMenuHeading: ["Integrations", "Integrations"],
+  //     subMenu: [
+  //       {
+  //         name: t("IntegrationsOne"),
+  //         link: "/Integrations/IntegrationsPosSystem",
+  //         icon: Dessert,
+  //       },
+  //       {
+  //         name: t("Integrationstwo"),
+  //         link: "/Integrations/IntegrationsAccounting",
+  //         icon: ShieldPlus,
+  //       },
+       
+  //     ],
+  //     gridCols: 2,
+  //   },
+  //   {
+  //     name: t("Resources"),
+  //     link: "/Resources",
+  //   },
+  //   {
+  //     name: t("about"),
+  //     link: "/about",
+  //   },
+  //   {
+  //     name: t("contact"),
+  //     link: "/contact",
+  //   },
+  // ];
   const Menus: NavItem[] = [
     {
       name: t("home"),
@@ -43,21 +84,21 @@ const Mainnav = ({ locale }: { locale: string }) => {
     },
     {
       name: t("Price & Features"),
-      link: "/Price&Features",
+      link: "#",
     },
     {
       name: "Integrations",
-      link: "/Integrations",
+      link: "#",
       subMenuHeading: ["Integrations", "Integrations"],
       subMenu: [
         {
           name: t("IntegrationsOne"),
-          link: "/Integrations/IntegrationsPosSystem",
+          link: "#",
           icon: Dessert,
         },
         {
           name: t("Integrationstwo"),
-          link: "/Integrations/IntegrationsAccounting",
+          link: "#",
           icon: ShieldPlus,
         },
        
@@ -66,21 +107,21 @@ const Mainnav = ({ locale }: { locale: string }) => {
     },
     {
       name: t("Resources"),
-      link: "/Resources",
+      link: "#",
     },
     {
       name: t("about"),
-      link: "/about",
+      link: "#",
     },
     {
       name: t("contact"),
-      link: "/contact",
+      link: "#",
     },
   ];
 
   return (
-    <div className="container mx-auto w-full -translate-x-2/4 translate-y-3 absolute left-2/4 px-4 z-[1000]">
-      <header className="flex justify-between py-4 px-4 items-center bg-nav-transparent text-blue-default rounded-full">
+    <div className="container mx-auto w-full -translate-x-2/4 translate-y-5 absolute left-2/4 px-4 z-[1000]">
+      <header className="flex justify-between py-4 pl-3 items-center bg-nav-transparent text-blue-default rounded-full">
         <nav className="px-3.5 flex justify-between w-full container mx-auto">
           <div className="flex items-center gap-x-3 z-[999] relative">
             <Link href={`/${locale}/`}>
@@ -109,7 +150,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
                   DE
                 </option>
               </select>
-              <div className="gap-4 items-center text-white bg-blue-default rounded-full py-2 px-4 hidden lg:flex">
+              <div className="gap-4 items-center text-white bg-blue-default rounded-full font-bold py-2 px-4 hidden lg:flex">
                 <Link
                   href="https://google.com"
                   target="_blank"
