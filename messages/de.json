@@ -1,7 +1,8 @@
 {
   "NavbarLinks": {
     "home": "Startseite",
-    "homeTitle": "Hauptseite",
+    "homeTitle": "BrnadPos",
+    "homeDescription": "Stroomlijn je afrekenproces en verhoog de klanttevredenheid.",
     "Price & Features": "Preis & Eigenschaften",
     "IntegrationsZero": "Integrationen",
     "IntegrationsOne": "Pos System",

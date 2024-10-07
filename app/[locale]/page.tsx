@@ -16,7 +16,7 @@ export async function generateMetadata({params: { locale },}: {params: { locale:
   
   const messages: any = await getMessages({ locale });
   const title = messages.NavbarLinks.homeTitle;
-  const description = messages.NavbarLinks.aboutDescription;
+  const description = messages.NavbarLinks.homeDescription;
 
   return {
     title,

@@ -1,7 +1,8 @@
 {
   "NavbarLinks": {
     "home": "Home",
-    "homeTitle": "Home page",
+    "homeTitle": "BrandPos",
+    "homeDescription": " Streamline your checkout process and enhance customer satisfaction.",
     "Price & Features": "Price & Features",
     "IntegrationsZero": "Integrations",
     "IntegrationsOne": "Pos System",
