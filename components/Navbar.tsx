@@ -152,7 +152,7 @@ const Navbar = ({ locale }: { locale: string }) => {
 
           {/* Suppress hydration warning for the language selector */}
           <label id="language-select" suppressHydrationWarning></label>
-          <select
+          {/* <select
             value={locale}
             onChange={handleLanguageChange}
             className="px-4 py-2  hover:outline-none focus:outline-none bg-gray-100 text-white rounded-full mx-4"
@@ -165,7 +165,7 @@ const Navbar = ({ locale }: { locale: string }) => {
             <option value="de" label="de">
               DE
             </option>
-          </select>
+          </select> */}
 
           <div className="gap-4 items-center text-white bg-blue-default rounded-full py-2 px-4 hidden lg:flex">
             <Link

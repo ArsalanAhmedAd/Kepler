@@ -34,11 +34,11 @@ const Mainnav = ({ locale }: { locale: string }) => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value as string;
-    const path = pathname.split("/").slice(2).join("/");
-    router.push(`/${newLocale}/${path}`);
-  };
+  // const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
+  //   const newLocale = e.target.value as string;
+  //   const path = pathname.split("/").slice(2).join("/");
+  //   router.push(`/${newLocale}/${path}`);
+  // };
 
   type NavItem = {
     name: string;
@@ -216,7 +216,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
             </ul>
             <div className="flex items-center gap-4">
               <label id="language-select" suppressHydrationWarning></label>
-              <select
+              {/* <select
                 value={locale}
                 onChange={handleLanguageChange}
                 className=" py-2 px-4  hover:outline-none focus:outline-none bg-gray-100 text-white rounded-full"
@@ -229,7 +229,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
                 <option value="de" label="de">
                   DE
                 </option>
-              </select>
+              </select> */}
               <div className="gap-4 items-center text-white bg-blue-default rounded-full py-2 px-4 hidden lg:flex">
                 <Link
                   href="https://google.com"
