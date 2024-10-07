@@ -1,12 +1,12 @@
 // Mainnav.tsx
 "use client";
 
-import React, { ChangeEvent } from "react";
+// import React, { ChangeEvent } from "react";
 // import { Menus } from "@/utils";
 import DesktopMenu from "@/components/DesktopMenu";
 import MobMenu from "@/components/MobMenu";
 import { useTranslations } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+// import { usePathname, useRouter } from "next/navigation";
 // import { Bolt } from "lucide-react";
 // import { ShoppingBag } from "lucide-react";
 // import { BellDot } from "lucide-react";
@@ -31,8 +31,8 @@ import Image from "next/image";
 
 const Mainnav = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarLinks");
-  const pathname = usePathname();
-  const router = useRouter();
+  // const pathname = usePathname();
+  // const router = useRouter();
 
   // const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
   //   const newLocale = e.target.value as string;
