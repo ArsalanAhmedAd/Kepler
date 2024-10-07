@@ -5,7 +5,7 @@
     "Price & Features": "Price & Features",
     "IntegrationsZero": "Integrations",
     "IntegrationsOne": "Pos System",
-    "Integrationstwo": "Accounting",
+    "Integrationstwo": "Pos Accounting",
     "Integrationsthree": "Integrations 3",
     "Integrationsfour": "Integrations 4",
     "Resources": "Resources",
@@ -17,9 +17,32 @@
     "contactTitle": "contact page"
   },
   "HomePage": {
-    "title": "Testing Lang"
+    "title": "Testing Lang",
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Payments <br /> for Ambitious Businesses",
+      "BannerImageDesktop": "/BannerElements/cart-with-payment-home-desktop.png",
+      "BannerImageMobile": "/BannerElements/cart-with-payment-home-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction"
+        
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    }
   },
   "AboutPage": {
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Payments <br /> for Ambitious Businesses",
+      "BannerImageDesktop": "/BannerElements/Ticket-buying-desktop.png",
+      "BannerImageMobile": "/BannerElements/Ticket-buying-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Introduction": {
       "Intro": "Introduction to",
       "pos": "BrandPOS",
@@ -155,6 +178,18 @@
     }
   },
   "ContactPage": {
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Payments <br /> for Ambitious Businesses",
+      "BannerImageDesktop": "/BannerElements/calling-person-desktop.png",
+      "BannerImageMobile": "/BannerElements/calling-person-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "title": "Contact us",
     "ContactInfo": {
       "Address": "Max-Planck-Straße 5, 85716",
@@ -472,7 +507,33 @@
       }
     }
   },
+  "PriceFeatures" : {
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Payments <br /> for Ambitious Businesses",
+      "BannerImageDesktop": "/BannerElements/mobile-in-hand.png",
+      "BannerImageMobile": "/BannerElements/mobile-in-hand-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    }
+  },
   "Integrations": {
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Payments <br /> for Ambitious Businesses",
+      "BannerImageDesktop": "/BannerElements/Person-mobile-group-desktop.png",
+      "BannerImageMobile": "/BannerElements/Person-mobile-group-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Image": "/PosConnector.svg",
     "title": "POS Connectors",
     "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown",
@@ -522,6 +583,18 @@
     }
   },
   "IntegrationsPosSystem": {
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Payments <br /> for Ambitious Businesses",
+      "BannerImageDesktop": "/BannerElements/icecream-girl-banner-desktop.png",
+      "BannerImageMobile": "/BannerElements/icecream-girl-banner-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Image": "/Integrations/PosSystem.svg",
     "title": "POS system connections in the dashboard profile",
     "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown",
@@ -559,11 +632,35 @@
     }
   },
   "IntegrationsAccounting": {
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Payments <br /> for Ambitious Businesses",
+      "BannerImageDesktop": "/BannerElements/Mechanic-desktop.png",
+      "BannerImageMobile": "/BannerElements/Mechanic-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Image": "/Integrations/IntegrationsAccounting.svg",
     "title": "Accounting  in the dashboard  ",
     "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown"
   },
   "Resources": {
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Payments <br /> for Ambitious Businesses",
+      "BannerImageDesktop": "/BannerElements/Cafe-Payment-desktop.png",
+      "BannerImageMobile": "/BannerElements/Cafe-Payment-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Image": "/Integrations/ResourcesHeader.svg",
     "title": "Gebrauchte Fälle",
     "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",

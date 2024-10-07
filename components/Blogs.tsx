@@ -35,7 +35,7 @@ const Blogs = () => {
                 <>
                     <div key={i} className="box-shadow-custom rounded-20">
                         <div className="relative -top-4 -right-9">
-                            <Image src="Blog/BlogThumbnail.jpg" alt="BlogThumbnail" width={420} height={320} className="w-full" />
+                            <Image src="/Blog/BlogThumbnail.jpg" alt="BlogThumbnail" width={420} height={320} className="w-full" />
                             <div className="absolute bottom-4 left-4 text-white">{tBlogSection(`Blogs.${key}.BlogPublishDate`)}</div>
                         </div>
                         <div className="pl-9 pb-6 pr-6">

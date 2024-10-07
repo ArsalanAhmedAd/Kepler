@@ -21,7 +21,7 @@ const CharacteristicsSection = ({CharacteristicsTitle,CharacteristicsDescription
           <div className="text-center sm:text-left text-2xl sm:text-3xl leading-9 text-gray-100 lg:text-[40px] lg:leading-[3rem] font-bold mb-4">
             {CharacteristicsTitle}
           </div>
-          <div className="text-center sm:text-left text-[16px] leading-8 text-gray-200 lg:text-[18px] lg:leading-8 font-normal mb-4">
+          <div className="text-center sm:text-left text-16 leading-8 text-gray-200 lg:text-18 lg:leading-8 font-normal mb-4">
             {CharacteristicsDescription}
              
           </div>

@@ -31,7 +31,7 @@ const Button: React.FC<ButtonProps> = ({
   
   // Define variant styles
   const variantStyles = {
-    primary: "bg-white text-blue-default justify-center rounded-full border-gray-100 border",
+    primary: "bg-white text-blue-default justify-center rounded-full border-gray-100",
     primaryBanner: "bg-white text-blue-default justify-center rounded-full border-gray-100",
     secondary: "border border-gray-100 justify-center text-gray-100 rounded-full hover:border-gray-200",
     danger: "bg-red-500 text-white hover:bg-red-600",

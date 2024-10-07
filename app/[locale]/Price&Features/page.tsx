@@ -31,10 +31,12 @@ const PriceFeatures = () => {
   const tFeaturesPageBrandposSection = useTranslations("FeaturesPageBrandposSection");
   const tFeaturesPageBankPaySection = useTranslations("FeaturesPageBankPaySection");
   const tFeaturesPageSecuritySection = useTranslations("FeaturesPageSecuritySection");
+  const tPriceFeatures = useTranslations("PriceFeatures.MainBanner");
+  const tBannerSubHeading = tPriceFeatures.raw('BannerSubHeading');
 
   return (
     <div>
-       <MainBanner/>
+        <MainBanner bannerMainHeading={tPriceFeatures('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tPriceFeatures('BannerImageDesktop')} bannerMobile={tPriceFeatures('BannerImageMobile')} bannerBtnLabel={tPriceFeatures('MainBannerBtnLabel')} bannerBtnLink={tPriceFeatures('MainBannerBtnLink')}/>
       <CharacteristicsSection
         CharacteristicsImage={tFeaturesCharacteristics("Image")}
         CharacteristicsTitle={tFeaturesCharacteristics("title")}

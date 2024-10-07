@@ -15,6 +15,8 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
     BrandPOSAdmin: "",
   };
 
+  const tResourcesMainBanner = useTranslations("Resources.MainBanner");
+  const tBannerSubHeading = tResourcesMainBanner.raw('BannerSubHeading');
   console.log("Current locale:", locale);
   const APIIntegrations = {
     PayPal: "",
@@ -27,7 +29,8 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
 
   return (
     <>
-      <MainBanner />
+                    <MainBanner bannerMainHeading={tResourcesMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tResourcesMainBanner('BannerImageDesktop')} bannerMobile={tResourcesMainBanner('BannerImageMobile')} bannerBtnLabel={tResourcesMainBanner('MainBannerBtnLabel')} bannerBtnLink={tResourcesMainBanner('MainBannerBtnLink')}/>
+
 
       <CharacteristicsSection
         CharacteristicsImage={tResources("Image")}

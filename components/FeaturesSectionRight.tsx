@@ -38,7 +38,7 @@ export const FeaturesSectionRight =  ({ features, description, ImageDirection, F
       <div className={`flex-col sm:flex-row flex items-center ${ImageDirection}`}>
         <div className="left w-full sm:w-[45%] mb-9 sm:mb-0">
           <div className="text-center sm:text-left text-2xl leading-9 lg:text-3xl  text-gray-100 lg:text-[32px] lg:leading-[2.5rem] font-bold mb-4">{features}</div>
-          <div className="text-center sm:text-left text-[16px] leading-8 text-gray-200 lg:text-[18px] lg:leading-8 font-normal mb-4">{description}</div>
+          <div className="text-center sm:text-left text-16 leading-8 text-gray-200 lg:text-18 lg:leading-8 font-normal mb-4">{description}</div>
           
 
             {buttonEnabled && (

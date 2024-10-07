@@ -50,9 +50,12 @@ const IntegrationsPosSystem = () => {
   
   };
   const tIntegrationsPosSystem = useTranslations("IntegrationsPosSystem");
+  const tIntegrationsMainBanner = useTranslations("IntegrationsPosSystem.MainBanner");
+  const tBannerSubHeading = tIntegrationsMainBanner.raw('BannerSubHeading');
   return (
     <>
-     <MainBanner/>
+                 <MainBanner bannerMainHeading={tIntegrationsMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tIntegrationsMainBanner('BannerImageDesktop')} bannerMobile={tIntegrationsMainBanner('BannerImageMobile')} bannerBtnLabel={tIntegrationsMainBanner('MainBannerBtnLabel')} bannerBtnLink={tIntegrationsMainBanner('MainBannerBtnLink')}/>
+
       <CharacteristicsSection
         CharacteristicsImage={tIntegrationsPosSystem("Image")}
         CharacteristicsTitle={tIntegrationsPosSystem("title")}

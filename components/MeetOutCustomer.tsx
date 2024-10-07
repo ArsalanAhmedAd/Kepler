@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'
 import CustomerLogo from "@/public/CustomerLogo.svg"
 import Image from "next/image";
+import { Autoplay  } from "swiper/modules";
 
 
 const MeetOutCustomer = () => {
@@ -19,7 +20,11 @@ const MeetOutCustomer = () => {
       <Swiper
       spaceBetween={20}
       slidesPerView={2}
-      
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: true,
+      }}
+      modules={[Autoplay]}
       className="CustomerSlider"
       breakpoints={{
         400: {

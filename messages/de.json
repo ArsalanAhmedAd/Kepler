@@ -5,7 +5,7 @@
     "Price & Features": "Preis & Eigenschaften",
     "IntegrationsZero": "Integrationen",
     "IntegrationsOne": "Pos System",
-    "Integrationstwo": "Buchhaltung",
+    "Integrationstwo": "Pos Boekhouding",
     "Integrationsthree": "Integrationen 3",
     "Integrationsfour": "Integrationen 4",
     "Resources": "Ressourcen",
@@ -17,9 +17,32 @@
     "contactTitle": "contact page"
   },
   "HomePage": {
-    "title": "Page d'atterrissage"
+    "title": "Page d'atterrissage",
+    "MainBanner" : {
+      "BannerHeading": "BrandPOS: <br /> Smarter Zahlungsverkehr <br /> für ehrgeizige Unternehmen",
+      "BannerImageDesktop": "/BannerElements/cart-with-payment-home-desktop.png",
+      "BannerImageMobile": "/BannerElements/cart-with-payment-home-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Optimieren Sie Ihren Checkout-Prozess und erhöhen Sie die Kundenzufriedenheit"
+       
+      },
+      "MainBannerBtnLabel": "Jetzt die App herunterladen",
+      "MainBannerBtnLink": "/about"
+    }
   },
   "AboutPage": {
+    "MainBanner" : {
+      "BannerHeading": "AboutPage",
+      "BannerImageDesktop": "/BannerElements/Ticket-buying-desktop.png",
+      "BannerImageMobile": "/BannerElements/Ticket-buying-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+       
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Introduction": {
       "Intro": "Einführung in",
       "pos": "BrandPOS",
@@ -155,6 +178,18 @@
       }
   },
   "ContactPage": {
+    "MainBanner" : {
+      "BannerHeading": "ContactPage",
+      "BannerImageDesktop": "/BannerElements/calling-person-desktop.png",
+      "BannerImageMobile": "/BannerElements/calling-person-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+     
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "title": "Kontakt aufnehmen",
     "ContactInfo": {
       "Address": "Max-Planck-Straße 5, 85716",
@@ -173,109 +208,111 @@
     "title": "Profil"
   },
   "FeatureSectionDiscover": {
-    "title": "Entdecken Sie die innovative App",
-    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "title": "Unsere App ist auf die Bedürfnisse Ihres Unternehmens abgestimmt",
+    "Description": "Ein Geschäft zu führen ist eine Herausforderung, aber Ihre Tools sollten es nicht sein. BrandPOS verwandelt Komplexität in Einfachheit und bietet Ihnen eine nahtlose Plattform, die darauf ausgelegt ist, Ihre täglichen Anforderungen im Einzelhandel zu erfüllen. Laden Sie die App jetzt im App Store oder bei Google Play herunter und erleben Sie den Unterschied aus erster Hand",
     "Image": "/FeatureSectionDiscover.svg",
     "BtnLabel": "Mehr erfahren",
     "BtnLink": "about"
   },
   "FeatureSectionNFC": {
-    "title": "NFC-fähige Zahlung",
-    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.,",
+    "title": "NFC-Zahlungen",
+    "Description": "Warum sollten Sie Ihre Kunden warten lassen? Mit nur einem Fingertipp können sie ihre Einkäufe im Handumdrehen abschließen. BrandPOS hebt NFC-Zahlungen auf die nächste Stufe und macht jede Transaktion schnell, sicher und völlig nahtlos. Es geht nicht nur um Geschwindigkeit, sondern auch darum, ein modernes, unkompliziertes Erlebnis zu bieten, das zu Ihrer zukunftsorientierten Marke passt.",
     "Image": "/FeatureSectionNFC.svg",
     "BtnLabel": "Mehr erfahren",
     "BtnLink": "#"
   },
   "FeatureSectionQR": {
-    "title": "QR-Scan-Zahlung ",
-    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+    "title": "QR-Code-Transaktionen",
+    "Description": "Bezahlen sollte einfach sein und keine Hürde darstellen. Mit BrandPOS verwandeln QR-Code-Transaktionen jedes Gerät in ein Zahlungsportal. Ob in einem Geschäft oder unterwegs, Ihre Kunden scannen einfach und bezahlen - ohne zusätzliche Hardware oder komplexe Prozesse.",
     "Image": "/FeatureSectionQR.svg",
     "BtnLabel": "Mehr erfahren",
     "BtnLink": "#"
   },
   "FeatureSectionManagement": {
-    "title": "Verwaltung von Soft-Terminals in Echtzeit",
-    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "title": "Soft-Terminal-Management in Echtzeit",
+    "Description": "Es war noch nie so einfach, Ihre Geschäftsabläufe flexibel und synchron zu halten. BrandPOS bietet eine Soft-Terminal-Verwaltung in Echtzeit, mit der Sie Terminals bei Bedarf hinzufügen, aktualisieren oder entfernen können, ohne dass physische Hardware ausgetauscht werden muss. Konfigurieren Sie Terminals für verschiedene Standorte, Veranstaltungen oder Personalschichten und sorgen Sie so für einen reibungslosen Betrieb mit minimalen Ausfallzeiten.",
     "Image": "/FeatureSectionManagment.svg",
-    "BtnLabel": "Mehr erfahren"
+    "BtnLabel": "Mehr erfahren",
+    "BtnLink": "#"
   },
   "FeatureSectionVideo": {
-    "title": "Ein Video ansehen",
-    "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "title": "Sehen Sie sich das BrandPOS-Erlebnis an",
+    "Description": "Entdecken Sie in einem kurzen Videoüberblick, wie BrandPOS Ihr Geschäft revolutionieren kann.",
     "Image": "/FeatureSectionVideo.svg",
-    "BtnLabel": "Mehr erfahren"
+    "BtnLabel": "Mehr erfahren",
+    "BtnLink": "#"
   },
   "FeaturePage": {
     "title": "FeatureSeite fr",
     "description": "Dies ist eine Beschreibung fr"
   },
-  "Solutions": {
+ "Solutions": {
     "Solution": {
-      "SolutionTitle": "Lösungen für jeden Geschäftsbedarf.",
-      "SolutionDescription": "Bringen Sie Ihr Unternehmen in Schwung mit der BrandPOS Payment App, die Ihren Bedürfnissen entspricht.",
+      "SolutionTitle": "Einzigartige Funktionen für Ihr einzigartiges Unternehmen",
+      "SolutionDescription": "Ihr Unternehmen verdient mehr als eine Einheitslösung, es verdient Tools, die einzigartige Herausforderungen verstehen und sich an sie anpassen.",
       "solutionSlides": {
         "solutionSlidesOne": {
           "solutionSlidesTitle": "Personalisierte Markenerfahrung",
-          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "solutionSlidesDescription": "Ihre Marke sollte mehr sein als nur ein Logo, sie sollte ein Erlebnis sein. BrandPOS ermöglicht es Ihnen, dieses Erlebnis mit vollständig anpassbaren Touchpoints zum Leben zu erwecken. ",
           "Image": "/Solution-1.svg"
         },
         "solutionSlidesTwo": {
           "solutionSlidesTitle": "Erhöhte Mobilität",
-          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
-           "Image": "/solution-2.svg"
+          "solutionSlidesDescription": "Die Führung Ihres Unternehmens sollte nicht an einen Ort gebunden sein. Mit BrandPOS wird Freiheit zum Standard. Verwalten Sie Ihre Geschäfte nahtlos über Mobil- und Tablet-Geräte und stellen Sie sicher, dass die Dinge reibungslos laufen, egal wo Sie sind.",
+          "Image": "/solution-2.svg"
         },
         "solutionSlidesThree": {
           "solutionSlidesTitle": "Echtzeit-Analytik",
-          "solutionSlidesDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+          "solutionSlidesDescription": "Daten sind nur so wertvoll wie Ihre Fähigkeit, auf sie zu reagieren. BrandPOS stellt Echtzeit-Einsichten in den Mittelpunkt, sodass Sie auf Trends reagieren, den Bestand optimieren und sich an das Kundenverhalten anpassen können, während es geschieht.",
            "Image": "/solution-3.svg"
         }
       }
     }
   },
   "OrderPlace": {
-    "title": "Geben Sie jetzt Ihre Bestellung auf",
-    "Description": "Senden Sie uns Ihren Kontakt, unser Vertreter wird sich innerhalb von 48 Stunden bei Ihnen melden.",
+    "title": "Geben Sie Ihre Bestellung heute auf",
+    "Description": "Teilen Sie uns Ihre Kontaktdaten mit, und unser Expertenteam wird sich innerhalb von 48 Stunden mit Ihnen in Verbindung setzen, um Sie bei Ihrer Bestellung zu unterstützen.",
     "ButtonText": "Senden Sie"
   },
   "WhyBrandPos": {
-    "title": "Warum BrandPOS wählen",
-    "Description": "Bringen Sie Ihr Unternehmen in Schwung mit der BrandPOS Payment App, die Ihren Bedürfnissen entspricht.",
+    "title": " Warum uns wählen",
+    "Description": "Wir wissen, dass kein Unternehmen wie das andere ist. Unsere Lösungen sind auf die spezifischen Anforderungen Ihres Unternehmens zugeschnitten",
     "Image": "/WhyBrandPos.svg",
     "WhyBrandPosSectionOne": {
-      "title": "Keine versteckten Dateien",
-      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      "title": "Offene, transparente Preisgestaltung",
+      "Description": "Mit BrandPOS müssen Sie sich keine Gedanken über versteckte Gebühren machen. Unser Preismodell ist klar, einfach und so gestaltet, dass Ihr Geschäftsbudget unter Kontrolle bleibt"
     },
     "WhyBrandPosSectionTwo": {
-      "title": "Schnellstart nach dem Herunterladen",
-      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      "title": "Sofortige Aktivierung",
+      "Description": "Verschwenden Sie keine Zeit mit komplizierten Konfigurationen. BrandPOS ist innerhalb weniger Minuten nach dem Herunterladen einsatzbereit, so dass Sie sich ohne Verzögerung auf Ihr Geschäft konzentrieren können"
     },
     "WhyBrandPosSectionThree": {
-      "title": "Akzeptiert jeden Betrag",
-      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      "title": "Nahtlose Zahlungsflexibilität",
+      "Description": "Ganz gleich, ob es sich um eine kleine oder große Transaktion handelt, BrandPOS wickelt Zahlungen in beliebiger Höhe mühelos ab und bietet Ihnen volle Flexibilität am Point of Sale."
     },
     "WhyBrandPosSectionFour": {
-      "title": "Sicherheit von Unternehmensdaten",
-      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard."
+      "title": "Zuverlässiger Datenschutz",
+      "Description": "Ihre Geschäftsdaten sind unsere Priorität. Mit robusten Sicherheitsprotokollen sorgt BrandPOS dafür, dass Ihre Unternehmensdaten vor potenziellen Bedrohungen geschützt bleiben."
     }
   },
   "personalizedSolution": {
-    "title": "Benötigen Sie eine personalisierte Lösung?",
-    "Description": "Lorem Ipsum ist einfach ein Blindtext der Druck- und Satzindustrie. Lorem Ipsum war der Standard der Industrie.",
+    "title": "Personalisierte Lösungen für Sie!",
+    "Description": "Wir glauben nicht an eine Einheitsgröße, die für alle passt. Unsere Experten arbeiten mit Ihnen zusammen, um eine individuelle Zahlungslösung zu entwickeln, die sich an Ihr Unternehmen anpasst und Ihnen hilft, schneller und intelligenter zu wachsen.",
     "ButtonLabel": "Mehr erfahren"
   },
   "MeetOutCustomer": {
-    "title": "Treffen Sie unsere Kunden",
-    "Description": "Lorem Ipsum ist einfach ein Blindtext der Druck- und Satzindustrie. Lorem Ipsum war der Standard der Industrie."
+    "title": "Wir sind stolz darauf, mit Kunden zu arbeiten",
+    "Description": "Jede Partnerschaft erzählt eine Geschichte, und wir sind dankbar für die Zusammenarbeit mit innovativen Unternehmen wie dem Ihren, die uns inspirieren und den Wandel in ihren Branchen vorantreiben."
   },
   "footer": {
-    "AddressOne": "Peterberg Street 3 <br/> 47139 Duisburg <br/> Germany",
-    "AddressTwo": "Max Planck Street 5 <br/> 85716 Unterschleißheim <br/> Germany",
+    "AddressOne": "Peterbergstraße 3 <br/> 47139 Duisburg <br/> Deutschland",
+    "AddressTwo": "Max Planck-straat 5 <br/> 85716 Unterschleißheim <br/> Deutschland",
     "PhoneNumber": "+49 (0) 89 2154 7447",
     "EmailAddress": "info@BrandPos.com",
-    "FooterHeading": "Entdecken Sie die innovativen Anwendungen",
+    "FooterHeading": "Erkunden Sie die innovativen Apps",
     "Copyright": "Copyright © 2024 brandpos.de alle Rechte vorbehalten",
-    "LinkOne": "Datenschutzvorschriften",
-    "LinkTwo": "Geschäftsbedingungen"
+    "LinkOne": "Datenschutz",
+    "LinkTwo": "Nutzungsbedingungen"
   },
   "FeaturesCharacteristics": {
     "title": "Eigenschaften",
@@ -473,7 +510,32 @@
       }
     }
   },
+  "PriceFeatures" : {
+    "MainBanner" : {
+      "BannerHeading": "update snipet <br />  from PriceFeatures",
+      "BannerImageDesktop": "/BannerElements/mobile-in-hand.png",
+      "BannerImageMobile": "/BannerElements/mobile-in-hand-mobile.png",
+      "BannerSubHeading": {
+         "labelOne": "update snipet from Price Features",
+          "labelTwo": "update snipet from Price Features 2"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    }
+  },
   "Integrations": {
+    "MainBanner" : {
+      "BannerHeading": "update snipet <br /> from Integrations",
+      "BannerImageDesktop": "/BannerElements/Person-mobile-group-desktop.png",
+      "BannerImageMobile": "/BannerElements/Person-mobile-group-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "update snipet from Integrations",
+        "labelTwo": "update snipet from Integrations 2"
+      
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Image": "/PosConnector.svg",
     "title": "POS-Anschlüsse",
     "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown",
@@ -523,6 +585,17 @@
     }
   },
   "IntegrationsPosSystem": {
+    "MainBanner" : {
+      "BannerHeading": "IntegrationsPosSystem",
+      "BannerImageDesktop": "/BannerElements/icecream-girl-banner-desktop.png",
+      "BannerImageMobile": "/BannerElements/icecream-girl-banner-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction"
+        
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Image": "/Integrations/PosSystem.svg",
     "title": "POS-Systemverbindungen im Dashboard Profil",
     "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown",
@@ -560,11 +633,34 @@
     }
   },
   "IntegrationsAccounting": {
+    "MainBanner" : {
+      "BannerHeading": "Integrations <br /> Accounting",
+      "BannerImageDesktop": "/BannerElements/Mechanic-desktop.png",
+      "BannerImageMobile": "/BannerElements/Mechanic-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction"
+       
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "#"
+    },
     "Image": "/Integrations/IntegrationsAccounting.svg",
     "title": "Buchhaltung im dem Dashboard",
     "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown"
   },
   "Resources": {
+    "MainBanner" : {
+      "BannerHeading": "Resources",
+      "BannerImageDesktop": "/BannerElements/Cafe-Payment-desktop.png",
+      "BannerImageMobile": "/BannerElements/Cafe-Payment-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Streamline your checkout process and enhance customer satisfaction",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
     "Image": "/Integrations/ResourcesHeader.svg",
     "title": "Gebrauchte Fälle",
     "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",

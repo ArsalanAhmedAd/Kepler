@@ -58,10 +58,12 @@ const Integrations = () => {
     },
   };
   const tIntegrations = useTranslations("Integrations");
+  const tIntegrationsMainBanner = useTranslations("Integrations.MainBanner");
+  const tBannerSubHeading = tIntegrationsMainBanner.raw('BannerSubHeading');
 
   return (
     <>
-           <MainBanner/>
+          <MainBanner bannerMainHeading={tIntegrationsMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tIntegrationsMainBanner('BannerImageDesktop')} bannerMobile={tIntegrationsMainBanner('BannerImageMobile')} bannerBtnLabel={tIntegrationsMainBanner('MainBannerBtnLabel')} bannerBtnLink={tIntegrationsMainBanner('MainBannerBtnLink')}/>
     <CharacteristicsSection
           CharacteristicsImage={tIntegrations("Image")}
           CharacteristicsTitle={tIntegrations("title")}

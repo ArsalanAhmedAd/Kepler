@@ -1,5 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import MainBanner from "@/components/MainBanner";
+import { useTranslations } from "next-intl";
 // import { useTranslations } from "next-intl";
 import { getMessages } from "next-intl/server";
 import React from "react";
@@ -26,7 +27,8 @@ const ContactPage = () => {
   //   "hands-on": FaTools,
   //   comprehensive: FaBook,
   // };
-
+  const tMainBanner = useTranslations("ContactPage.MainBanner");
+  const tBannerSubHeading = tMainBanner.raw('BannerSubHeading');
   return (
     // <div className="min-h-screen py-40 max-w-6xl mx-auto">
     //   <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-balance text-center py-4">
@@ -63,7 +65,8 @@ const ContactPage = () => {
     //   <div className="flex items-center justify-center"></div>
     // </div>
     <>
-      <MainBanner />
+                    <MainBanner bannerMainHeading={tMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tMainBanner('BannerImageDesktop')} bannerMobile={tMainBanner('BannerImageMobile')} bannerBtnLabel={tMainBanner('MainBannerBtnLabel')} bannerBtnLink={tMainBanner('MainBannerBtnLink')}/>
+
       <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
         <ContactForm />
       </div>

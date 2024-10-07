@@ -47,7 +47,7 @@ const SolutionSection = () => {
           <div className="scroll-m-20 text-2xl sm:text-3xl leading-10 font-extrabold tracking-tight lg:text-[40px] w-full lg:w-5/12 lg:leading-[50px] text-gray-100 mx-auto text-balance text-center">
             {tSolutions("Solution.SolutionTitle")}
           </div>
-          <div className="scroll-m-20 text-[18px] font-normal text-gray-200 lg:text-[22px] text-balance text-center py-4">
+          <div className="scroll-m-20 text-18 font-normal text-gray-200 lg:text-22 text-balance text-center py-4 lg:max-w-[80%] mx-auto">
             {tSolutions("Solution.SolutionDescription")}
           </div>
 
@@ -57,6 +57,8 @@ const SolutionSection = () => {
               slidesPerView={1}
               draggable={false}
               modules={[Pagination, Navigation]}
+              
+              navigation={false}
               className="SolutionSwiper"
               breakpoints={{
                 400: {
@@ -88,7 +90,7 @@ const SolutionSection = () => {
                     <div className="scroll-m-20 leading-9 text-2xl sm:text-[26px] text-gray-100 font-semibold tracking-tight max-w-[90%]">
                       {tSolutions(`Solution.solutionSlides.${key}.solutionSlidesTitle` )}
                     </div>
-                    <div className="pt-3 text-gray-200">
+                    <div className="pt-3 text-16 sm:text-18 text-gray-200">
                       {tSolutions( `Solution.solutionSlides.${key}.solutionSlidesDescription` )}
                     </div>
                   </div>

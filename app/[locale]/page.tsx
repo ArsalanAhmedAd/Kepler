@@ -34,10 +34,13 @@ export default function Home () {
   const FeatureSectionQR = useTranslations("FeatureSectionQR");
   const FeatureSectionManagement = useTranslations("FeatureSectionManagement");
   const FeatureSectionVideo = useTranslations("FeatureSectionVideo");
+  const tHomePage = useTranslations("HomePage.MainBanner");
+  const tBannerSubHeading = tHomePage.raw('BannerSubHeading');
+
  
   return (
     <>
-       <MainBanner/>
+       <MainBanner bannerMainHeading={tHomePage('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tHomePage('BannerImageDesktop')} bannerMobile={tHomePage('BannerImageMobile')} bannerBtnLabel={tHomePage('MainBannerBtnLabel')} bannerBtnLink={tHomePage('MainBannerBtnLink')}/>
       <div className="bg-gray-300 py-5">
         <div className="container mx-auto">
           <ManufactureSlider />

@@ -1,166 +1,54 @@
-// Mainnav.tsx
 "use client";
 
-// import React, { ChangeEvent } from "react";
+import React, { ChangeEvent } from "react";
+
 // import { Menus } from "@/utils";
 import DesktopMenu from "@/components/DesktopMenu";
 import MobMenu from "@/components/MobMenu";
 import { useTranslations } from "next-intl";
-// import { usePathname, useRouter } from "next/navigation";
-// import { Bolt } from "lucide-react";
-// import { ShoppingBag } from "lucide-react";
-// import { BellDot } from "lucide-react";
-// import { BookOpenText } from "lucide-react";
-// import { BriefcaseBusiness } from "lucide-react";
-// import { CircleHelp } from "lucide-react";
-// import { TriangleAlert } from "lucide-react";
-import { Users } from "lucide-react";
-// import { Lock } from "lucide-react";
+
+import { usePathname, useRouter } from "next/navigation";
+
+
 import { Dessert } from "lucide-react";
 import { ShieldPlus } from "lucide-react";
-// import { MessageCircle } from "lucide-react";
-// import { Images } from "lucide-react";
-// import { Figma } from "lucide-react";
-// import { Play } from "lucide-react";
-// import { MapPin } from "lucide-react";
-// import { Database } from "lucide-react";
-// import { PanelsTopLeft } from "lucide-react";
-// import { PanelTop } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Mainnav = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarLinks");
-  // const pathname = usePathname();
-  // const router = useRouter();
 
-  // const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
-  //   const newLocale = e.target.value as string;
-  //   const path = pathname.split("/").slice(2).join("/");
-  //   router.push(`/${newLocale}/${path}`);
-  // };
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    const newLocale = e.target.value as string;
+    const path = pathname.split("/").slice(2).join("/");
+    router.push(`/${newLocale}/${path}`);
+  };
 
   type NavItem = {
     name: string;
     link?: string;
-    gridCols? : number;
-    subMenuHeading?: string[]; // Array of strings for headings
+    gridCols?: number;
+    subMenuHeading?: string[];
     subMenu?: NavItem[]; // Sub-menu can contain further NavItems
     icon?: React.ElementType; // Icons should refer to a valid React component type
   };
-
-  //   const navItem: NavItem[] = [
-  //     {
-  //       label: t("home"),
-  //       link: "/",
-  //     },
-  //     {
-  //       label: t("Price & Features"),
-  //       link: "/Price&Features",
-  //     },
-  //     {
-  //       label: t("IntegrationsZero"),
-  //       link: "/Integrations",
-  //       children: [
-  //         {
-  //           label: t("IntegrationsOne"),
-  //           link: "Integrations/IntegrationsPosSystem",
-  //           iconImage: "",
-  //         },
-  //         {
-  //           label: t("Integrationstwo"),
-  //           link: "Integrations/IntegrationsAccounting",
-  //           iconImage: "",
-  //         },
-  //         {
-  //           label: t("Integrationsthree"),
-  //           link: "/Integrations",
-  //           iconImage: "",
-  //         },
-  //         {
-  //           label: t("Integrationsfour"),
-  //           link: "contact",
-  //           iconImage: "",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       label: t("Resources"),
-  //       link: "/Resources",
-  //     },
-  //     {
-  //       label: t("about"),
-  //       link: "/about",
-  //     },
-  //     {
-  //       label: t("contact"),
-  //       link: "/contact",
-  //     },
-  //   ];
 
   const Menus: NavItem[] = [
     {
       name: t("home"),
       link: "/",
-      //   subMenuHeading: ["Design", "Scale"],
-      //   subMenu: [
-      //     {
-      //       name: "Design",
-      //       desc: "Responsive design",
-      //       icon: PanelsTopLeft,
-      //       link: "/features"
-      //     },
-      //     {
-      //       name: "Management",
-      //       desc: "Site control",
-      //       icon: Bolt,
-      //       link: "/home",
-      //     },
-      //     {
-      //       name: "Navigation",
-      //       desc: "Link pages",
-      //       icon: PanelTop,
-      //     },
-      //     {
-      //       name: "CMS",
-      //       desc: "Management content",
-      //       icon: Database,
-      //     },
-      //   ],
-      //   gridCols: 2,
     },
     {
       name: t("Price & Features"),
       link: "/Price&Features",
-      //   subMenuHeading: ["Get started", "Programs", "Recent"],
-      //   subMenu: [
-      //     {
-      //         label: t("IntegrationsOne"),
-      //         link: "Integrations/IntegrationsPosSystem",
-      //         icon: Dessert,
-      //       },
-      //       {
-      //         label: t("Integrationstwo"),
-      //         link: "Integrations/IntegrationsAccounting",
-      //         icon: ShieldPlus,
-      //       },
-      //       {
-      //         label: t("Integrationsthree"),
-      //         link: "/Integrations",
-      //         icon: Users,
-      //       },
-      //       {
-      //         label: t("Integrationsfour"),
-      //         link: "contact",
-      //         icon: Dessert,
-      //       },
-      //   ],
-      //   gridCols: 3,
     },
     {
       name: "Integrations",
       link: "/Integrations",
-      subMenuHeading: ["Overview", "Features"],
+      subMenuHeading: ["Integrations", "Integrations"],
       subMenu: [
         {
           name: t("IntegrationsOne"),
@@ -172,16 +60,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
           link: "/Integrations/IntegrationsAccounting",
           icon: ShieldPlus,
         },
-        {
-          name: t("Integrationsthree"),
-          link: "/Integrations",
-          icon: Users,
-        },
-        {
-          name: t("Integrationsfour"),
-          link: "/contact",
-          icon: Dessert,
-        },
+       
       ],
       gridCols: 2,
     },
@@ -216,7 +95,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
             </ul>
             <div className="flex items-center gap-4">
               <label id="language-select" suppressHydrationWarning></label>
-              {/* <select
+              <select
                 value={locale}
                 onChange={handleLanguageChange}
                 className=" py-2 px-4  hover:outline-none focus:outline-none bg-gray-100 text-white rounded-full"
@@ -229,7 +108,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
                 <option value="de" label="de">
                   DE
                 </option>
-              </select> */}
+              </select>
               <div className="gap-4 items-center text-white bg-blue-default rounded-full py-2 px-4 hidden lg:flex">
                 <Link
                   href="https://google.com"
@@ -241,7 +120,6 @@ const Mainnav = ({ locale }: { locale: string }) => {
               </div>
               <div className="xl:hidden">
                 <MobMenu Menus={Menus} locale={locale} />
-              
               </div>
             </div>
           </div>

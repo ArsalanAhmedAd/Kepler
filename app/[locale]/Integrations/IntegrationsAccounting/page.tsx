@@ -6,11 +6,14 @@ import React from "react";
 
 const IntegrationsAccounting = () => {
   const tIntegrationsAccounting = useTranslations("IntegrationsAccounting");
+  const tIntegrationsMainBanner = useTranslations("IntegrationsAccounting.MainBanner");
+  const tBannerSubHeading = tIntegrationsMainBanner.raw('BannerSubHeading');
   
 
   return (
     <>
-      <MainBanner />
+              <MainBanner bannerMainHeading={tIntegrationsMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tIntegrationsMainBanner('BannerImageDesktop')} bannerMobile={tIntegrationsMainBanner('BannerImageMobile')} bannerBtnLabel={tIntegrationsMainBanner('MainBannerBtnLabel')} bannerBtnLink={tIntegrationsMainBanner('MainBannerBtnLink')}/>
+
       <CharacteristicsSection
         CharacteristicsImage={tIntegrationsAccounting("Image")}
         CharacteristicsTitle={tIntegrationsAccounting("title")}
