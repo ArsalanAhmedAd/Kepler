@@ -1,6 +1,10 @@
+import { AnimatedBeamDemo } from "@/components/Beam";
 import CharacteristicsSection from "@/components/CharacteristicsSection";
+import IntegrationAccount from "@/components/IntegrationAccount";
+
 import MainBanner from "@/components/MainBanner";
 import { OrderPlace } from "@/components/OrderPlace";
+
 import { useTranslations } from "next-intl";
 import React from "react";
 
@@ -19,8 +23,13 @@ const IntegrationsAccounting = () => {
         CharacteristicsTitle={tIntegrationsAccounting("title")}
         CharacteristicsDescription={tIntegrationsAccounting("Description")}
       />
-      <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
-        IntegrationsAccounting
+      <div className="container mx-auto px-4 ">
+            <div className="hidden lg:flex">
+            <AnimatedBeamDemo  />
+            </div>
+           <div className="flex lg:hidden">
+           <IntegrationAccount />
+           </div>
       </div>
       <OrderPlace/>
     </>

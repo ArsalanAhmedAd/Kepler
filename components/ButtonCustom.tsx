@@ -11,7 +11,7 @@ interface ButtonProps {
   disabled?: boolean;
   icon?: string; // Type for icon component
   iconPosition?: "left" | "right" | "rightRelative"; // Position of the icon
-  variant?: "primary" | "secondary" | "danger" | "blueBtn"| "outline" | "TransparentBg" | "primaryBanner"; // Color variants
+  variant?: "primary" | "secondary" | "danger" | "blueBtn"| "outline" | "TransparentBg" | "primaryBanner" | "primarySubmit"; // Color variants
   size?: "sm" | "md" | "lg" | "blueBtnMd" | "outlineBtnMd" | "TransparentMd" | "Bannermd"; // Size variants
 }
 
@@ -33,6 +33,7 @@ const Button: React.FC<ButtonProps> = ({
   const variantStyles = {
     primary: "bg-white text-blue-default justify-center rounded-full border-gray-100",
     primaryBanner: "bg-white text-blue-default justify-center rounded-full border-gray-100",
+    primarySubmit: "text-white bg-blue-default justify-center rounded-full",
     secondary: "border border-gray-100 justify-center text-gray-100 rounded-full hover:border-gray-200 font-bold",
     danger: "bg-red-500 text-white hover:bg-red-600",
     blueBtn: "bg-blue-default text-white justify-center hover:bg-blue-default w-full",

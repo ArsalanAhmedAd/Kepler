@@ -2,14 +2,22 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ProfileForm } from "./ContactFormComp";
 
 const ContactForm = () => {
   const tContactForm = useTranslations("ContactPage");
 
   return (
-    <div className="grid grid-cols-2">
-      <div>{tContactForm("title")}
-      <form></form>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="">
+        <div className="text-40 text-gray-100 font-semibold pb-9">
+         
+          {tContactForm("title")}
+        </div>
+
+        <div>
+          <ProfileForm />
+        </div>
       </div>
       <div>
         <div className="box-shadow-custom p-6 rounded-20 mb-5">
@@ -54,13 +62,12 @@ const ContactForm = () => {
             className="mb-6"
           />
           <div className="text-18 text-gray-200">
-            <Link href={tContactForm("EmailOneLink")}>
-              {" "}
-              {tContactForm("EmailOne")}
+            <Link href={tContactForm("ContactInfo.EmailOneLink")}>
+              {tContactForm("ContactInfo.EmailOne")}
             </Link>
             <br />
-            <Link href={tContactForm("PhoneTwoLink")}>
-              {tContactForm("EmailTwo")}
+            <Link href={tContactForm("ContactInfo.PhoneTwoLink")}>
+              {tContactForm("ContactInfo.EmailTwo")}
             </Link>
           </div>
         </div>

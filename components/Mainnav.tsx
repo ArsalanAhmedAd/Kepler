@@ -6,10 +6,7 @@ import React, { ChangeEvent } from "react";
 import DesktopMenu from "@/components/DesktopMenu";
 import MobMenu from "@/components/MobMenu";
 import { useTranslations } from "next-intl";
-
 import { usePathname, useRouter } from "next/navigation";
-
-
 import { Dessert } from "lucide-react";
 import { ShieldPlus } from "lucide-react";
 import Link from "next/link";
@@ -20,10 +17,10 @@ const Mainnav = ({ locale }: { locale: string }) => {
 
   const pathname = usePathname();
   const router = useRouter();
-
+  console.log(pathname)
   const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value as string;
-    const path = pathname.split("/").slice(2).join("/");
+    const path = pathname?.split("/").slice(2).join("/") ?? "";
     router.push(`/${newLocale}/${path}`);
   };
 
@@ -36,47 +33,6 @@ const Mainnav = ({ locale }: { locale: string }) => {
     icon?: React.ElementType; // Icons should refer to a valid React component type
   };
 
-  // const Menus: NavItem[] = [
-  //   {
-  //     name: t("home"),
-  //     link: "/",
-  //   },
-  //   {
-  //     name: t("Price & Features"),
-  //     link: "/Price&Features",
-  //   },
-  //   {
-  //     name: "Integrations",
-  //     link: "/Integrations",
-  //     subMenuHeading: ["Integrations", "Integrations"],
-  //     subMenu: [
-  //       {
-  //         name: t("IntegrationsOne"),
-  //         link: "/Integrations/IntegrationsPosSystem",
-  //         icon: Dessert,
-  //       },
-  //       {
-  //         name: t("Integrationstwo"),
-  //         link: "/Integrations/IntegrationsAccounting",
-  //         icon: ShieldPlus,
-  //       },
-       
-  //     ],
-  //     gridCols: 2,
-  //   },
-  //   {
-  //     name: t("Resources"),
-  //     link: "/Resources",
-  //   },
-  //   {
-  //     name: t("about"),
-  //     link: "/about",
-  //   },
-  //   {
-  //     name: t("contact"),
-  //     link: "/contact",
-  //   },
-  // ];
   const Menus: NavItem[] = [
     {
       name: t("home"),
@@ -84,21 +40,21 @@ const Mainnav = ({ locale }: { locale: string }) => {
     },
     {
       name: t("Price & Features"),
-      link: "#",
+      link: "/Price&Features",
     },
     {
       name: "Integrations",
-      link: "#",
+      link: "/Integrations",
       subMenuHeading: ["Integrations", "Integrations"],
       subMenu: [
         {
           name: t("IntegrationsOne"),
-          link: "#",
+          link: "/Integrations/IntegrationsPosSystem",
           icon: Dessert,
         },
         {
           name: t("Integrationstwo"),
-          link: "#",
+          link: "/Integrations/IntegrationsAccounting",
           icon: ShieldPlus,
         },
        
@@ -107,17 +63,18 @@ const Mainnav = ({ locale }: { locale: string }) => {
     },
     {
       name: t("Resources"),
-      link: "#",
+      link: "/Resources",
     },
     {
       name: t("about"),
-      link: "#",
+      link: "/about",
     },
     {
       name: t("contact"),
-      link: "#",
+      link: "/contact",
     },
   ];
+
 
   return (
     <div className="container mx-auto w-full -translate-x-2/4 translate-y-5 absolute left-2/4 px-4 z-[1000]">

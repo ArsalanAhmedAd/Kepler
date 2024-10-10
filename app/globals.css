@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+input,
+textarea {
+  @apply border border-red-600 p-8 rounded-md; /* Tailwind CSS classes */
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -14,7 +20,7 @@
   }
 }
 
-.swiper-button-prev.swiper-button-disabled, 
+.swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0 !important;
 }
@@ -23,41 +29,40 @@
   margin-left: 18px;
 }
 .swiper-button-prev::after {
-  content: '' !important;
+  content: "" !important;
   display: block;
-  background-image: url('/SwiperLeftIcon.svg'); 
-  background-size: contain; 
+  background-image: url("/SwiperLeftIcon.svg");
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 40px;  
-  height: 40px; 
+  width: 40px;
+  height: 40px;
   background-size: 26px 26px;
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
   border-radius: 10px;
-  margin-left: 5px; 
-  background-color: #E5F2FF;
+  margin-left: 5px;
+  background-color: #e5f2ff;
 }
 .swiper-button-next {
   margin-right: 15px;
 }
 .swiper-button-next::after {
-  content: '' !important;
+  content: "" !important;
   display: block;
-  background-image: url('/SwiperRightIcon.svg'); 
+  background-image: url("/SwiperRightIcon.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 40px;  
-  height: 40px; 
+  width: 40px;
+  height: 40px;
   background-size: 26px 26px;
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
-  margin-left: 5px; 
+  margin-left: 5px;
   border-radius: 10px;
-  background-color: #E5F2FF;
+  background-color: #e5f2ff;
 }
-
 
 #root {
   max-width: 1280px;
@@ -65,8 +70,6 @@
   padding: 2rem;
   text-align: center;
 }
-
-
 
 .logo {
   height: 6em;
@@ -107,18 +110,17 @@
 @layer components {
   .sub-menu {
     @apply absolute top-[5.5rem] p-[15px] rounded-[6px] origin-[50%_-170px] bg-[rgba(255,255,255,0.6)];
-
   }
 }
 
 @layer utilities {
-
   .flex-center {
     @apply flex items-center;
   }
   .flex-center-between {
     @apply flex items-center justify-between;
   }
+
 
   .text-balance {
     text-wrap: balance;
@@ -207,7 +209,9 @@
   .box-shadow-faq {
     box-shadow: 1px 5px 14px 2px rgba(19, 61, 131, 0.16);
   }
-  
+  .integration-box {
+    box-shadow: none !important;
+  }
 }
 
 @layer base {
@@ -272,5 +276,10 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  input,
+  textarea {
+    @apply border border-red-600 p-8 rounded-md; /* Tailwind CSS classes */
   }
 }

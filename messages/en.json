@@ -647,7 +647,35 @@
     },
     "Image": "/Integrations/IntegrationsAccounting.svg",
     "title": "Accounting  in the dashboard  ",
-    "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown"
+    "Description": "Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown",
+    "AccountSection": {
+      "AccountSectionContent" : {
+        "ContentOne" : {
+          "Image" : "/Integrations/Pos/datev.svg",
+          "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry en."
+        },
+        "ContentTwo" : {
+          "Image" : "/Integrations/Pos/zohoBook.svg",
+          "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry en."
+        },
+        "ContentThree" : {
+          "Image" : "/Integrations/Pos/laxLaptop.svg",
+          "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry en."
+        },
+        "ContentFour" : {
+          "Image" : "/Integrations/Pos/sage.svg",
+          "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry en."
+        },
+        "ContentFive" : {
+          "Image" : "/Integrations/Pos/sapLogo.svg",
+          "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry en."
+        },
+        "ContentSix" : {
+          "Image" : "/Integrations/Pos/Dlogo.svg",
+          "Description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry en."
+        }
+      }
+    }
   },
   "Resources": {
     "MainBanner" : {
