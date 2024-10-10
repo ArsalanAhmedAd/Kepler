@@ -15,13 +15,7 @@ import "swiper/css/navigation";
 const SolutionSection = () => {
   const tSolutions = useTranslations("Solutions");
   const solutionSlides = tSolutions.raw('Solution.solutionSlides');
-  // const tSolutions = useTranslations.raw("Solutions.solutionSlides");
-  
-  // const obj = {
-  //   solutionSlidesOne: Solution1,
-  //   solutionSlidesTwo: Solution2,
-  //   solutionSlidesThree: Solution3,
-  // };
+
 
   return (
     <div className="relative">

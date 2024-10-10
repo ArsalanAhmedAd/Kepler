@@ -17,7 +17,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
 
   const pathname = usePathname();
   const router = useRouter();
-  console.log(pathname)
+
   const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value as string;
     const path = pathname?.split("/").slice(2).join("/") ?? "";
@@ -40,21 +40,21 @@ const Mainnav = ({ locale }: { locale: string }) => {
     },
     {
       name: t("Price & Features"),
-      link: "/Price&Features",
+      link: "/price&features",
     },
     {
       name: "Integrations",
-      link: "/Integrations",
+      link: "/integrations",
       subMenuHeading: ["Integrations", "Integrations"],
       subMenu: [
         {
           name: t("IntegrationsOne"),
-          link: "/Integrations/IntegrationsPosSystem",
+          link: "/integrations/integrationspossystem",
           icon: Dessert,
         },
         {
           name: t("Integrationstwo"),
-          link: "/Integrations/IntegrationsAccounting",
+          link: "integrations/integrationsaccounting",
           icon: ShieldPlus,
         },
        
@@ -63,7 +63,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
     },
     {
       name: t("Resources"),
-      link: "/Resources",
+      link: "/resources",
     },
     {
       name: t("about"),

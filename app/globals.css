@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 input,
 textarea {
   @apply border border-red-600 p-8 rounded-md; /* Tailwind CSS classes */
@@ -41,7 +40,7 @@ textarea {
   background-position: center;
   flex-shrink: 0;
   border-radius: 10px;
-  margin-left: 5px;
+  margin-left: 30px;
   background-color: #e5f2ff;
 }
 .swiper-button-next {
@@ -59,7 +58,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
-  margin-left: 5px;
+  margin-left: -30px;
   border-radius: 10px;
   background-color: #e5f2ff;
 }
@@ -121,7 +120,6 @@ textarea {
     @apply flex items-center justify-between;
   }
 
-
   .text-balance {
     text-wrap: balance;
   }
@@ -163,6 +161,12 @@ textarea {
   .SolutionSwiper {
     padding: 20px !important;
   }
+
+  .FaqSwiper {
+    padding: 20px !important;
+  }
+
+
   .TeamSwiper {
     padding: 20px 50px 20px 20px !important;
   }
@@ -173,6 +177,10 @@ textarea {
   .text-18 {
     font-size: 18px;
     line-height: 28px;
+  }
+  .text-20 {
+    font-size: 20px;
+    line-height: 30px;
   }
   .text-22 {
     font-size: 22px;

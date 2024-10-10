@@ -23,7 +23,7 @@ export async function generateMetadata({params: { locale },}: {params: { locale:
   };
 }
 
-const PriceFeatures = () => {
+const Pricefeatures = () => {
   const tFeaturesCharacteristics = useTranslations("FeaturesCharacteristics");
   // const FeatureSectionDiscover = useTranslations("FeatureSectionDiscover");
   const tFeaturesPagePaymentsSection = useTranslations("FeaturesPagePaymentsSection");
@@ -102,4 +102,4 @@ const PriceFeatures = () => {
   );
 };
 
-export default PriceFeatures;
+export default Pricefeatures;
