@@ -28,7 +28,7 @@ const MainHeading = bannerMainHeading;
         <div className="container mx-auto px-4 pt-[155px] pb-[20px] lg:pt-[0] lg-pb-[20px] lg:absolute text-white z-50">
           <div className="content text-center lg:text-start lg:max-w-[80%] ">
             <div className="text-2xl lg:text-4xl xl:text-48  font-extrabold text-white flex justify-center lg:justify-start items-center">
-              <div dangerouslySetInnerHTML={{ __html: MainHeading || "" }} />
+              <h1 dangerouslySetInnerHTML={{ __html: MainHeading || "" }} />
             </div>
             <ul className="text-white text-16 lg:text-18 font-bold grid gap-2 md:gap-3 lg:max-w-[55%] py-5 lg:py-8 flex gap-3 items-start justify-center lg:justify-start">
 
@@ -37,7 +37,7 @@ const MainHeading = bannerMainHeading;
             {BannerSubHeading && Object.entries(BannerSubHeading).map(([key,value], i) => {
                 return (
                   <li key={i} className="flex items-start gap-3">
-                    <Image src="/WhiteCheckMark.svg" width={20} height={20} alt={`${key}-imge`} className="mt-1" />
+                    <Image src="/WhiteCheckMark.svg" width={20} height={20} alt={`${key}-imge-BrandPos`} className="mt-1" />
                     {value}
                   </li>
                 );
@@ -65,7 +65,7 @@ const MainHeading = bannerMainHeading;
 
         <Image
           src={bannerDesktop || "no image"}
-          alt=""
+          alt="Main-Banner-BrandPos"
           height={1080}
           width={1920}
           quality={100}
@@ -76,7 +76,7 @@ const MainHeading = bannerMainHeading;
 
         <Image
           src={bannerMobile || "no image mobile"}
-          alt=""
+           alt="Main-Banner-BrandPos"
           height={850}
           width={1920}
           quality={100}

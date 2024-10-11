@@ -24,7 +24,7 @@ const Faqs = () => {
   };
   return (
     <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
-      <Accordion   type="single" collapsible className="max-w-[960px] mx-auto">
+      <Accordion   type="multiple"  className="max-w-[960px] mx-auto">
         {Object.entries(ResourcesFaqs).map(([key, value], i) => {
           return (
             <>

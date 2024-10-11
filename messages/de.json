@@ -771,6 +771,22 @@
     }
   },
   "FaqPage": {
+    "MainBanner": {
+      "BannerHeading": "Frequently <br /> Asked Questions",
+      "BannerImageDesktop": "/cart-with-payment-gradient.png",
+      "BannerImageMobile": "/cart-with-payment-gradient-mobile.png",
+      "BannerSubHeading": {
+        "labelOne": "Haben Sie eine Frage",
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
+        "labelThree": "Was ist BrandPOS App?"
+      },
+      "MainBannerBtnLabel": "Download the app now",
+      "MainBannerBtnLink": "/about"
+    },
+    "FaqCharacteristics": {
+      "Title": "Haben Sie eine Frage?",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
     "title": "Online-Zahlung",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     "FaqCategoery": {
@@ -802,7 +818,7 @@
         "0": {
           "id": 1,
           "heading" : "Sicherheit",
-          "content": "1 Lorem Ipsum is simply dummy text of the printing and typesetting industry ",
+          "content": "Sicherheit Lorem Ipsum is simply dummy text of the printing and typesetting industry ",
           "divContent": {
             "faqs": {
               "FaqOne": {
@@ -831,7 +847,7 @@
         "1": {
           "id": 1,
           "heading" : "Online-Zahlung",
-          "content": "2 Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "content": "Online-Zahlung Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
           "divContent": {
             "faqs": {
               "FaqOne": {
@@ -860,15 +876,15 @@
         "2": {
           "id": 1,
           "heading" : "Erstattung",
-          "content": "3 Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "content": "Erstattung Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
           "divContent": {
             "faqs": {
               "FaqOne": {
-                "Question": "Was ist BrandPOS App? 3",
+                "Question": "Erstattung Was ist BrandPOS App? 3",
                 "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
               },
               "FaqTwo": {
-                "Question": "Was ist das “Brand-POS Plug-in“ und warum brauche ich eine zweite App?",
+                "Question": "Erstattung Was ist das “Brand-POS Plug-in“ und warum brauche ich eine zweite App?",
                 "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
               },
               "FaqThree": {
@@ -889,15 +905,15 @@
         "3": {
           "id": 1,
           "heading" : "Privacy",
-          "content": "4 Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "content": "Privacy Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
           "divContent": {
             "faqs": {
               "FaqOne": {
-                "Question": "Was ist BrandPOS App? 4",
+                "Question": "Privacy Was ist BrandPOS App? 4",
                 "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
               },
               "FaqTwo": {
-                "Question": "Was ist das “Brand-POS Plug-in“ und warum brauche ich eine zweite App?",
+                "Question": "Privacy Was ist das “Brand-POS Plug-in“ und warum brauche ich eine zweite App?",
                 "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
               },
               "FaqThree": {
@@ -918,15 +934,15 @@
         "4": {
           "id": 1,
           "heading" : "Fifth",
-          "content": "5 Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "content": "Fifth Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
           "divContent": {
             "faqs": {
               "FaqOne": {
-                "Question": "Was ist BrandPOS App? 5",
+                "Question": "Fifth Was ist BrandPOS App? 5",
                 "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
               },
               "FaqTwo": {
-                "Question": "Was ist das “Brand-POS Plug-in“ und warum brauche ich eine zweite App?",
+                "Question": "Fifth Was ist das “Brand-POS Plug-in“ und warum brauche ich eine zweite App?",
                 "FaqContent": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
               },
               "FaqThree": {
@@ -945,6 +961,16 @@
           }
         }
       }
+    },
+    "FaqContact" : {
+      "Title" : "Haben Sie noch Fragen?",
+      "Description" : "Wenn Sie keine Antwort auf Ihre Frage in unseren FAQs finden,  können Sie uns kontaktieren. Wir werden Ihnen in Kürze antworten!",
+      "ContactTitle": "Wir sind immer für Sie da!",
+      "EmailTitle": "Schnelle Antwort von unserem Vertreter",
+      "Phone": "+49 89 2154 7447",
+      "PhoneLink": "tel:+49 89 2154 7447",
+      "Email": "support@brandpos.com",
+      "EmailLink":"mailto:support@brandpos.com"
     }
   },
   "BlogSection": {

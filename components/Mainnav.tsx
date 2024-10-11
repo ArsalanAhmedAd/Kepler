@@ -40,7 +40,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
     },
     {
       name: t("Price & Features"),
-      link: "/price&features",
+      link: "/price-features",
     },
     {
       name: "Integrations",
@@ -49,12 +49,12 @@ const Mainnav = ({ locale }: { locale: string }) => {
       subMenu: [
         {
           name: t("IntegrationsOne"),
-          link: "/integrations/integrationspossystem",
+          link: "/integrations/integrations-pos-system",
           icon: Dessert,
         },
         {
           name: t("Integrationstwo"),
-          link: "integrations/integrationsaccounting",
+          link: "integrations/integrations-accounting",
           icon: ShieldPlus,
         },
        

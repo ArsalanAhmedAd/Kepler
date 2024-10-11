@@ -20,55 +20,34 @@ export async function generateMetadata({
 }
 
 const ContactPage = () => {
-  // const t = useTranslations("WhyUswrap2");
-  // const obj = {
-  //   "real-world": FaShoppingCart,
-  //   advanced: FaRocket,
-  //   "hands-on": FaTools,
-  //   comprehensive: FaBook,
-  // };
   const tMainBanner = useTranslations("ContactPage.MainBanner");
-  const tBannerSubHeading = tMainBanner.raw('BannerSubHeading');
+  const tBannerSubHeading = tMainBanner.raw("BannerSubHeading");
   return (
-    // <div className="min-h-screen py-40 max-w-6xl mx-auto">
-    //   <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-balance text-center py-4">
-    //     {t("WhyUs.title")}
-    //   </h2>
-    //   <div className="py-8">
-    //     <div className="grid grid-col-1 lg:grid-cols-2 gap-6">
-    //       {Object.entries(obj).map(([key, value], i) => {
-    //         const Icon = value;
-    //         return (
-    //           <div
-    //             key={i}
-    //             className="rounded-md shadow p-4 flex  gap-4 dark:border-slate-600 dark:border dark:bg-slate-700"
-    //           >
-    //             <div className="bg-purple-800 w-16 h-16 rounded-lg text-gray-50 flex items-center justify-center flex-shrink-0">
-    //               <Icon className="w-8 h-8" />
-    //             </div>
-    //             <div className="">
-    //               <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-    //                 {t(`WhyUs.points.${key}.title`)}
-    //               </h2>
-    //               <p className="pt-3">
-    //                 {t(`WhyUs.points.${key}.description.descriptionOne`)}
-    //               </p>
-    //               <p className="pt-3">
-    //                 {t(`WhyUs.points.${key}.description.descriptiontwo`)}
-    //               </p>
-    //             </div>
-    //           </div>
-    //         );
-    //       })}
-    //     </div>
-    //   </div>
-    //   <div className="flex items-center justify-center"></div>
-    // </div>
     <>
-                    <MainBanner bannerMainHeading={tMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tMainBanner('BannerImageDesktop')} bannerMobile={tMainBanner('BannerImageMobile')} bannerBtnLabel={tMainBanner('MainBannerBtnLabel')} bannerBtnLink={tMainBanner('MainBannerBtnLink')}/>
+      <MainBanner
+        bannerMainHeading={tMainBanner("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tMainBanner("BannerImageDesktop")}
+        bannerMobile={tMainBanner("BannerImageMobile")}
+        bannerBtnLabel={tMainBanner("MainBannerBtnLabel")}
+        bannerBtnLink={tMainBanner("MainBannerBtnLink")}
+      />
 
       <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
         <ContactForm />
+      </div>
+
+      <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
+        <div>
+          <iframe
+            width="100%"
+            height="500"
+            scrolling="no"
+            src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=washington%20dc+(My%20Business%20Name)&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          >
+            <a href="https://www.gps.ie/">gps trackers</a>
+          </iframe>
+        </div>
       </div>
     </>
   );
