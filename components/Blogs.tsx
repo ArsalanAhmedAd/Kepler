@@ -30,12 +30,13 @@ const Blogs = () => {
        
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-14 lg:gap-20 py-8 sm:py-10 md:py-12 pr-12 lg:pr-12">
      
-        {Object.entries(tblogs).slice(0,visible).map(([key], i) => {
+        {Object.entries(tblogs).slice(0,visible).map(([key]) => {
             return (
                 <>
-                    <div key={i} className="box-shadow-custom rounded-20">
+                    <div key={key} className="box-shadow-custom rounded-20">
+                      
                         <div className="relative -top-4 -right-9">
-                            <Image src="/Blog/BlogThumbnail.jpg" alt="BlogThumbnail" width={420} height={320} className="w-full" />
+                            <Image src="/Blog/BlogThumbnail.jpg" alt="BlogThumbnail-BrandPos" width={420} height={320} className="w-full" />
                             <div className="absolute bottom-4 left-4 text-white">{tBlogSection(`Blogs.${key}.BlogPublishDate`)}</div>
                         </div>
                         <div className="pl-9 pb-6 pr-6">

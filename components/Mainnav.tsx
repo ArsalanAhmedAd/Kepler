@@ -20,6 +20,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
 
   const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value as string;
+    console.log();
     const path = pathname?.split("/").slice(2).join("/") ?? "";
     router.push(`/${newLocale}/${path}`);
   };
@@ -57,7 +58,6 @@ const Mainnav = ({ locale }: { locale: string }) => {
           link: "integrations/integrations-accounting",
           icon: ShieldPlus,
         },
-       
       ],
       gridCols: 2,
     },
@@ -75,7 +75,6 @@ const Mainnav = ({ locale }: { locale: string }) => {
     },
   ];
 
-
   return (
     <div className="container mx-auto w-full -translate-x-2/4 translate-y-5 absolute left-2/4 px-4 z-[1000]">
       <header className="flex justify-between py-4 pl-3 items-center bg-nav-transparent text-blue-default rounded-full">
@@ -92,21 +91,37 @@ const Mainnav = ({ locale }: { locale: string }) => {
               ))}
             </ul>
             <div className="flex items-center gap-4">
-              <label id="language-select" suppressHydrationWarning></label>
-              <select
-                value={locale}
-                onChange={handleLanguageChange}
-                className=" py-2 px-4  hover:outline-none focus:outline-none bg-gray-100 text-white rounded-full"
-                aria-labelledby="language-select"
-                suppressHydrationWarning
-              >
-                <option value="en" label="en">
-                  EN
-                </option>
-                <option value="de" label="de">
-                  DE
-                </option>
-              </select>
+              <div className="relative">
+                <label id="language-select"></label>
+                <select
+                  value={locale}
+                  onChange={handleLanguageChange}
+                  className=" py-[9px] pl-[9px] pr-[15px] language-select hover:outline-none focus:outline-none bg-gray-100 text-white rounded-full"
+                  aria-labelledby="language-select"
+                  suppressHydrationWarning
+                >
+                  <option value="en" label="en" className="EnFlag">
+                    EN
+                  </option>
+                  <option value="de" label="de" className="DeFlag">
+                    DE
+                  </option>
+                </select>
+
+                <div className="absolute inset-y-0 left-[8px] flex items-center pr-3 pointer-events-none">
+                  <Image
+                    src={
+                      locale === "en"
+                        ? "/united-states-flag.svg"
+                        : "/german-flag.svg"
+                    }
+                    alt="Flag"
+                    width={30}
+                    height={20}
+                  />
+                </div>
+              </div>
+
               <div className="gap-4 items-center text-white bg-blue-default rounded-full font-bold py-2 px-4 hidden lg:flex">
                 <Link
                   href="https://google.com"

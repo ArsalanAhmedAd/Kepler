@@ -221,6 +221,19 @@ textarea {
     box-shadow: none !important;
   }
 }
+select {
+  position: relative;
+}
+select .DeFlag::after {
+  content: "test";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  background-color: red;
+}
+
 
 @layer base {
   :root {
@@ -291,3 +304,5 @@ textarea {
     @apply border border-red-600 p-8 rounded-md; /* Tailwind CSS classes */
   }
 }
+
+
