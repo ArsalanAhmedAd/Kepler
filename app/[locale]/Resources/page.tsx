@@ -115,9 +115,7 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
                       {tResources(`APIIntegrations.${key}.Description`)}
                       <Link
                         href={tResources(`APIIntegrations.${key}.PDFFileLink`)}
-                        download={tResources(
-                          `APIIntegrations.${key}.PDFFileLink`
-                        )}
+                        download={tResources(`APIIntegrations.${key}.PDFFileLink`)}
                         className="text-blue-default font-semibold ml-1"
                       >
                         {tResources(`APIIntegrations.${key}.Link`)}

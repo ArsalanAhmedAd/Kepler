@@ -35,8 +35,8 @@ export const FeaturesSectionLeft = ({ features, description, ImageDirection, Fea
             <Image src={FeatureImage} alt={features} width={685} height={580} quality={100}  className="px-7 sm:px-3"/>   
         </div>
         <div className="left w-full sm:w-[45%] mb-9 sm:mb-0">
-          <div className="text-center sm:text-left text-2xl  leading-9 text-gray-100 lg:text-40  font-bold mb-4">{features}</div>
-          <div className="text-center sm:text-left text-16 leading-8 text-gray-200 lg:text-22 lg:leading-8 font-normal mb-10 mt-6">{description}</div>
+          <h2 className="text-center sm:text-left text-2xl  leading-9 text-gray-100 lg:text-40  font-bold mb-4">{features}</h2>
+          <p className="text-center sm:text-left text-16 leading-8 text-gray-200 lg:text-22 lg:leading-8 font-normal mb-10 mt-6">{description}</p>
          
         
 

@@ -41,7 +41,7 @@
         "labelThree": "Streamline your checkout process and enhance customer satisfaction"
       },
       "MainBannerBtnLabel": "Download the app now",
-      "MainBannerBtnLink": "/about"
+      "MainBannerBtnLink": "#"
     },
     "Introduction": {
       "Intro": "Introduction to",
@@ -188,7 +188,7 @@
         "labelThree": "Streamline your checkout process and enhance customer satisfaction"
       },
       "MainBannerBtnLabel": "Download the app now",
-      "MainBannerBtnLink": "/about"
+      "MainBannerBtnLink": "#"
     },
     "title": "Contact us",
     "ContactInfo": {
@@ -246,7 +246,7 @@
       "SolutionDescription": "Your business deserves more than one-size-fits-all solutions, it deserves tools that understand and adapt to unique challenges",
       "solutionSlides": {
         "solutionSlidesOne": {
-          "solutionSlidesTitle": "Personalized Brand Experience",
+          "solutionSlidesTitle": "Personalized <br /> Brand Experience",
           "solutionSlidesDescription": "Your brand should be more than just a logo, it should be an experience. BrandPOS allows you to bring that experience to life with fully customizable touchpoints. ",
           "Image": "/Solution-1.svg"
         },
@@ -518,7 +518,7 @@
         "labelThree": "Streamline your checkout process and enhance customer satisfaction"
       },
       "MainBannerBtnLabel": "Download the app now",
-      "MainBannerBtnLink": "/about"
+      "MainBannerBtnLink": "#"
     }
   },
   "Integrations": {
@@ -532,7 +532,7 @@
         "labelThree": "Streamline your checkout process and enhance customer satisfaction"
       },
       "MainBannerBtnLabel": "Download the app now",
-      "MainBannerBtnLink": "/about"
+      "MainBannerBtnLink": "#"
     },
     "Image": "/PosConnector.svg",
     "title": "POS Connectors",
@@ -593,7 +593,7 @@
         "labelThree": "Streamline your checkout process and enhance customer satisfaction"
       },
       "MainBannerBtnLabel": "Download the app now",
-      "MainBannerBtnLink": "/about"
+      "MainBannerBtnLink": "#"
     },
     "Image": "/Integrations/PosSystem.svg",
     "title": "POS system connections in the dashboard profile",
@@ -642,7 +642,7 @@
         "labelThree": "Streamline your checkout process and enhance customer satisfaction"
       },
       "MainBannerBtnLabel": "Download the app now",
-      "MainBannerBtnLink": "/about"
+      "MainBannerBtnLink": "#"
     },
     "Image": "/Integrations/IntegrationsAccounting.svg",
     "title": "Accounting  in the dashboard  ",
@@ -687,7 +687,7 @@
         "labelThree": "Streamline your checkout process and enhance customer satisfaction"
       },
       "MainBannerBtnLabel": "Download the app now",
-      "MainBannerBtnLink": "/about"
+      "MainBannerBtnLink": "#"
     },
     "Image": "/Integrations/ResourcesHeader.svg",
     "title": "Gebrauchte Fälle",
@@ -786,7 +786,7 @@
         "labelThree": "Was ist BrandPOS App?"
       },
       "MainBannerBtnLabel": "Download the app now",
-      "MainBannerBtnLink": "/about"
+      "MainBannerBtnLink": "#"
     },
     "FaqCharacteristics": {
       "Title": "Do you have any questions?",

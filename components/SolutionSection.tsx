@@ -81,12 +81,12 @@ const SolutionSection = () => {
                     />
                   </div>
                   <div className="mt-6">
-                    <div className="scroll-m-20 leading-9 text-2xl sm:text-[26px] text-gray-100 font-semibold tracking-tight max-w-[90%]">
-                      {tSolutions(`Solution.solutionSlides.${key}.solutionSlidesTitle` )}
-                    </div>
-                    <div className="pt-3 text-16 sm:text-18 text-gray-200">
+                    <h3 className="scroll-m-20 leading-9 text-2xl sm:text-[26px] text-gray-100 font-semibold tracking-tight max-w-[90%]">
+                    <div dangerouslySetInnerHTML={{ __html: tSolutions(`Solution.solutionSlides.${key}.solutionSlidesTitle`) }} />
+                    </h3>
+                    <p className="pt-3 text-16 sm:text-18 text-gray-200">
                       {tSolutions( `Solution.solutionSlides.${key}.solutionSlidesDescription` )}
-                    </div>
+                    </p>
                   </div>
                 </SwiperSlide>
               ))}

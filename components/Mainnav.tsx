@@ -81,7 +81,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
         <nav className="px-3.5 flex justify-between w-full container mx-auto">
           <div className="flex items-center gap-x-3 z-[999] relative">
             <Link href={`/${locale}/`}>
-              <Image src="/Logo.svg" alt="Logo" width={145} height={44} />
+              <Image src="/Logo.svg" alt="Logo" width={145} height={44} priority={false} />
             </Link>
           </div>
           <div className="flex gap-5">
@@ -101,10 +101,10 @@ const Mainnav = ({ locale }: { locale: string }) => {
                   suppressHydrationWarning
                 >
                   <option value="en" label="en" className="EnFlag">
-                    EN
+                    English
                   </option>
                   <option value="de" label="de" className="DeFlag">
-                    DE
+                    German
                   </option>
                 </select>
 
@@ -122,7 +122,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
                 </div>
               </div>
 
-              <div className="gap-4 items-center text-white bg-blue-default rounded-full font-bold py-2 px-4 hidden lg:flex">
+              <div className="gap-4 items-center text-white bg-blue-default rounded-full font-bold py-[9px] px-4 hidden lg:flex">
                 <Link
                   href="https://google.com"
                   target="_blank"

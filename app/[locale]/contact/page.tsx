@@ -7,15 +7,24 @@ import React from "react";
 // import { FaShoppingCart, FaRocket, FaTools, FaBook } from "react-icons/fa";
 
 export async function generateMetadata({
-  params: { locale },
+  params: { locale, slug   },
 }: {
-  params: { locale: string };
+  params: { locale: string; slug: string };
 }) {
   const messages: any = await getMessages({ locale });
   const title = messages.NavbarLinks.aboutTitle;
 
+  const baseUrl = 'https://www.yoursite.com';
+  const currentPath = `/${locale}/${slug}`; // Dynamic path based on slug
+  const canonicalUrl = `${baseUrl}${currentPath}`;
+
+
   return {
     title,
+    alternates: {
+      canonical: canonicalUrl, // Adding canonical URL dynamically
+    },
+   
   };
 }
 
@@ -33,11 +42,11 @@ const ContactPage = () => {
         bannerBtnLink={tMainBanner("MainBannerBtnLink")}
       />
 
-      <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
+      <div className="container mx-auto px-4 py-8 sm:py-10 md:py-20">
         <ContactForm />
       </div>
 
-      <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
+      <div className="container mx-auto px-4 pb-8 sm:pb-10 md:pb-12">
         <div>
           <iframe
             width="100%"
