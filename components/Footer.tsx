@@ -7,15 +7,15 @@ import GoogleStore from "@/public/GoogleStore.svg";
 import AppStore from "@/public/AppStore.svg";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { FaFacebookF, FaLinkedinIn, FaShopware, FaYoutube } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 const Footer = ({ locale }: { locale: string }) => {
- 
   const tfooter = useTranslations("footer");
 
-  const htmlContent: string = tfooter('LinkTwo');
-  const AddressOne: string  = tfooter("AddressOne")
-  const AddressTwo: string  = tfooter("AddressTwo")
-
+  const htmlContent: string = tfooter("LinkTwo");
+  const AddressOne: string = tfooter("AddressOne");
+  const AddressTwo: string = tfooter("AddressTwo");
 
   return (
     <div className="bg-blue-100 pt-16 lg:pt-20 pb-10 mt-0 sm:mt-8">
@@ -34,7 +34,10 @@ const Footer = ({ locale }: { locale: string }) => {
                   height={20}
                   className="mr-2"
                 />
-               <Link href="tel:+49(0)892154 7447"> {tfooter("PhoneNumber")}</Link>
+                <Link href="tel:+49(0)892154 7447">
+                  {" "}
+                  {tfooter("PhoneNumber")}
+                </Link>
               </div>
               <div className="flex ">
                 <Image
@@ -44,15 +47,16 @@ const Footer = ({ locale }: { locale: string }) => {
                   height={20}
                   className="mr-2"
                 />
-              <Link href="mailto:info@brandpos.com">{tfooter("EmailAddress")}</Link>
+                <Link href="mailto:info@brandpos.com">
+                  {tfooter("EmailAddress")}
+                </Link>
               </div>
             </div>
             <div className="address-one text-[16px] text-gray-100">
-            <span dangerouslySetInnerHTML={{ __html: AddressOne } } />
-             
+              <span dangerouslySetInnerHTML={{ __html: AddressOne }} />
             </div>
             <div className="address-two text-[16px] text-gray-100">
-            <span dangerouslySetInnerHTML={{ __html: AddressTwo } } />
+              <span dangerouslySetInnerHTML={{ __html: AddressTwo }} />
             </div>
           </div>
         </div>
@@ -61,13 +65,50 @@ const Footer = ({ locale }: { locale: string }) => {
             {tfooter("FooterHeading")}
           </div>
           <div className="footerLogo flex justify-center gap-3">
-            <Link href="https://play.google.com/store/games?hl=en" target="_blank"><Image
-              src={GoogleStore}
-              alt="googleStore"
-              width={120}
-              height={40}
-            /></Link>
-           <Link href="https://www.apple.com/app-store/" target="_blank"> <Image src={AppStore} alt="googleStore" width={120} height={40} /></Link>
+            <Link
+              href="https://play.google.com/store/games?hl=en"
+              target="_blank"
+            >
+              <Image
+                src={GoogleStore}
+                alt="googleStore"
+                width={120}
+                height={40}
+              />
+            </Link>
+            <Link href="https://www.apple.com/app-store/" target="_blank">
+              {" "}
+              <Image src={AppStore} alt="googleStore" width={120} height={40} />
+            </Link>
+          </div>
+          <div className="social mt-6">
+            <ul className="flex justify-center gap-5 text-22">
+              <li>
+                <Link href="https://www.facebook.com/" target="_blank">
+                  <FaFacebookF />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.linkedin.com/" target="_blank">
+                  <FaLinkedinIn />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.youtube.com/" target="_blank">
+                  <FaYoutube />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.x.com/" target="_blank">
+                  <BsTwitterX />
+                </Link>
+              </li>
+              <li>
+                <Link href="https://www.shopware.com/" target="_blank">
+                <FaShopware />
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="footer-bottom border-t text-center flex-col md:flex-row flex justify-between border-blue-200 pt-6">
@@ -79,9 +120,8 @@ const Footer = ({ locale }: { locale: string }) => {
               <Link href={`/${locale}/contact`}>{tfooter("LinkOne")}</Link>
               <span className="border border-gray-400 mx-1"></span>
               <Link href={`/${locale}/about`}>
-                <span dangerouslySetInnerHTML={{ __html: htmlContent } } />
+                <span dangerouslySetInnerHTML={{ __html: htmlContent }} />
               </Link>
-              
             </div>
           </div>
         </div>

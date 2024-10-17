@@ -189,10 +189,24 @@
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
     },
+    "ContactForm": {
+      "Name" : "Vollständiger Name",
+      "Phone" : "Telefon",
+      "Email" : "E-Mail Adresse",
+      "Message" : "Schreiben Sie Ihre Nachricht",
+      "SubmitLabel" : "Einreichen",
+      "SendingLabel": "Senden von"
+    },
+    "Formvalidation": {
+      "NameMessage": "Der Benutzername muss mindestens 2 Zeichen lang sein.",
+      "EmailMessage": "Gültige E-Mail Adresse eingeben.",
+      "PhoneMessage": "Muss mindestens 11 Ziffern umfassen und darf nur Zahlen enthalten.",
+      "Message": "Die Nachricht muss mindestens 20 Zeichen lang sein."
+    },
     "title": "Kontakt aufnehmen",
     "ContactInfo": {
       "Address": "Max-Planck-Straße 5, 85716",
-      "AddressHalf": "Unterschleißheim, Germany View Map",
+      "AddressHalf": "Unterschleißheim, Germany",
       "PhoneOne": "Support: +91 96000 59360",
       "PhoneOneLink": "tel:+919600059360",
       "PhoneTwo": "Marketing: +91 96000 59360",
@@ -271,7 +285,16 @@
   "OrderPlace": {
     "title": "Geben Sie Ihre Bestellung heute auf",
     "Description": "Teilen Sie uns Ihre Kontaktdaten mit, und unser Expertenteam wird sich innerhalb von 48 Stunden mit Ihnen in Verbindung setzen, um Sie bei Ihrer Bestellung zu unterstützen.",
-    "ButtonText": "Senden Sie"
+    "ButtonText": "Senden Sie",
+    "ButtonTextSending": "Senden von...",
+    "NamePlaceHolder" :  "Vollständiger Name",
+    "EamilPlaceHolder" : "E-Mail Adresse",
+    "NumberPlaceHolder" : "Telefon",
+    "Formvalidation": {
+      "NameMessage": "Der Benutzername muss mindestens 2 Zeichen lang sein.",
+      "EmailMessage": "Gültige E-Mail Adresse eingeben.",
+      "PhoneMessage": "Muss mindestens 11 Ziffern umfassen und darf nur Zahlen enthalten."
+    }
   },
   "WhyBrandPos": {
     "title": " Warum uns wählen",

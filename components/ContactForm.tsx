@@ -10,8 +10,7 @@ const ContactForm = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       <div className="">
-        <div className="text-40 text-gray-100 font-semibold pb-9">
-         
+        <div className="text-2xl sm:text-40 text-gray-100 font-semibold pb-9">
           {tContactForm("title")}
         </div>
 
@@ -23,28 +22,26 @@ const ContactForm = () => {
         <div className="box-shadow-custom p-6 rounded-20 mb-5">
           <Image
             src="/LocationIcon.svg"
-            alt="Envelop"
+            alt="LocationIcon-BrandPos"
             width={40}
             height={37}
-            className="mb-6"
+            className="mb-6 h-auto" // Use w-[40px] instead of w-[40]
           />
           <div className="text-18 text-gray-200">
-            {" "}
-            {tContactForm("ContactInfo.Address")} <br />{" "}
+            {tContactForm("ContactInfo.Address")} <br />
             {tContactForm("ContactInfo.AddressHalf")}
           </div>
         </div>
         <div className="box-shadow-custom p-6 rounded-20 mb-5">
           <Image
             src="/PhoneIcon.svg"
-            alt="Envelop"
+            alt="PhoneIcon-BrandPos"
             width={40}
             height={37}
-            className="mb-6"
+            className="mb-6 h-auto aspect-auto"
           />
           <div className="text-18 text-gray-200">
             <Link href={tContactForm("ContactInfo.PhoneOneLink")}>
-              {" "}
               {tContactForm("ContactInfo.PhoneOne")}
             </Link>
             <br />
@@ -56,10 +53,10 @@ const ContactForm = () => {
         <div className="box-shadow-custom p-6 rounded-20 mb-5">
           <Image
             src="/Envelop.svg"
-            alt="Envelop"
+            alt="Envelop-BrandPos"
             width={40}
             height={37}
-            className="mb-6"
+            className="mb-6 h-auto"
           />
           <div className="text-18 text-gray-200">
             <Link href={tContactForm("ContactInfo.EmailOneLink")}>

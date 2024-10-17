@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import Mainnav from "@/components/Mainnav";
 import Script from "next/script";
 import { Toaster } from "react-hot-toast";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -35,7 +37,8 @@ export default async function RootLayout({
             <Mainnav locale={locale}/>
             {/* <Navbar locale={locale} /> */}
             {/* <MainBanner/> */}
-            {children}
+            <Suspense fallback={<Loading/>}>  {children}</Suspense>
+          
             <Toaster position="top-right" reverseOrder={false}/>
             <Footer  locale={locale} />
         </NextIntlClientProvider>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -16,25 +16,31 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import { sendContactForm } from "@/lib/api";
 import { toast } from "react-hot-toast"; // Import toast
-
-// Define the schema using zod
-const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-  phone: z.string().min(11, {
-    message: "Enter valid Phone Number",
-  }),
-  email: z.string().email({
-    message: "Enter valid Email address",
-  }),
-  messageBody: z.string().min(20, {
-    message: "Message must be at least 20 characters.",
-  }),
-});
+import { useTranslations } from "next-intl";
 
 export function ProfileForm() {
+  const tContactFormValidation = useTranslations("ContactPage.Formvalidation");
+  const tContactFormData = useTranslations("ContactPage.ContactForm");
   const [loading, setLoading] = useState(false);
+  // Define the schema using zod
+  // Zod Validation
+  const formSchema = z.object({
+    username: z.string().min(2, {
+      message: `${tContactFormValidation("NameMessage")}`,
+    }),
+    phone: z
+      .string()
+      .min(11, { message: `${tContactFormValidation("PhoneMessage")}` })
+      .regex(/^\d+$/, { message: "Phone number must contain only digits" }),
+
+    email: z.string().email({
+      message: `${tContactFormValidation("EmailMessage")}`,
+    }),
+    messageBody: z.string().min(20, {
+      message: `${tContactFormValidation("Message")}`,
+    }),
+  });
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -82,7 +88,11 @@ export function ProfileForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Name" {...field} />
+                <Input
+                  placeholder={tContactFormData("Name")}
+                  {...field}
+                  className="focus-visible:ring-blue-default focus-visible:ring-2"
+                />
               </FormControl>
               <FormMessage className="pt-3 px-3" />
             </FormItem>
@@ -94,7 +104,11 @@ export function ProfileForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Phone No." {...field} />
+                <Input
+                  placeholder={tContactFormData("Phone")}
+                  {...field}
+                  className="focus-visible:ring-blue-default focus-visible:ring-2"
+                />
               </FormControl>
               <FormMessage className="pt-3 px-3" />
             </FormItem>
@@ -106,7 +120,11 @@ export function ProfileForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="Email Address" {...field} />
+                <Input
+                  placeholder={tContactFormData("Email")}
+                  {...field}
+                  className="focus-visible:ring-blue-default focus-visible:ring-2"
+                />
               </FormControl>
               <FormMessage className="pt-3 px-3" />
             </FormItem>
@@ -118,7 +136,12 @@ export function ProfileForm() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Textarea placeholder="Message" {...field} rows={10} />
+                <Textarea
+                  placeholder={tContactFormData("Message")}
+                  {...field}
+                  rows={10}
+                  className="focus-visible:ring-blue-default focus-visible:ring-2"
+                />
               </FormControl>
               <FormMessage className="pt-3 px-3" />
             </FormItem>
@@ -133,7 +156,9 @@ export function ProfileForm() {
             size="md"
             className="mx-auto sm:mx-0 mt-7"
           >
-            {loading ? "Sending..." : "Submit"} {/* Show loading text */}
+            {loading
+              ? `${tContactFormData("SendingLabel")}`
+              : `${tContactFormData("SubmitLabel")}`}{" "}
           </Button>
         </div>
       </form>

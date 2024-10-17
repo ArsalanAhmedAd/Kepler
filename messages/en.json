@@ -190,10 +190,24 @@
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
     },
+    "ContactForm": {
+      "Name": "Full Name",
+      "Phone": "Phone",
+      "Email": "Email Address",
+      "Message": "Write Your Message",
+      "SubmitLabel": "Submit",
+      "SendingLabel": "Sending"
+    },
+    "Formvalidation": {
+      "NameMessage": "Username must be at least 2 characters.",
+      "EmailMessage": "Enter valid Email address.",
+      "PhoneMessage": "Must be at least 11 digits and contain only numbers.",
+      "Message": "Message must be at least 20 characters."
+    },
     "title": "Contact us",
     "ContactInfo": {
       "Address": "Max-Planck-Straße 5, 85716",
-      "AddressHalf": "Unterschleißheim, Germany View Map",
+      "AddressHalf": "Unterschleißheim, Germany",
       "PhoneOne": "Support: +91 96000 59360",
       "PhoneOneLink": "tel:+919600059360",
       "PhoneTwo": "Marketing: +91 96000 59360",
@@ -266,7 +280,16 @@
   "OrderPlace": {
     "title": "Place Your Order Today",
     "Description": "Share your contact details, and our expert team will reach out to you within 48 hours to assist with your order",
-    "ButtonText": "Send"
+    "ButtonText": "Send",
+    "ButtonTextSending": "Sending...",
+    "NamePlaceHolder": "Full name",
+    "EamilPlaceHolder": "E-mail address",
+    "NumberPlaceHolder": "Phone number",
+    "Formvalidation": {
+      "NameMessage": "Username must be at least 2 characters.",
+      "EmailMessage": "Enter valid Email address.",
+      "PhoneMessage": "Must be at least 11 digits and contain only numbers."
+    }
   },
   "WhyBrandPos": {
     "title": " Why Choose Us",
@@ -967,15 +990,15 @@
         }
       }
     },
-    "FaqContact" : {
-      "Title" : "Do you have any questions?",
-      "Description" : "If you can't find the answer to your question in our FAQs, you can contact us. We will answer you shortly!",
+    "FaqContact": {
+      "Title": "Do you have any questions?",
+      "Description": "If you can't find the answer to your question in our FAQs, you can contact us. We will answer you shortly!",
       "ContactTitle": "We are always here to help you!",
       "EmailTitle": "Quick response from our representative",
       "Phone": "+49 89 2154 7447",
       "PhoneLink": "tel:+49 89 2154 7447",
       "Email": "support@brandpos.com",
-      "EmailLink":"mailto:support@brandpos.com"
+      "EmailLink": "mailto:support@brandpos.com"
     }
   },
   "BlogSection": {

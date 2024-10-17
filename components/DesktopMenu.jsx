@@ -5,28 +5,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-// import { usePathname, useRouter } from "next/navigation";
-
-// interface SubMenuItem {
-//   name: string;
-//   desc: string;
-//   icon?: any; // Adjust this type according to your icon implementation
-// }
-
-// interface MenuItem {
-//   name: string;
-//   subMenu?: SubMenuItem[];
-//   subMenuHeading?: string[];
-//   gridCols?: number;
-// }
-
-// interface DesktopMenuProps {
-//   menu: MenuItem;
-// }
-
 export default function DesktopMenu({ menu, locale }) {
-
- 
   const [isHover, toggleHover] = useState(false);
   const toggleHoverMenu = () => {
     toggleHover(!isHover);
@@ -84,7 +63,13 @@ export default function DesktopMenu({ menu, locale }) {
           variants={subMenuAnimate}
         >
           <div
-            className={`grid gap-7 ${menu.gridCols === 3? "grid-cols-3": menu.gridCols === 2? "grid-cols-2": "grid-cols-1"}`}
+            className={`grid gap-7 ${
+              menu.gridCols === 3
+                ? "grid-cols-3"
+                : menu.gridCols === 2
+                ? "grid-cols-2"
+                : "grid-cols-1"
+            }`}
           >
             {menu.subMenu.map((submenu, i) => (
               <div className="relative cursor-pointer" key={i}>
@@ -102,7 +87,6 @@ export default function DesktopMenu({ menu, locale }) {
                     <Link
                       // href={menu.link}
                       href={`/${locale}/${submenu.link}`}
-                      
                     >
                       <h6 className="font-semibold">{submenu.name}</h6>
                     </Link>
