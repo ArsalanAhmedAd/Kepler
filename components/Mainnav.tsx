@@ -94,6 +94,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
               <div className="relative">
                 <label id="language-select"></label>
                 <select
+                aria-label="Switch-Langauge"
                   value={locale}
                   onChange={handleLanguageChange}
                   className=" py-[9px] pl-[9px] pr-[15px] language-select hover:outline-none focus:outline-none bg-gray-100 text-white rounded-full"

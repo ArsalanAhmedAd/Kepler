@@ -29,9 +29,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={plusJakartaSans.className}>
 
-    <Script 
+    {/* <Script 
     strategy="beforeInteractive"
-    src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_CAPTACHA_SITE_KEY}`}/>
+    src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_CAPTACHA_SITE_KEY}`}/> */}
 
         <NextIntlClientProvider messages={messages}>
             <Mainnav locale={locale}/>

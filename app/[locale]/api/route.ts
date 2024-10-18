@@ -1,83 +1,34 @@
-// import { NextResponse } from "next/server";
-// import nodemailer from "nodemailer";
-
-// export async function POST(req: Request) {
-//   const emailadd = "imarsalanahmed77@gamil.com";
-//   const { username, phone, email, messageBody } = await req.json();
-//   let mailOptions = {};
-//   // Create a Nodemailer transporter
-//   const transporter = nodemailer.createTransport({
-//     service: "gmail", // or another email service
-//     auth: {
-//       user: process.env.EMAIL_USER, // Your email
-//       pass: process.env.EMAIL_PASS, // Your email password
-//     },
-//   });
-
-//   if (messageBody) {
-//     // Email options
-//       mailOptions = {
-//       from: process.env.EMAIL_USER, // Your email
-//       to: process.env.EMAIL_USER,
-//       email, // Send to the user who filled the form (you can also specify a fixed recipient)
-//       subject: "BrandPos Contact Form",
-//       text: `
-//       Username: ${username}
-//       Phone: ${phone}
-//       Email: ${email}
-//       Message: ${messageBody}`,
-//     };
-//   } else {
-//        mailOptions = {
-//       from: process.env.EMAIL_USER, // Your email
-//       to: process.env.EMAIL_USER,
-//       email, // Send to the user who filled the form (you can also specify a fixed recipient)
-//       subject: "BrandPos Order Form",
-//       text: `
-//       Username: ${username}
-//       Phone: ${phone}`,
-//     };
-//   }
-
-//   try {
-//     // Send email
-//     await transporter.sendMail(mailOptions);
-//     console.log(username, phone);
-//     return NextResponse.json(
-//       { message: "Email sent successfully!" },
-//       { status: 200 }
-//     );
-//   } catch (error) {
-//     // Check if error is an instance of Error
-//     if (error instanceof Error) {
-//       return NextResponse.json(
-//         { error: "Failed to send email", details: error.message },
-//         { status: 500 }
-//       );
-//     } else {
-//       // Fallback for non-Error types
-//       return NextResponse.json(
-//         { error: "Failed to send email", details: String(error) },
-//         { status: 500 }
-//       );
-//     }
-//   }
-// }
-
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
-  const { username, phone, email, messageBody } = await req.json();
+  const { username, phone, email, messageBody, recaptchaToken } = await req.json();
   let mailOptions = {};
   let confirmationEmailOptions = {};
 
+  // Verify the reCAPTCHA token
+  const secretKey = process.env.CAPTACHA_SECRET_KEY; // Your secret key
+  const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${recaptchaToken}`;
+
+  const response = await fetch(verifyUrl, {
+    method: 'POST',
+  });
+
+  const verificationResult = await response.json();
+
+  if (!verificationResult.success) {
+    return NextResponse.json(
+      { error: 'reCAPTCHA verification failed. Please try again.' },
+      { status: 400 }
+    );
+  }
+
   // Create a Nodemailer transporter
   const transporter = nodemailer.createTransport({
-    service: "gmail", // or another email service
+    service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER, // Your email
-      pass: process.env.EMAIL_PASS, // Your email password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
@@ -85,7 +36,7 @@ export async function POST(req: Request) {
   if (messageBody) {
     mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Send to yourself
+      to: process.env.EMAIL_USER,
       subject: "BrandPos Contact Form",
       text: `
       Username: ${username}
@@ -96,7 +47,7 @@ export async function POST(req: Request) {
   } else {
     mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Send to yourself
+      to: process.env.EMAIL_USER,
       subject: "BrandPos Order Form",
       text: `
       Username: ${username}
@@ -105,7 +56,7 @@ export async function POST(req: Request) {
   }
 
   // Email options for sending a confirmation email to the customer
-   confirmationEmailOptions = {
+  confirmationEmailOptions = {
     from: process.env.EMAIL_USER,
     to: email, // Send confirmation to the user
     subject: "Confirmation of your submission",
@@ -121,7 +72,7 @@ export async function POST(req: Request) {
 
       Best regards,
       BrandPos Team`,
-    };
+  };
 
   try {
     // Send the main email to yourself

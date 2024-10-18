@@ -15,15 +15,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import { sendContactForm } from "@/lib/api";
-import { toast } from "react-hot-toast"; // Import toast
+import { toast } from "react-hot-toast";
 import { useTranslations } from "next-intl";
+import ReCAPTCHA from "react-google-recaptcha"; // Import ReCAPTCHA
 
 export function ProfileForm() {
   const tContactFormValidation = useTranslations("ContactPage.Formvalidation");
   const tContactFormData = useTranslations("ContactPage.ContactForm");
   const [loading, setLoading] = useState(false);
-  // Define the schema using zod
-  // Zod Validation
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+
   const formSchema = z.object({
     username: z.string().min(2, {
       message: `${tContactFormValidation("NameMessage")}`,
@@ -32,7 +33,6 @@ export function ProfileForm() {
       .string()
       .min(11, { message: `${tContactFormValidation("PhoneMessage")}` })
       .regex(/^\d+$/, { message: "Phone number must contain only digits" }),
-
     email: z.string().email({
       message: `${tContactFormValidation("EmailMessage")}`,
     }),
@@ -55,27 +55,33 @@ export function ProfileForm() {
   const onSubmit = async (data: any) => {
     setLoading(true); // Set loading to true while sending
 
+    if (!recaptchaToken) {
+      toast.error(`${tContactFormValidation("ReCaptecha")}`);
+      setLoading(false); // Reset loading state
+      return;
+    }
+
     const locale = "en"; // or use a dynamic locale value
 
     try {
-      const response = await sendContactForm(data, locale);
+      const response = await sendContactForm({ ...data, recaptchaToken }, locale);
 
       if (response.ok) {
         const jsonResponse = await response.json();
-        toast.success(jsonResponse.message); // Show success toast
-        form.reset(); // Clear the form fields after successful submission
+        toast.success(jsonResponse.message);
+        form.reset();
       } else {
         const errorResponse = await response.json();
-        toast.error(errorResponse.error); // Show error toast
+        toast.error(errorResponse.error);
       }
     } catch (error) {
       if (error instanceof Error) {
-        toast.error("Failed to send the email: " + error.message); // Show error toast
+        toast.error("Failed to send the email: " + error.message);
       } else {
-        toast.error("Failed to send the email: " + String(error)); // Show error toast
+        toast.error("Failed to send the email: " + String(error));
       }
     } finally {
-      setLoading(false); // Reset loading state
+      setLoading(false);
     }
   };
 
@@ -147,19 +153,29 @@ export function ProfileForm() {
             </FormItem>
           )}
         />
-        <div className="mt-3">
+        
+        {/* Add ReCAPTCHA here */}
+        <div className="flex flex-col items-start lg:flex-row lg:justify-between lg:items-center">
+        <div className="">
           <Button
             type="submit"
             icon={IconType}
             iconPosition="right"
             variant="primarySubmit"
             size="md"
-            className="mx-auto sm:mx-0 mt-7"
+            className="mx-auto sm:mx-0 "
           >
             {loading
               ? `${tContactFormData("SendingLabel")}`
-              : `${tContactFormData("SubmitLabel")}`}{" "}
+              : `${tContactFormData("SubmitLabel")}`}
           </Button>
+        </div>
+        <div className="mt-3">
+          <ReCAPTCHA
+            sitekey={process.env.NEXT_PUBLIC_CAPTACHA_SITE_KEY || ''} // Add your site key here
+            onChange={(token) => setRecaptchaToken(token)}
+          />
+        </div>
         </div>
       </form>
     </Form>

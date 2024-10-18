@@ -88,7 +88,7 @@ export default function DesktopMenu({ menu, locale }) {
                       // href={menu.link}
                       href={`/${locale}/${submenu.link}`}
                     >
-                      <h6 className="font-semibold">{submenu.name}</h6>
+                      <div className="font-semibold">{submenu.name}</div>
                     </Link>
                     <p className="text-sm text-gray-400">{submenu.desc}</p>
                   </div>

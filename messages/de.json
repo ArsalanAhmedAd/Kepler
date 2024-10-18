@@ -3,6 +3,7 @@
     "home": "Startseite",
     "homeTitle": "BrnadPos",
     "homeDescription": "Stroomlijn je afrekenproces en verhoog de klanttevredenheid.",
+    "HomeKeywords": "Pos, System ,Boekhouding",
     "Price & Features": "Preis & Eigenschaften",
     "IntegrationsZero": "Integrationen",
     "IntegrationsOne": "Pos System",
@@ -71,7 +72,7 @@
       }
     },
     "TeamSection": {
-      "Title": "Our Team",
+      "Title": "Unser Team",
       "Members": {
         "MembersOne": {
           "Name": "John Doe",
@@ -201,7 +202,8 @@
       "NameMessage": "Der Benutzername muss mindestens 2 Zeichen lang sein.",
       "EmailMessage": "Gültige E-Mail Adresse eingeben.",
       "PhoneMessage": "Muss mindestens 11 Ziffern umfassen und darf nur Zahlen enthalten.",
-      "Message": "Die Nachricht muss mindestens 20 Zeichen lang sein."
+      "Message": "Die Nachricht muss mindestens 20 Zeichen lang sein.",
+      "ReCaptecha": "Bitte füllen Sie das reCAPTCHA aus."
     },
     "title": "Kontakt aufnehmen",
     "ContactInfo": {
@@ -293,7 +295,8 @@
     "Formvalidation": {
       "NameMessage": "Der Benutzername muss mindestens 2 Zeichen lang sein.",
       "EmailMessage": "Gültige E-Mail Adresse eingeben.",
-      "PhoneMessage": "Muss mindestens 11 Ziffern umfassen und darf nur Zahlen enthalten."
+      "PhoneMessage": "Muss mindestens 11 Ziffern umfassen und darf nur Zahlen enthalten.",
+      "ReCaptecha": "Bitte füllen Sie das reCAPTCHA aus."
     }
   },
   "WhyBrandPos": {
@@ -388,7 +391,7 @@
           "description": {
             "descriptionOne": {
               "service": "Basic €25 min.invoice/month",
-              "isService": "false"
+              "isService": "true"
             },
             "descriptiontwo": {
               "service": "Basic No monthly fee",

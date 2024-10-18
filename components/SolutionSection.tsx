@@ -38,9 +38,9 @@ const SolutionSection = () => {
       <div className="bg-[#fff] absolute w-full h-1/2 bottom-0"></div>
       <div className="container mx-auto px-4 pt-24 pb-0 lg:pt-28 lg:pb-16 relative z-10">
         <div className="">
-          <div className="scroll-m-20 text-2xl sm:text-3xl leading-10 font-extrabold tracking-tight lg:text-[40px] w-full lg:w-5/12 lg:leading-[50px] text-gray-100 mx-auto text-balance text-center">
+          <h2 className="scroll-m-20 text-2xl sm:text-3xl leading-10 font-extrabold tracking-tight lg:text-[40px] w-full lg:w-5/12 lg:leading-[50px] text-gray-100 mx-auto text-balance text-center">
             {tSolutions("Solution.SolutionTitle")}
-          </div>
+          </h2>
           <div className="scroll-m-20 text-18 font-normal text-gray-200 lg:text-22 text-balance text-center py-4 lg:max-w-[80%] mx-auto">
             {tSolutions("Solution.SolutionDescription")}
           </div>

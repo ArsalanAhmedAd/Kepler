@@ -65,9 +65,9 @@ const WeCanFindSlider = () => {
                 className="rounded-lg w-full"
               />
               <div className="absolute bottom-10 left-5">
-              <div className="leading-9 text-xl sm:2xl: lg:text-[26px] text-white font-semibold tracking-tight">
+              <h3 className="leading-9 text-xl sm:2xl: lg:text-[26px] text-white font-semibold tracking-tight">
                 {tWeCanFindSlider(`WeCanFindSliders.${key}.WeCanFindSliderTitle`)}
-              </div>
+              </h3>
             </div>
             </div>
             

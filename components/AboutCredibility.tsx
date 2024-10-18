@@ -17,13 +17,13 @@ const AboutCredibility = () => {
                   src={tAboutPage(`CredibilitySection.${key}.Image`)}
                   width={100}
                   height={100}
-                  alt="AboutCredibility"
+                  alt="AboutCredibility-BrandPos"
                 />
               </div>
               <div className="content">
-                <div className="text-blue-default text-22 lg:text-2xl font-bold break-all">
+                <h3 className="text-blue-default text-22 lg:text-2xl font-bold break-all">
                   {tAboutPage(`CredibilitySection.${key}.Title`)}
-                </div>
+                </h3>
                 <div>{tAboutPage(`CredibilitySection.${key}.content`)}</div>
               </div>
             </div>

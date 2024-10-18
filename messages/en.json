@@ -3,6 +3,7 @@
     "home": "Home",
     "homeTitle": "BrandPos",
     "homeDescription": " Streamline your checkout process and enhance customer satisfaction.",
+    "HomeKeywords": "Pos System Boekhouding",
     "Price & Features": "Price & Features",
     "IntegrationsZero": "Integrations",
     "IntegrationsOne": "Pos System",
@@ -202,7 +203,8 @@
       "NameMessage": "Username must be at least 2 characters.",
       "EmailMessage": "Enter valid Email address.",
       "PhoneMessage": "Must be at least 11 digits and contain only numbers.",
-      "Message": "Message must be at least 20 characters."
+      "Message": "Message must be at least 20 characters.",
+      "ReCaptecha": "Please complete the reCAPTCHA."
     },
     "title": "Contact us",
     "ContactInfo": {
@@ -288,7 +290,8 @@
     "Formvalidation": {
       "NameMessage": "Username must be at least 2 characters.",
       "EmailMessage": "Enter valid Email address.",
-      "PhoneMessage": "Must be at least 11 digits and contain only numbers."
+      "PhoneMessage": "Must be at least 11 digits and contain only numbers.",
+      "ReCaptecha": "Please complete the reCAPTCHA."
     }
   },
   "WhyBrandPos": {

@@ -10,12 +10,14 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendContactForm } from "@/lib/api";
 import toast from "react-hot-toast";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export const OrderPlace = () => {
   const tOrderPlace = useTranslations("OrderPlace");
   const tOrderPlaceValid = useTranslations("OrderPlace.Formvalidation");
 
   const [loading, setLoading] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   
   const formSchema = z.object({
     username: z.string().min(2, {
@@ -42,10 +44,16 @@ export const OrderPlace = () => {
   const onSubmit = async (data: any) => {
     setLoading(true); // Set loading to true while sending
 
+    if (!recaptchaToken) {
+      // alert('Please complete the reCAPTCHA.');
+      toast.error(`${tOrderPlaceValid("ReCaptecha")}`);
+      setLoading(false); // Reset loading state
+      return;
+    }
     const locale = "en"; // or use a dynamic locale value
 
     try {
-      const response = await sendContactForm(data, locale);
+      const response = await sendContactForm({ ...data, recaptchaToken }, locale);
 
       if (response.ok) {
         const jsonResponse = await response.json();
@@ -144,6 +152,11 @@ export const OrderPlace = () => {
                     : `${tOrderPlace("ButtonText")}`}
                 </Button>
               </div>
+
+              <ReCAPTCHA
+                sitekey={process.env.NEXT_PUBLIC_CAPTACHA_SITE_KEY || ''} 
+                onChange={(token) => setRecaptchaToken(token)}
+              />
             </form>
           </Form>
         </div>

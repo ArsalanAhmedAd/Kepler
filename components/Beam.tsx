@@ -50,7 +50,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentOne.Image")}
-                alt="datev"
+                alt="datev-BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -64,7 +64,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentTwo.Image")}
-                alt="datev"
+                alt="zoho-Book-BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -80,7 +80,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentThree.Image")}
-                alt="datev"
+                alt="datev-BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -100,7 +100,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentFour.Image")}
-                alt="datev"
+                alt="datev-BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -116,7 +116,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentFive.Image")}
-                alt="datev"
+                alt="datev-BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -130,7 +130,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentSix.Image")}
-                alt="datev"
+                alt="datev-BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"

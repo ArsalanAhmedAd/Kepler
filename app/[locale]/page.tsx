@@ -14,13 +14,33 @@ import MainBanner from "@/components/MainBanner";
 
 export async function generateMetadata({params: { locale },}: {params: { locale: string }}) {
   
+
+  const routeTranslations = {
+    en: {
+      'price-features': 'price-features',
+    },
+    de: {
+      'price-features': 'preise-und-funktionen',
+    },
+  };
+  
   const messages: any = await getMessages({ locale });
   const title = messages.NavbarLinks.homeTitle;
   const description = messages.NavbarLinks.homeDescription;
+  const keywords = messages.NavbarLinks.HomeKeywords;
+
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;  
+  const path = `/`;  
+  const canonicalUrl = `${baseUrl}/${locale}${path}`;
+
 
   return {
     title,
-    description
+    description,
+    keywords,
+    alternates: {
+      canonical: canonicalUrl,
+    },
   };
 }
 

@@ -40,9 +40,9 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
 
       <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
         <div className="pb-10">
-          <div className="text-2xl sm:text-3xl text-gray-100 font-bold">
+          <h2 className="text-2xl sm:text-3xl text-gray-100 font-bold">
             {tResources("HowItWorks.Title")}
-          </div>
+          </h2>
           <div className="xl:max-w-[45%] text-gray-200 text-18">
             {tResources("HowItWorks.Description")}
           </div>
@@ -54,9 +54,9 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
               <>
                 <div key={i} className="shadow-lg border-[5px] border-gray-800 rounded-20 p-5 flex items-center relative justify-between" >
                   <div className="pr-5 md:pr-9">
-                    <div className="text-18 pb-3 text-gray-100 font-semibold">
+                    <h3 className="text-18 pb-3 text-gray-100 font-semibold">
                       {tResources(`HowItWorks.${key}.Title`)}
-                    </div>
+                    </h3>
                     <div>
                       {tResources(`HowItWorks.${key}.Description`)}
                       <Link
@@ -89,9 +89,9 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
         </div>
 
         <div className="pt-20 lg:pt-28 pb-10">
-          <div className="text-2xl sm:text-3xl text-gray-100 font-bold">
+          <h2 className="text-2xl sm:text-3xl text-gray-100 font-bold">
             {tResources("APIIntegrations.Title")}
-          </div>
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-11">
@@ -104,7 +104,7 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
                 >
                   <div className="pr-5 md:pr-9">
                     <div className="text-18 pb-3 text-gray-100 font-semibold">
-                      <div
+                      <h3
                         dangerouslySetInnerHTML={{
                           __html: tResources(`APIIntegrations.${key}.Title`),
                         }}

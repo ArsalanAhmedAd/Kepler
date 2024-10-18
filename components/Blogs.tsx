@@ -40,9 +40,9 @@ const Blogs = () => {
                             <div className="absolute bottom-4 left-4 text-white">{tBlogSection(`Blogs.${key}.BlogPublishDate`)}</div>
                         </div>
                         <div className="pl-9 pb-6 pr-6">
-                                <div className="text-18 font-semibold text-gray-100 pt-3 pr-14 pb-2">
+                                <h3 className="text-18 font-semibold text-gray-100 pt-3 pr-14 pb-2">
                                     {tBlogSection(`Blogs.${key}.BlogTitle`)}
-                                </div>
+                                </h3>
                             <div className="text-gray-200 text-18 pb-5">
                         
                             {tBlogSection(`Blogs.${key}.BlogContent`)}

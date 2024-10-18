@@ -61,9 +61,9 @@ const Footer = ({ locale }: { locale: string }) => {
           </div>
         </div>
         <div className="footer-middle flex flex-col justify-center py-8">
-          <div className="text-2xl sm:text-3xl text-gray-100 font-bold text-center pb-6">
+          <h2 className="text-2xl sm:text-3xl text-gray-100 font-bold text-center pb-6">
             {tfooter("FooterHeading")}
-          </div>
+          </h2>
           <div className="footerLogo flex justify-center gap-3">
             <Link
               href="https://play.google.com/store/games?hl=en"
@@ -84,27 +84,27 @@ const Footer = ({ locale }: { locale: string }) => {
           <div className="social mt-6">
             <ul className="flex justify-center gap-5 text-22">
               <li>
-                <Link href="https://www.facebook.com/" target="_blank">
+                <Link href="https://www.facebook.com/" target="_blank" aria-label="facebook">
                   <FaFacebookF />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/" target="_blank">
+                <Link href="https://www.linkedin.com/" target="_blank" aria-label="linkedin">
                   <FaLinkedinIn />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.youtube.com/" target="_blank">
+                <Link href="https://www.youtube.com/" target="_blank" aria-label="youtube">
                   <FaYoutube />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.x.com/" target="_blank">
+                <Link href="https://www.x.com/" target="_blank" aria-label="Twitter">
                   <BsTwitterX />
                 </Link>
               </li>
               <li>
-                <Link href="https://www.shopware.com/" target="_blank">
+                <Link href="https://www.shopware.com/" target="_blank" aria-label="shopware">
                 <FaShopware />
                 </Link>
               </li>

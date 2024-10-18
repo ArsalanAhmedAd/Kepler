@@ -10,9 +10,9 @@ const ContactForm = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       <div className="">
-        <div className="text-2xl sm:text-40 text-gray-100 font-semibold pb-9">
+        <h2 className="text-2xl sm:text-40 text-gray-100 font-semibold pb-9">
           {tContactForm("title")}
-        </div>
+        </h2>
 
         <div>
           <ProfileForm />

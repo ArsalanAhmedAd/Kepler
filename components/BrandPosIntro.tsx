@@ -7,10 +7,10 @@ const BrandPosIntro = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10">
-        <div className="text-2xl sm:text-3xl leading-10 font-bold tracking-tight lg:text-[40px] w-full lg:leading-[55px] text-gray-100 mx-auto text-balance text-start flex flex-col justify-center">
+        <h2 className="text-2xl sm:text-3xl leading-10 font-bold tracking-tight lg:text-[40px] w-full lg:leading-[55px] text-gray-100 mx-auto text-balance text-start flex flex-col justify-center">
           {tAboutPage('Introduction.Intro')} <br />
           <span className="text-blue-default">   {tAboutPage('Introduction.pos')}  </span>
-        </div>
+        </h2>
         <div className="text-justify">
         {tAboutPage('Introduction.contentOne')}
         </div>

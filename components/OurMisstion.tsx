@@ -15,9 +15,9 @@ const OurMisstion = () => {
         />
       </div>
       <div className="relative mt-10 md:mt-0 md:absolute md:right-0 md:top-[50%] md:-translate-y-[50%] max-w-[100%] md:max-w-[85%] lg:max-w-[74%] border-20 p-8 sm:p-10 bg-white box-shadow-custom rounded-20 opacity-90">
-        <div className="text-gray-100 text-2xl sm:text-3xl font-bold pb-2 ">
+        <h2 className="text-gray-100 text-2xl sm:text-3xl font-bold pb-2 ">
           {tOurMission("OurMission.Title")}
-        </div>
+        </h2>
         <div className="text-16 sm:text-18 text-gray-200">
           {tOurMission("OurMission.content")}
         </div>

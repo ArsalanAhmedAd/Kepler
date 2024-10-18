@@ -19,7 +19,7 @@ const PricePlan = () => {
 
   return (
     <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
-       <div className="text-gray-100 text-3xl font-bold pb-6"> {tpricingPlan('pricingPlanwhy.title')}</div>
+       <h2 className="text-gray-100 text-3xl font-bold pb-6"> {tpricingPlan('pricingPlanwhy.title')}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {Object.entries(obj).map(([key], i) => {
           return (

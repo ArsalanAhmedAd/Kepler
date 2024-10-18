@@ -38,7 +38,7 @@ const OurTeam = () => {
 
   return (
     <div className="py-8 sm:py-10 md:py-12">
-      <div className="text-3xl text-gray-100 font-bold">Unser Team</div>
+      <h2 className="text-3xl text-gray-100 font-bold">   {tOurTeam("Title")}</h2>
 
       <div className="py-8">
         <Swiper
@@ -103,10 +103,10 @@ const OurTeam = () => {
                     className="w-full"
                   />
                   <div className="absolute bottom-4 left-4 text-white">
-                    <div className="font-bold text-18">
+                    <h3 className="font-bold text-18">
                     
                       {tOurTeam(`Members.${key}.Name`)}
-                    </div>
+                    </h3>
                     <div className="text-[14] italic">
                       {tOurTeam(`Members.${key}.Designation`)}
                     
