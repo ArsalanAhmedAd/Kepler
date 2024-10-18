@@ -6,7 +6,7 @@ import { Plus_Jakarta_Sans } from 'next/font/google';
 // import MainBanner from "@/components/MainBanner";
 import Footer from "@/components/Footer";
 import Mainnav from "@/components/Mainnav";
-import Script from "next/script";
+
 import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
 import Loading from "./loading";

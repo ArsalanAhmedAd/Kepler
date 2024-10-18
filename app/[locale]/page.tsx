@@ -15,14 +15,7 @@ import MainBanner from "@/components/MainBanner";
 export async function generateMetadata({params: { locale },}: {params: { locale: string }}) {
   
 
-  const routeTranslations = {
-    en: {
-      'price-features': 'price-features',
-    },
-    de: {
-      'price-features': 'preise-und-funktionen',
-    },
-  };
+  
   
   const messages: any = await getMessages({ locale });
   const title = messages.NavbarLinks.homeTitle;
