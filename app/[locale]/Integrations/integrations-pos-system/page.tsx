@@ -75,14 +75,22 @@ const IntegrationsPosSystem = () => {
     Vectron: {
       Image: "/Integrations/Vectron.svg",
     },
-  
   };
   const tIntegrationsPosSystem = useTranslations("IntegrationsPosSystem");
-  const tIntegrationsMainBanner = useTranslations("IntegrationsPosSystem.MainBanner");
-  const tBannerSubHeading = tIntegrationsMainBanner.raw('BannerSubHeading');
+  const tIntegrationsMainBanner = useTranslations(
+    "IntegrationsPosSystem.MainBanner"
+  );
+  const tBannerSubHeading = tIntegrationsMainBanner.raw("BannerSubHeading");
   return (
     <>
-                 <MainBanner bannerMainHeading={tIntegrationsMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tIntegrationsMainBanner('BannerImageDesktop')} bannerMobile={tIntegrationsMainBanner('BannerImageMobile')} bannerBtnLabel={tIntegrationsMainBanner('MainBannerBtnLabel')} bannerBtnLink={tIntegrationsMainBanner('MainBannerBtnLink')}/>
+      <MainBanner
+        bannerMainHeading={tIntegrationsMainBanner("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tIntegrationsMainBanner("BannerImageDesktop")}
+        bannerMobile={tIntegrationsMainBanner("BannerImageMobile")}
+        bannerBtnLabel={tIntegrationsMainBanner("MainBannerBtnLabel")}
+        bannerBtnLink={tIntegrationsMainBanner("MainBannerBtnLink")}
+      />
 
       <CharacteristicsSection
         CharacteristicsImage={tIntegrationsPosSystem("Image")}
@@ -94,14 +102,23 @@ const IntegrationsPosSystem = () => {
           {Object.entries(IntegrationsPosSystemData).map(([key, value], i) => {
             return (
               <>
-                <div key={i} className="flex py-6 sm:py-4 gap-2 flex-col sm:flex-row sm:gap-10 items-center ">
+                <div
+                  key={i}
+                  className="flex py-6 sm:py-4 gap-2 flex-col sm:flex-row sm:gap-10 items-center "
+                >
                   <div className="w-44 flex-shrink-0">
-                    <Image src={value.Image} alt="Pos aplications - BrandPos" width={100} height={100} className="pb-8 w-full "/>
+                    <Image
+                      src={value.Image}
+                      alt="Pos aplications - BrandPos"
+                      width={100}
+                      height={100}
+                      className="pb-8 w-full "
+                    />
                   </div>
 
                   <div className="py-8 px-8 md:py-20 md:px-16 box-shadow-custom rounded-[24px] text-gray-200 text-18">
                     {tIntegrationsPosSystem(`${key}.Description`)}
-                  </div>  
+                  </div>
                 </div>
               </>
             );

@@ -8,10 +8,14 @@ import { Toaster } from "react-hot-toast";
 import { Suspense } from "react";
 import Loading from "./loading";
 
+
+
+
 const plusJakartaSans = Plus_Jakarta_Sans({
-  weight: ["400", "700"],
   subsets: ["latin"],
-});
+  weight: ["200", "400", "700"],
+  display: "swap",
+  })
 
 export default async function RootLayout({
   children,

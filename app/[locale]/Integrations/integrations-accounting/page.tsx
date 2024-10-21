@@ -54,13 +54,21 @@ export async function generateMetadata({
 
 const IntegrationsAccounting = () => {
   const tIntegrationsAccounting = useTranslations("IntegrationsAccounting");
-  const tIntegrationsMainBanner = useTranslations("IntegrationsAccounting.MainBanner");
-  const tBannerSubHeading = tIntegrationsMainBanner.raw('BannerSubHeading');
-  
+  const tIntegrationsMainBanner = useTranslations(
+    "IntegrationsAccounting.MainBanner"
+  );
+  const tBannerSubHeading = tIntegrationsMainBanner.raw("BannerSubHeading");
 
   return (
     <>
-              <MainBanner bannerMainHeading={tIntegrationsMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tIntegrationsMainBanner('BannerImageDesktop')} bannerMobile={tIntegrationsMainBanner('BannerImageMobile')} bannerBtnLabel={tIntegrationsMainBanner('MainBannerBtnLabel')} bannerBtnLink={tIntegrationsMainBanner('MainBannerBtnLink')}/>
+      <MainBanner
+        bannerMainHeading={tIntegrationsMainBanner("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tIntegrationsMainBanner("BannerImageDesktop")}
+        bannerMobile={tIntegrationsMainBanner("BannerImageMobile")}
+        bannerBtnLabel={tIntegrationsMainBanner("MainBannerBtnLabel")}
+        bannerBtnLink={tIntegrationsMainBanner("MainBannerBtnLink")}
+      />
 
       <CharacteristicsSection
         CharacteristicsImage={tIntegrationsAccounting("Image")}
@@ -68,14 +76,14 @@ const IntegrationsAccounting = () => {
         CharacteristicsDescription={tIntegrationsAccounting("Description")}
       />
       <div className="container mx-auto px-4 ">
-            <div className="hidden lg:flex">
-            <AnimatedBeamDemo  />
-            </div>
-           <div className="flex lg:hidden">
-           <IntegrationAccount />
-           </div>
+        <div className="hidden lg:flex">
+          <AnimatedBeamDemo />
+        </div>
+        <div className="flex lg:hidden">
+          <IntegrationAccount />
+        </div>
       </div>
-      <OrderPlace/>
+      <OrderPlace />
     </>
   );
 };

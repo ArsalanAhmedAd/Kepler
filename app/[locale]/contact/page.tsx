@@ -7,7 +7,6 @@ import { useTranslations } from "next-intl";
 import { getMessages } from "next-intl/server";
 import React from "react";
 
-
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -69,9 +68,7 @@ const ContactPage = () => {
         <ContactForm />
       </div>
 
-     
-    <ContactMap />
-    
+      <ContactMap />
     </>
   );
 };

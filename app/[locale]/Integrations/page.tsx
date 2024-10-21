@@ -87,18 +87,24 @@ const Integrations = () => {
   };
   const tIntegrations = useTranslations("Integrations");
   const tIntegrationsMainBanner = useTranslations("Integrations.MainBanner");
-  const tBannerSubHeading = tIntegrationsMainBanner.raw('BannerSubHeading');
+  const tBannerSubHeading = tIntegrationsMainBanner.raw("BannerSubHeading");
 
   return (
     <>
-          <MainBanner bannerMainHeading={tIntegrationsMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tIntegrationsMainBanner('BannerImageDesktop')} bannerMobile={tIntegrationsMainBanner('BannerImageMobile')} bannerBtnLabel={tIntegrationsMainBanner('MainBannerBtnLabel')} bannerBtnLink={tIntegrationsMainBanner('MainBannerBtnLink')}/>
-    <CharacteristicsSection
-          CharacteristicsImage={tIntegrations("Image")}
-          CharacteristicsTitle={tIntegrations("title")}
-          CharacteristicsDescription="Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown"
-        />
+      <MainBanner
+        bannerMainHeading={tIntegrationsMainBanner("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tIntegrationsMainBanner("BannerImageDesktop")}
+        bannerMobile={tIntegrationsMainBanner("BannerImageMobile")}
+        bannerBtnLabel={tIntegrationsMainBanner("MainBannerBtnLabel")}
+        bannerBtnLink={tIntegrationsMainBanner("MainBannerBtnLink")}
+      />
+      <CharacteristicsSection
+        CharacteristicsImage={tIntegrations("Image")}
+        CharacteristicsTitle={tIntegrations("title")}
+        CharacteristicsDescription="Lorem I psum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown"
+      />
       <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
-        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.entries(tintegrationsData).map(([key, value], i) => {
             return (
