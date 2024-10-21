@@ -11,6 +11,7 @@ import { useTranslations } from "next-intl";
 import { getMessages } from "next-intl/server";
 import React from "react";
 
+
 export async function generateMetadata({
   params: { locale },
 }: {
@@ -57,24 +58,41 @@ export async function generateMetadata({
 const Pricefeatures = () => {
   const tFeaturesCharacteristics = useTranslations("FeaturesCharacteristics");
   // const FeatureSectionDiscover = useTranslations("FeatureSectionDiscover");
-  const tFeaturesPagePaymentsSection = useTranslations("FeaturesPagePaymentsSection");
-  const tFeaturesPageWalletPaymentsSection = useTranslations("FeaturesPageWalletPaymentsSection");
-  const tFeaturesPageBrandposSection = useTranslations("FeaturesPageBrandposSection");
-  const tFeaturesPageBankPaySection = useTranslations("FeaturesPageBankPaySection");
-  const tFeaturesPageSecuritySection = useTranslations("FeaturesPageSecuritySection");
+  const tFeaturesPagePaymentsSection = useTranslations(
+    "FeaturesPagePaymentsSection"
+  );
+  const tFeaturesPageWalletPaymentsSection = useTranslations(
+    "FeaturesPageWalletPaymentsSection"
+  );
+  const tFeaturesPageBrandposSection = useTranslations(
+    "FeaturesPageBrandposSection"
+  );
+  const tFeaturesPageBankPaySection = useTranslations(
+    "FeaturesPageBankPaySection"
+  );
+  const tFeaturesPageSecuritySection = useTranslations(
+    "FeaturesPageSecuritySection"
+  );
   const tPriceFeatures = useTranslations("PriceFeatures.MainBanner");
-  const tBannerSubHeading = tPriceFeatures.raw('BannerSubHeading');
+  const tBannerSubHeading = tPriceFeatures.raw("BannerSubHeading");
 
   return (
     <div>
-        <MainBanner bannerMainHeading={tPriceFeatures('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tPriceFeatures('BannerImageDesktop')} bannerMobile={tPriceFeatures('BannerImageMobile')} bannerBtnLabel={tPriceFeatures('MainBannerBtnLabel')} bannerBtnLink={tPriceFeatures('MainBannerBtnLink')}/>
+      <MainBanner
+        bannerMainHeading={tPriceFeatures("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tPriceFeatures("BannerImageDesktop")}
+        bannerMobile={tPriceFeatures("BannerImageMobile")}
+        bannerBtnLabel={tPriceFeatures("MainBannerBtnLabel")}
+        bannerBtnLink={tPriceFeatures("MainBannerBtnLink")}
+      />
       <CharacteristicsSection
         CharacteristicsImage={tFeaturesCharacteristics("Image")}
         CharacteristicsTitle={tFeaturesCharacteristics("title")}
         CharacteristicsDescription={tFeaturesCharacteristics("description")}
-       
-        
       />
+
+      <div></div>
       <PricePlan />
       <FeaturesSectionLeft
         features={tFeaturesPagePaymentsSection("title")}
@@ -96,7 +114,7 @@ const Pricefeatures = () => {
         buttonEnabled={true}
         ButtonLabel={tFeaturesPageWalletPaymentsSection("BtnLabel")}
       />
-         <FeaturesSectionLeft
+      <FeaturesSectionLeft
         features={tFeaturesPageBrandposSection("title")}
         description={tFeaturesPageBrandposSection("Description")}
         FeatureImage={tFeaturesPageBrandposSection("Image")}
@@ -115,10 +133,10 @@ const Pricefeatures = () => {
         buttonEnabled={true}
         ButtonLabel={tFeaturesPageBankPaySection("BtnLabel")}
       />
-      <OrderPlace/>
+      <OrderPlace />
       <AppFeatures />
       <PaymentSection />
-      <WeCanFindSlider/>
+      <WeCanFindSlider />
       <FeaturesSectionRight
         features={tFeaturesPageSecuritySection("title")}
         description={tFeaturesPageSecuritySection("Description")}

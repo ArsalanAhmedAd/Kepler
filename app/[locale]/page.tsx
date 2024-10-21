@@ -1,3 +1,4 @@
+
 import { FeaturesSectionRight } from "@/components/FeaturesSectionRight";
 import { FeaturesSectionLeft } from "@/components/FeaturesSectionLeft";
 import { useTranslations } from "next-intl";
@@ -10,7 +11,9 @@ import WhyBrandPos from "@/components/WhyBrandPos";
 import PersonalisedSolution from "@/components/PersonalisedSolution";
 import MeetOutCustomer from "@/components/MeetOutCustomer";
 import MainBanner from "@/components/MainBanner";
+
 // import logo from "@/public/Logo.svg";
+
 
 export async function generateMetadata({
   params: { locale },
@@ -24,8 +27,7 @@ export async function generateMetadata({
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   const path = `/`;
   const canonicalUrl = `${baseUrl}/${locale}${path}`;
-
-
+  
   return {
     title,
     description,

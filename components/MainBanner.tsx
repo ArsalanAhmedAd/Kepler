@@ -36,7 +36,7 @@ const MainHeading = bannerMainHeading;
             
             {BannerSubHeading && Object.entries(BannerSubHeading).map(([key,value], i) => {
                 return (
-                  <li key={i} className="flex items-start gap-3">
+                  <li key={i} className="flex items-start gap-3 break-all sm:break-normal">
                     <Image src="/WhiteCheckMark.svg" width={20} height={20} alt={`${key}-imge-BrandPos`} className="mt-1" />
                     <span> {value}</span>
                   </li>

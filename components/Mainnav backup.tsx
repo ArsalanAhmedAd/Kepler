@@ -16,7 +16,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarLinks");
 
   const pathname = usePathname();
-
+  console.log("path", pathname)
   const router = useRouter();
 
   const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {

@@ -43,22 +43,16 @@ export default function MobMenu({ Menus, locale }) {
 
 
   useEffect(() => {
-    // const handleBodyClick = () => {
+   
       setIsOpen(false); // Toggles the state on each click
-    // };
-
-    // document.body.addEventListener('click', handleBodyClick);
-
-  
-    // return () => {
-    //   document.body.removeEventListener('click', handleBodyClick);
-    // };
+   
   }, []);
 
   return (
     <div className="flex">
       <button className="xl:hidden z-[999] relative" onClick={toggleDrawer}>
         {isOpen ? <X /> : <Menu />}
+      
       </button>
       <div className="container mx-auto w-full -translate-x-2/4 translate-y-3 absolute left-2/4 px-4 z-50">
         <motion.div
