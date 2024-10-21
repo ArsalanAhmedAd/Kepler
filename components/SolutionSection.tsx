@@ -22,7 +22,7 @@ const SolutionSection = () => {
       <div className="bg-[#F3F9FF] absolute w-full h-1/2 top-0">
         <Image
           src={SolutionGg}
-          alt="solution"
+          alt="solution - BrandPos"
           width={300}
           height={300}
           className="bottom-0 opacity-30 absolute left-1/2 -translate-x-2/4 lg:translate-x-0 lg:left-28 "
@@ -36,7 +36,7 @@ const SolutionSection = () => {
         />
       </div>
       <div className="bg-[#fff] absolute w-full h-1/2 bottom-0"></div>
-      <div className="container mx-auto px-4 pt-24 pb-0 lg:pt-28 lg:pb-16 relative z-10">
+      <div className="container mx-auto px-4 pt-24 pb-0 lg:pt-28 lg:pb-4 relative z-10">
         <div className="">
           <h2 className="scroll-m-20 text-2xl sm:text-3xl leading-10 font-extrabold tracking-tight lg:text-[40px] w-full lg:w-5/12 lg:leading-[50px] text-gray-100 mx-auto text-balance text-center">
             {tSolutions("Solution.SolutionTitle")}
@@ -74,7 +74,7 @@ const SolutionSection = () => {
                   <div className="flex flex-col rounded-20 gap-4 bg-white shadow-lg">
                     <Image
                       src= {tSolutions(`Solution.solutionSlides.${key}.Image`)}
-                      alt={`${key}-image`}
+                      alt={`${key}-image - BrandPos`}
                       className="rounded-lg w-full"
                       width={100}
                       height={100}

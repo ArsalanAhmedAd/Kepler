@@ -101,3 +101,4 @@ export default function DesktopMenu({ menu, locale }) {
     </motion.li>
   );
 }
+  

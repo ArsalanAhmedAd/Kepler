@@ -50,11 +50,11 @@ const AccordionTrigger = React.forwardRef<
      
         {!isOpen ? (
           <div className="bg-blue-100 p-2 rounded-md shadow-sm flex flex-shrink-0 ml-4">
-          <Image src="/PlusIcon.svg" alt="Expand" width={20} height={20} />
+          <Image src="/PlusIcon.svg" alt="Expand Icon - BrandPos" width={20} height={20} />
           </div>
         ) : (
           <div className="bg-blue-100 p-2 rounded-md shadow-sm flex flex-shrink-0 ml-4">
-          <Image src="/MinusIcon.svg" alt="Collapse" width={20} height={20} className="h-[20px]"/>
+          <Image src="/MinusIcon.svg" alt="Collapse Icon - BrandPos" width={20} height={20} className="h-[20px]"/>
           </div>
         )}
       </AccordionPrimitive.Trigger>

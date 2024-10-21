@@ -8,9 +8,9 @@ const WhyBrandPos = () => {
     const tWhyBrandPos = useTranslations("WhyBrandPos");
 
   return (
-    <div className="container mx-auto px-4 py-10 md:pt-16 pb-0">
+    <div className="container mx-auto px-4 py-10 md:pt-2 pb-0">
       <SectionTitle SectionTitle={tWhyBrandPos("title")}  sectionDescription={tWhyBrandPos("Description")} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center pt-7 sm:pt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-[26%,42%,26%] items-center pt-7 sm:pt-10">
         <div className="pr-0 sm:pr-10">
           <WhyBrnadPostContent  WhyBrnadPostContentitle={tWhyBrandPos("WhyBrandPosSectionOne.title")}  WhyBrnadPostContentDescription={tWhyBrandPos("WhyBrandPosSectionOne.Description")}/>
           <WhyBrnadPostContent  WhyBrnadPostContentitle={tWhyBrandPos("WhyBrandPosSectionTwo.title")}  WhyBrnadPostContentDescription={tWhyBrandPos("WhyBrandPosSectionTwo.Description")}/>
@@ -18,10 +18,12 @@ const WhyBrandPos = () => {
         <div className="hidden md:block">
           <Image
             src="/WhyBrandPos.svg"
-            alt="WhyBrandPos"
+            alt="WhyBrandPos - BrandPos"
             width={650}
             height={600}
-           
+            quality={100}
+            unoptimized={true}
+            className="w-auto h-auto"
           />
         </div>
         <div className="pl-0 sm:pl-10">

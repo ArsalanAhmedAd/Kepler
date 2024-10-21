@@ -50,7 +50,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentOne.Image")}
-                alt="datev-BrandPos"
+                alt="datev - BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -64,7 +64,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentTwo.Image")}
-                alt="zoho-Book-BrandPos"
+                alt="zoho-Book - BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -80,7 +80,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentThree.Image")}
-                alt="datev-BrandPos"
+                alt="datev - BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -94,13 +94,13 @@ export function AnimatedBeamDemo() {
             ref={div4Ref}
             className="w-[475px] bg-transparent border-none shadow-none p-0 integration-box"
           >
-            <Image src={Laptop} alt="laptop" width={470} height={370} />
+            <Image src={Laptop} alt="laptop - BrandPos" width={470} height={370} />
           </Circle>
           <Circle ref={div6Ref}>
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentFour.Image")}
-                alt="datev-BrandPos"
+                alt="datev - BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -116,7 +116,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentFive.Image")}
-                alt="datev-BrandPos"
+                alt="datev - BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"
@@ -130,7 +130,7 @@ export function AnimatedBeamDemo() {
             <div className="flex gap-6 items-center">
               <Image
                 src={tAccountSectionContent("ContentSix.Image")}
-                alt="datev-BrandPos"
+                alt="datev - BrandPos"
                 width={150}
                 height={150}
                 className="w-[100px] xl:w-[150px]"

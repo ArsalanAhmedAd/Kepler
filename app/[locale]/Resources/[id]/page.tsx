@@ -5,10 +5,19 @@ import React from "react";
 const Pagess = ({ params }: { params: { id: string } }) => {
   const { id } = params;
   const tblog = useTranslations("BlogDetail");
+  const tResourcesMainBanner = useTranslations("Resources.MainBanner");
+  const tBannerSubHeading = tResourcesMainBanner.raw("BannerSubHeading");
 
   return (
     <div>
-      <MainBanner />
+      <MainBanner
+        bannerMainHeading={tResourcesMainBanner("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tResourcesMainBanner("BannerImageDesktop")}
+        bannerMobile={tResourcesMainBanner("BannerImageMobile")}
+        bannerBtnLabel={tResourcesMainBanner("MainBannerBtnLabel")}
+        bannerBtnLink={tResourcesMainBanner("MainBannerBtnLink")}
+      />
 
       <br />
 

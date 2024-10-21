@@ -61,7 +61,7 @@ const WeCanFindSlider = () => {
             <div className="flex flex-col rounded-20 gap-4 bg-white relative pt-5">
               <Image
                 src={value}
-                alt={`${key}-image`}
+                alt={`${key}-image - BrandPos`}
                 className="rounded-lg w-full"
               />
               <div className="absolute bottom-10 left-5">

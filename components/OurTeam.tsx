@@ -37,10 +37,10 @@ const OurTeam = () => {
   const tOurTeamMembers: TeamSection = tOurTeam.raw("Members") as TeamSection;
 
   return (
-    <div className="py-8 sm:py-10 md:py-12">
+    <div className="pt-8 sm:pt-10 md:pt-12">
       <h2 className="text-3xl text-gray-100 font-bold">   {tOurTeam("Title")}</h2>
 
-      <div className="py-8">
+      <div className="pt-8">
         <Swiper
           spaceBetween={100}
           slidesPerView={1}
@@ -85,9 +85,10 @@ const OurTeam = () => {
                         >
                           <Image
                             src={socialData.Icon}
-                            alt={socialName}
+                            alt={`${socialName} - BrandPos`}
                             width={30}
                             height={30}
+                            
                           />
                         </Link>
                       </li>
@@ -97,7 +98,7 @@ const OurTeam = () => {
                 <div className="relative -top-4 -right-12">
                   <Image
                     src={tOurTeam(`Members.${key}.Image`)}
-                    alt="BlogThumbnail"
+                    alt="BlogThumbnail - BrandPos"
                     width={280}
                     height={320}
                     className="w-full"

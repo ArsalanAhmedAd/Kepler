@@ -11,7 +11,7 @@ import GPay from "@/public/GPay.svg";
 import visa from "@/public/Visa.svg";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -27,6 +27,7 @@ const PaymentSection = () => {
     Master,
     ApplePay,
     AliPay,
+  
   ];
   const tPaymentSection = useTranslations("PaymentSection");
   return (
@@ -38,9 +39,13 @@ const PaymentSection = () => {
       <div>
         <Swiper
           spaceBetween={30}
-          draggable={false}
-          modules={[Pagination, Navigation]}
+          // draggable={false}
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
           className="SolutionSwiper"
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             300: {
               slidesPerView: 2,
@@ -72,7 +77,7 @@ const PaymentSection = () => {
               <div className="flex flex-col ">
                 <Image
                   src={paymentMethord}
-                  alt={`${index}-image`}
+                  alt={`${index}-image - BrandPos`}
                   className="rounded-lg w-full"
                 />
               </div>

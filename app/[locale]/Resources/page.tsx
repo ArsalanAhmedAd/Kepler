@@ -16,7 +16,7 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
   };
 
   const tResourcesMainBanner = useTranslations("Resources.MainBanner");
-  const tBannerSubHeading = tResourcesMainBanner.raw('BannerSubHeading');
+  const tBannerSubHeading = tResourcesMainBanner.raw("BannerSubHeading");
   console.log("Current locale:", locale);
   const APIIntegrations = {
     PayPal: "",
@@ -29,8 +29,14 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
 
   return (
     <>
-                    <MainBanner bannerMainHeading={tResourcesMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tResourcesMainBanner('BannerImageDesktop')} bannerMobile={tResourcesMainBanner('BannerImageMobile')} bannerBtnLabel={tResourcesMainBanner('MainBannerBtnLabel')} bannerBtnLink={tResourcesMainBanner('MainBannerBtnLink')}/>
-
+      <MainBanner
+        bannerMainHeading={tResourcesMainBanner("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tResourcesMainBanner("BannerImageDesktop")}
+        bannerMobile={tResourcesMainBanner("BannerImageMobile")}
+        bannerBtnLabel={tResourcesMainBanner("MainBannerBtnLabel")}
+        bannerBtnLink={tResourcesMainBanner("MainBannerBtnLink")}
+      />
 
       <CharacteristicsSection
         CharacteristicsImage={tResources("Image")}
@@ -52,7 +58,10 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
           {Object.entries(HowItWorks).map(([key], i) => {
             return (
               <>
-                <div key={i} className="shadow-lg border-[5px] border-gray-800 rounded-20 p-5 flex items-center relative justify-between" >
+                <div
+                  key={i}
+                  className="shadow-lg border-[5px] border-gray-800 rounded-20 p-5 flex items-center relative justify-between"
+                >
                   <div className="pr-5 md:pr-9">
                     <h3 className="text-18 pb-3 text-gray-100 font-semibold">
                       {tResources(`HowItWorks.${key}.Title`)}
@@ -63,6 +72,7 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
                         href={tResources(`HowItWorks.${key}.PDFFileLink`)}
                         download={tResources(`HowItWorks.${key}.PDFFileLink`)}
                         className="text-blue-default font-semibold ml-1"
+                        target="_blank"
                       >
                         {tResources(`HowItWorks.${key}.Link`)}
                       </Link>
@@ -115,10 +125,14 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
                       {tResources(`APIIntegrations.${key}.Description`)}
                       <Link
                         href={tResources(`APIIntegrations.${key}.PDFFileLink`)}
-                        download={tResources(`APIIntegrations.${key}.PDFFileLink`)}
+                        download={tResources(
+                          `APIIntegrations.${key}.PDFFileLink`
+                        )}
                         className="text-blue-default font-semibold ml-1"
+                        target="_blank"
                       >
                         {tResources(`APIIntegrations.${key}.Link`)}
+                        
                       </Link>
                     </div>
                   </div>
@@ -135,6 +149,7 @@ const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
                       alt="DownloadArrow"
                       width="50"
                       height="50"
+
                     />
                   </div>
                 </div>

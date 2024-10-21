@@ -76,7 +76,7 @@ export const OrderPlace = () => {
 
 
   return (
-    <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
+    <div className="container mx-auto px-4 py-8 sm:py-10 md:py-14">
       <div className="bg-blue-default rounded-20 py-7 px-7 sm:py-12 sm:px-10 text-white grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 items-center">
         <div className="OrderPlaceContent ">
           <div className="text-2xl sm:text-[32px] font-bold w-full lg:w-3/6 sm:leading-10 mb-3">
@@ -139,8 +139,9 @@ export const OrderPlace = () => {
                 )}
               />
 
-              <div>
-                <Button
+              <div className="flex justify-between items-center">
+               <div>
+               <Button
                   type="submit"
                   icon={IconType.src}
                   iconPosition="right"
@@ -151,12 +152,14 @@ export const OrderPlace = () => {
                     ? `${tOrderPlace("ButtonTextSending")}`
                     : `${tOrderPlace("ButtonText")}`}
                 </Button>
-              </div>
+               </div>
+             
 
               <ReCAPTCHA
                 sitekey={process.env.NEXT_PUBLIC_CAPTACHA_SITE_KEY || ''} 
                 onChange={(token) => setRecaptchaToken(token)}
               />
+               </div>
             </form>
           </Form>
         </div>

@@ -16,7 +16,7 @@ const FaqContact = () => {
         <div className="rounded-20 box-shadow-custom text-center p-11 pb-7 flex items-center flex-col xl:min-w-[500px]">
           <Image
             src="/faq/FaqContactPhone.svg"
-            alt="FaqContactPhone"
+            alt="FaqContactPhone - BrandPos"
             height={60}
             width={60}
             className="h-14 w-14 mb-4"
@@ -29,7 +29,7 @@ const FaqContact = () => {
         <div className="rounded-20 box-shadow-custom text-center p-11 pb-7 flex items-center flex-col xl:min-w-[500px]">
           <Image
             src="/faq/FaqContactEnvlap.svg"
-            alt="FaqContactPhone"
+            alt="FaqContactPhone - BrandPos"
             height={60}
             width={60}
             className="h-14 w-14 mb-4"

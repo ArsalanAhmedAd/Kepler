@@ -9,7 +9,7 @@ const OurMisstion = () => {
       <div className="max-w-[685px] max-h-[500px]">
         <Image
           src="/OurMissionThumbnail.jpg"
-          alt="OurMissionThumbnail"
+          alt="OurMissionThumbnail - BrandPos"
           width={685}
           height={500}
         />

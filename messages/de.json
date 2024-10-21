@@ -705,8 +705,8 @@
       "BannerImageMobile": "/BannerElements/Cafe-Payment-mobile.png",
       "BannerSubHeading": {
         "labelOne": "Streamline your checkout process and enhance customer satisfaction",
-        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
-        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+       
       },
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
@@ -721,13 +721,13 @@
         "Title": "Download Benutzerhandbuch für Brand POS",
         "Description": "Klicken Sie auf das PDF-Symbol, um es herunterzuladen und online zu lesen",
         "Link": "klicken Sie hier.",
-        "PDFFileLink": "/PDFIcon.svg"
+       "PDFFileLink": "/file-sample.pdf"
       },
       "BrandPOSAdmin": {
         "Title": "Download Benutzerhandbuch Für Brand POS Admin Bereich",
         "Description": "Klicken Sie auf das PDF-Symbol, um es herunterzuladen und online zu lesen",
         "Link": "klicken Sie hier.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       }
     },
     "APIIntegrations": {
@@ -743,31 +743,31 @@
         "Title": "Handbuch zur AliPay-Integration",
         "Description": "Klicken Sie auf das PDF-Symbol, um es herunterzuladen und online zu lesen ",
         "Link": "klicken Sie hier.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       },
       "WeChat": {
         "Title": "Handbuch zur WeChat-Integration",
         "Description": "Klicken Sie auf das PDF-Symbol, um es herunterzuladen und online zu lesen ",
         "Link": "klicken Sie hier.",
-        "PDFFileLink": "/PDFIcon.svg"
+       "PDFFileLink": "/file-sample.pdf"
       },
       "ApplePay": {
         "Title": "Handbuch zur ApplePay-Integration",
         "Description": "Klicken Sie auf das PDF-Symbol, um es herunterzuladen und online zu lesen ",
         "Link": "klicken Sie hier.",
-        "PDFFileLink": "/PDFIcon.svg"
+       "PDFFileLink": "/file-sample.pdf"
       },
       "SamsungPay": {
         "Title": "Handbuch zur SamsungPay-Integration",
         "Description": "Klicken Sie auf das PDF-Symbol, um es herunterzuladen und online zu lesen ",
         "Link": "klicken Sie hier.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       },
       "Novalnet": {
         "Title": "Handbuch zur Novalnet-Integration",
         "Description": "Klicken Sie auf das PDF-Symbol, um es herunterzuladen und online zu lesen ",
         "Link": "klicken Sie hier.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       }
     },
     "Faqs": {
@@ -1010,7 +1010,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website",
+        "BlogLink": "resources/how-to-create-website",
         "BlogLabel": "Mehr lesen"
       },
       "WebsiteOne": {
@@ -1018,7 +1018,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Mehr lesen"
       },
       "WebsiteTwo": {
@@ -1026,7 +1026,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Mehr lesen"
       },
       "WebsiteThree": {
@@ -1034,7 +1034,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Mehr lesen"
       },
       "WebsiteFour": {
@@ -1042,7 +1042,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Mehr lesen"
       },
       "WebsiteFive": {
@@ -1050,7 +1050,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Mehr lesen"
       },
       "WebsiteSix": {
@@ -1058,7 +1058,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Mehr lesen"
       }
     }

@@ -72,7 +72,7 @@ const FaqSlider = () => {
                         <div className="flex flex-col items-center">
                           <Image
                             src={tFaqPage( `FaqCategoery.FaqCategoerySlider.${key}.FaqCategoeryImage`)}
-                            alt={tFaqPage(`FaqCategoery.FaqCategoerySlider.${key}.FaqCategoeryName`)}
+                            alt={tFaqPage(`FaqCategoery.FaqCategoerySlider.${key}.FaqCategoeryName - BrandPos`)}
                             width={60}
                             height={60}
                             className="w-14 h-14"

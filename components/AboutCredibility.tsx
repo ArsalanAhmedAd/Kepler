@@ -17,7 +17,7 @@ const AboutCredibility = () => {
                   src={tAboutPage(`CredibilitySection.${key}.Image`)}
                   width={100}
                   height={100}
-                  alt="AboutCredibility-BrandPos"
+                  alt="AboutCredibility - BrandPos"
                 />
               </div>
               <div className="content">

@@ -118,7 +118,7 @@ const Footer = ({ locale }: { locale: string }) => {
           <div className="footer-nav text-c md:text-end">
             <div>
               <Link href={`/${locale}/contact`}>{tfooter("LinkOne")}</Link>
-              <span className="border border-gray-400 mx-1"></span>
+              <span className="border border-gray-200 mx-2 text-[10px]"></span>
               <Link href={`/${locale}/about`}>
                 <span dangerouslySetInnerHTML={{ __html: htmlContent }} />
               </Link>

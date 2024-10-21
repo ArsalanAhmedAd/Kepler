@@ -31,7 +31,7 @@ const AppFeatures = () => {
                 <div className="  flex justify-start items-center pb-12 sm:pb-16">
                   <Image
                     src={value.Image}
-                    alt={`${key} feature-BrandPos`}
+                    alt={`${key} feature - BrandPos`}
                     width={80}
                     height={80}
                     className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]"

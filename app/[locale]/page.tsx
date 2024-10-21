@@ -21,7 +21,6 @@ export async function generateMetadata({params: { locale },}: {params: { locale:
   const title = messages.NavbarLinks.homeTitle;
   const description = messages.NavbarLinks.homeDescription;
   const keywords = messages.NavbarLinks.HomeKeywords;
-
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;  
   const path = `/`;  
   const canonicalUrl = `${baseUrl}/${locale}${path}`;
@@ -60,6 +59,7 @@ export default function Home () {
         </div>
       </div>
      
+      <div className="py-8 sm:py-10 md:py-14">
       <FeaturesSectionRight
         features={FeatureSectionDiscover("title")}
         description={FeatureSectionDiscover("Description")}
@@ -68,8 +68,9 @@ export default function Home () {
         // locale={locale}
         playStoreImageEnabled={true}
         buttonEnabled={false}
-        
+      
       />
+      </div>
       <SolutionSection />
       <FeaturesSectionLeft
         features={FeatureSectionNFC("title")}

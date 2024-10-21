@@ -62,10 +62,10 @@ const Button: React.FC<ButtonProps> = ({
       {...rest}
     >
       {/* Render icon based on position */}
-      {Icon && iconPosition === "left" && <Image width={20} height={20} alt="testing" src={Icon} className="mr-2 " />}
+      {Icon && iconPosition === "left" && <Image width={20} height={20} alt="Icon - BrandPos" src={Icon} className="mr-2 " />}
       {children}
-      {Icon && iconPosition === "right" && <Image width={20} height={20} alt="testing" src={Icon}  className="ml-2 absolute right-4" />}
-      {Icon && iconPosition === "rightRelative" && <Image width={20} height={20} alt="testing" src={Icon}  className="ml-2 relative" />}
+      {Icon && iconPosition === "right" && <Image width={20} height={20} alt="Icon - BrandPos" src={Icon}  className="ml-2 absolute right-4" />}
+      {Icon && iconPosition === "rightRelative" && <Image width={20} height={20} alt="Icon - BrandPos" src={Icon}  className="ml-2 relative" />}
     </button>
   );
 };

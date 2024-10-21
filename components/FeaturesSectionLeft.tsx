@@ -28,7 +28,7 @@ export const FeaturesSectionLeft = ({ features, description, ImageDirection, Fea
 
    
   return (
-    <div className="container mx-auto px-4 py-8 sm:py-10 md:py-20">
+    <div className="container mx-auto px-4 py-8 sm:py-10 md:py-11">
       <div className={`flex-col-reverse sm:flex-row flex items-center ${ImageDirection}`}>
         
         <div className="right w-full sm:w-[55%] flex justify-start">
@@ -51,8 +51,8 @@ export const FeaturesSectionLeft = ({ features, description, ImageDirection, Fea
         
           {playStoreImageEnabled && (
           <div className="flex gap-2">
-            <Link href="/https://www.apple.com/app-store/" target="_blank"><Image src={image1} width={170} height={60} alt="playstore" className="w-24 sm:w-[100px] md:w-[170px] cursor-pointer"/></Link>
-            <Link href="/https://play.google.com/store/games?hl=en" target="_blank"><Image src={image2} width={170} height={60} alt="playstore" className="w-24 sm:w-[100px] md:w-[170px] cursor-pointer"/></Link>
+            <Link href="/https://www.apple.com/app-store/" target="_blank"><Image src={image1} width={170} height={60} alt="playstore - BrandPos" className="w-24 sm:w-[100px] md:w-[170px] cursor-pointer"/></Link>
+            <Link href="/https://play.google.com/store/games?hl=en" target="_blank"><Image src={image2} width={170} height={60} alt="playstore - BrandPos" className="w-24 sm:w-[100px] md:w-[170px] cursor-pointer"/></Link>
           </div>
             )}
 

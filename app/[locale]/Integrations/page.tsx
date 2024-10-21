@@ -24,7 +24,7 @@ export async function generateMetadata({
 const Integrations = () => {
   const tintegrationsData = {
     paypal: {
-      Image: "/Integrations/paypal.svg",
+      Image: "/Integrations/Paypal.svg",
     },
     mollie: {
       Image: "/Integrations/mollie.svg",
@@ -82,7 +82,7 @@ const Integrations = () => {
                   <div className="">
                     <Image
                       src={value.Image}
-                      alt=""
+                      alt="Payment Method Icon - BrandPos"
                       width={100}
                       height={100}
                       className="pb-8"

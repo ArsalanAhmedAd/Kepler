@@ -34,7 +34,7 @@ export const FeaturesSectionRight =  ({ features, description, ImageDirection, F
 
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   return (
-    <div className="container mx-auto px-4 py-8 sm:py-10 md:py-20">
+    <div className="container mx-auto px-4 py-8 sm:py-10 md:py-11">
       <div className={`flex-col sm:flex-row flex items-center ${ImageDirection}`}>
         <div className="left w-full sm:w-[45%] mb-9 sm:mb-0">
           <h2 className="text-center sm:text-left text-2xl leading-9  text-gray-100 lg:text-40  font-bold mb-4">{features}</h2>

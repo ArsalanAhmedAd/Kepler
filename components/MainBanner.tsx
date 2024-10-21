@@ -25,7 +25,7 @@ const MainHeading = bannerMainHeading;
   return (
     <div>
       <div className="mainbanner bg-[#0088FF] relative flex flex-col lg:flex-row items-center justify-center w-full max-w-full">
-        <div className="container mx-auto px-4 pt-[155px] pb-[20px] lg:pt-[0] lg-pb-[20px] lg:absolute text-white z-50">
+        <div className="container mx-auto px-4 pt-[155px] pb-[20px] lg:pt-[0] lg-pb-[20px] lg:top-[55%] lg:-translate-y-2/4 xl:top-[50%] xl:-translate-y-2/4 lg:absolute text-white z-50">
           <div className="content text-center lg:text-start lg:max-w-[80%] ">
             <div className="text-2xl lg:text-4xl xl:text-48  font-extrabold text-white flex justify-center lg:justify-start items-center">
               <h1 dangerouslySetInnerHTML={{ __html: MainHeading || "" }} />
@@ -38,7 +38,7 @@ const MainHeading = bannerMainHeading;
                 return (
                   <li key={i} className="flex items-start gap-3">
                     <Image src="/WhiteCheckMark.svg" width={20} height={20} alt={`${key}-imge-BrandPos`} className="mt-1" />
-                    {value}
+                    <span> {value}</span>
                   </li>
                 );
             })}

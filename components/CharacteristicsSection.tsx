@@ -18,10 +18,10 @@ const CharacteristicsSection = ({
       <div className="flex flex-col sm:flex-row items-center py-9">
         <Image
           src={CharacteristicsImage || "/default-image-path.jpg"}
-          alt={`${CharacteristicsTitle}-image`}
+          alt={`${CharacteristicsTitle}-image - BrandPos`}
           width={350}
           height={350}
-          className="px-10 pb-5 sm:px-4 w-72 h-72 md:w-80 md:h-80"
+          className="px-10 pb-5 sm:px-4 w-full h-72 sm:w-72 md:h-72"
         />
         <div className="flex flex-col px-3 md:px-8">
           <h2 className="text-center sm:text-left text-2xl sm:text-3xl leading-9 text-gray-100 lg:text-[40px] lg:leading-[3rem] font-bold mb-4">

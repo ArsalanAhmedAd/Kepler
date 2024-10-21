@@ -40,9 +40,9 @@ const PricePlan = () => {
                   <Button
                     variant="outline"
                     size="outlineBtnMd"
-                    className="mx-auto sm:mx-0"
+                    className="mx-auto sm:mx-0 py-2"
                   >
-                    <Link href="/google.com" target="_blank" className="font-semibold">
+                    <Link href="https://www.google.com" target="_blank" className="font-semibold">
                       {tpricingPlan(`pricingPlanwhy.services.${key}.pricingBuyNowLabel`)}
                     </Link>
                   </Button>
@@ -54,8 +54,8 @@ const PricePlan = () => {
 
                       <div>
                         {tpricingPlan(`pricingPlanwhy.services.${key}.description.${desc}.isService`) === 'true'
-                          ? <Image src={ServiceAvailable} alt="Service Available Check"/>
-                          : <Image src={ServiceNotAvailable} alt="Service Not Available Check"/>}
+                          ? <Image src={ServiceAvailable} alt="Service Available Check - BrandPos"/>
+                          : <Image src={ServiceNotAvailable} alt="Service Not Available Check - BrandPos"/>}
                       </div>
                       <div>
                         {tpricingPlan(`pricingPlanwhy.services.${key}.description.${desc}.service`)}

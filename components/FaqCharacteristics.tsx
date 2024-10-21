@@ -13,7 +13,7 @@ const FaqCharacteristics = () => {
                 <div className='text-18 font-normal text-gray-200 lg:text-22 text-center sm:text-start py-4'>{tFaqCharacteristicse('FaqCharacteristics.description')}</div>
             </div>
             <div className='w-[15%]'>
-                <Image src="/FaqCharacter.svg" alt='Faq-Character-BrandPos' width={159} height={292}/>
+                <Image src="/FaqCharacter.svg" alt='Faq-Character - BrandPos' width={159} height={292}/>
             </div>
         </div>
         

@@ -22,7 +22,7 @@ const ContactForm = () => {
         <div className="box-shadow-custom p-6 rounded-20 mb-5">
           <Image
             src="/LocationIcon.svg"
-            alt="LocationIcon-BrandPos"
+            alt="LocationIcon - BrandPos"
             width={40}
             height={37}
             className="mb-6 h-auto" // Use w-[40px] instead of w-[40]
@@ -35,7 +35,7 @@ const ContactForm = () => {
         <div className="box-shadow-custom p-6 rounded-20 mb-5">
           <Image
             src="/PhoneIcon.svg"
-            alt="PhoneIcon-BrandPos"
+            alt="PhoneIcon - BrandPos"
             width={40}
             height={37}
             className="mb-6 h-auto aspect-auto"
@@ -53,7 +53,7 @@ const ContactForm = () => {
         <div className="box-shadow-custom p-6 rounded-20 mb-5">
           <Image
             src="/Envelop.svg"
-            alt="Envelop-BrandPos"
+            alt="Envelop - BrandPos"
             width={40}
             height={37}
             className="mb-6 h-auto"

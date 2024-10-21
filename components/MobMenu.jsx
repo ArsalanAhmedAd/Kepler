@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 // interface SubMenuItem {
 //   name: string;
@@ -21,6 +22,7 @@ import Link from "next/link";
 // }
 
 export default function MobMenu({ Menus, locale }) {
+  const t = useTranslations("NavbarLinks");
   const [isOpen, setIsOpen] = useState(false);
   const [clicked, setClicked] = useState(null);
   const toggleDrawer = () => {
@@ -38,6 +40,20 @@ export default function MobMenu({ Menus, locale }) {
       overflow: "hidden",
     },
   };
+
+
+  useEffect(() => {
+    // const handleBodyClick = () => {
+      setIsOpen(false); // Toggles the state on each click
+    // };
+
+    // document.body.addEventListener('click', handleBodyClick);
+
+  
+    // return () => {
+    //   document.body.removeEventListener('click', handleBodyClick);
+    // };
+  }, []);
 
   return (
     <div className="flex">
@@ -58,7 +74,10 @@ export default function MobMenu({ Menus, locale }) {
                 <li key={name} className="">
                   <span
                     className="flex-center-between p-3 font-semibold hover:bg-[#E5F2FF] rounded-md cursor-pointer relative"
-                    onClick={() => setClicked(isClicked ? null : i)}
+                    onClick={() => { 
+                      setClicked(isClicked ? null : i); 
+                      
+                    }}
                   >
                     {/* {name} */}
                     <Link
@@ -102,6 +121,17 @@ export default function MobMenu({ Menus, locale }) {
               );
             })}
           </ul>
+          <div className="gap-4 items-center text-white text-center justify-center bg-blue-default rounded-full font-bold py-[9px] px-4 flex lg:hidden">
+                <Link
+                  href="https://google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("signUp")}
+                </Link>
+              </div>
+
+             
         </motion.div>
       </div>
     </div>

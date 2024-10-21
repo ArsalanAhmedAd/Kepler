@@ -38,8 +38,8 @@
       "BannerImageMobile": "/BannerElements/Ticket-buying-mobile.png",
       "BannerSubHeading": {
         "labelOne": "Streamline your checkout process and enhance customer satisfaction",
-        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
-        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+        
       },
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
@@ -185,8 +185,8 @@
       "BannerImageMobile": "/BannerElements/calling-person-mobile.png",
       "BannerSubHeading": {
         "labelOne": "Streamline your checkout process and enhance customer satisfaction",
-        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
-        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+       
       },
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
@@ -540,8 +540,8 @@
       "BannerImageMobile": "/BannerElements/mobile-in-hand-mobile.png",
       "BannerSubHeading": {
         "labelOne": "Streamline your checkout process and enhance customer satisfaction",
-        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
-        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+       
       },
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
@@ -554,8 +554,8 @@
       "BannerImageMobile": "/BannerElements/Person-mobile-group-mobile.png",
       "BannerSubHeading": {
         "labelOne": "Streamline your checkout process and enhance customer satisfaction",
-        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
-        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+        
       },
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
@@ -615,8 +615,8 @@
       "BannerImageMobile": "/BannerElements/icecream-girl-banner-mobile.png",
       "BannerSubHeading": {
         "labelOne": "Streamline your checkout process and enhance customer satisfaction",
-        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
-        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+        
       },
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
@@ -664,8 +664,8 @@
       "BannerImageMobile": "/BannerElements/Mechanic-mobile.png",
       "BannerSubHeading": {
         "labelOne": "Streamline your checkout process and enhance customer satisfaction",
-        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
-        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+       
       },
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
@@ -709,8 +709,8 @@
       "BannerImageMobile": "/BannerElements/Cafe-Payment-mobile.png",
       "BannerSubHeading": {
         "labelOne": "Streamline your checkout process and enhance customer satisfaction",
-        "labelTwo": "Streamline your checkout process and enhance customer satisfaction",
-        "labelThree": "Streamline your checkout process and enhance customer satisfaction"
+        "labelTwo": "Streamline your checkout process and enhance customer satisfaction"
+     
       },
       "MainBannerBtnLabel": "Download the app now",
       "MainBannerBtnLink": "#"
@@ -725,13 +725,13 @@
         "Title": "Download Usermanual For Brand POS",
         "Description": "Click PDF icon to download and for reading online ",
         "Link": "click here.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       },
       "BrandPOSAdmin": {
         "Title": "Download Usermanual For Brand POS2",
         "Description": "Click PDF icon to download and for reading online",
         "Link": "click here.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       }
     },
     "APIIntegrations": {
@@ -741,37 +741,37 @@
         "Title": "PayPal <br/> Integration Manual",
         "Description": "Click PDF icon to download and for reading online ",
         "Link": "click here.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       },
       "AliPay": {
         "Title": "AliPay <br/> Integration Manual",
         "Description": "Click PDF icon to download and for reading online",
         "Link": "click here.",
-        "PDFFileLink": "/PDFIcon.svg"
+         "PDFFileLink": "/file-sample.pdf"
       },
       "WeChat": {
         "Title": "WeChat <br/> Integration Manual",
         "Description": "Click PDF icon to download and for reading online",
         "Link": "click here.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       },
       "ApplePay": {
         "Title": "ApplePay <br/> Integration Manual",
         "Description": "Click PDF icon to download and for reading online",
         "Link": "click here.",
-        "PDFFileLink": "/PDFIcon.svg"
+        "PDFFileLink": "/file-sample.pdf"
       },
       "SamsungPay": {
         "Title": "SamsungPay <br/> Integration Manual",
         "Description": "Click PDF icon to download and for reading online",
         "Link": "click here.",
-        "PDFFileLink": "/PDFIcon.svg"
+         "PDFFileLink": "/file-sample.pdf"
       },
       "Novalnet": {
         "Title": "Novalnet <br/> Integration Manual",
         "Description": "Click PDF icon to download and for reading online",
         "Link": "click here.",
-        "PDFFileLink": "/PDFIcon.svg"
+         "PDFFileLink": "/file-sample.pdf"
       }
     },
     "Faqs": {
@@ -1014,7 +1014,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website",
+        "BlogLink": "resources/how-to-create-website",
         "BlogLabel": "Learn more"
       },
       "WebsiteOne": {
@@ -1022,7 +1022,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Learn more"
       },
       "WebsiteTwo": {
@@ -1030,7 +1030,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Learn more"
       },
       "WebsiteThree": {
@@ -1038,7 +1038,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Learn more"
       },
       "WebsiteFour": {
@@ -1046,7 +1046,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Learn more"
       },
       "WebsiteFive": {
@@ -1054,7 +1054,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Learn more"
       },
       "WebsiteSix": {
@@ -1062,7 +1062,7 @@
         "BlogContent": "Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum is simply dummy text of the printing and type setting industry. ",
         "BlogPublishDate": "July 17, 2024  |  Mobile Payment",
         "BlogThumnail": "/Blog/BlogThumbnail.jpg",
-        "BlogLink": "Resources/how-to-create-website-one",
+        "BlogLink": "resources/how-to-create-website-one",
         "BlogLabel": "Learn more"
       }
     }
