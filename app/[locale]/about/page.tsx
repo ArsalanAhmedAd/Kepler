@@ -14,27 +14,62 @@ export async function generateMetadata({
   params: { locale: string };
 }) {
   const messages: any = await getMessages({ locale });
-  const title = messages.NavbarLinks.aboutTitle;
-  const description = messages.NavbarLinks.aboutDescription;
+  const title = messages.Page.Home.Title;
+  const description = messages.Page.Home.Description;
+  const keywords = messages.Page.Home.keywords;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/about`;
+  const canonicalUrl = `${baseUrl}/${locale}${path}`;
 
   return {
     title,
     description,
+    keywords,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
+    openGraph: {
+      title: title,
+      description: description,
+      images: [
+        {
+          url: "/logo.svg", // Use a default image if none provided
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title,
+      description: description,
+      images: "/logo.svg", // Use a default image if none provided
+    },
   };
 }
 
 const AboutPage = () => {
   const tMainBanner = useTranslations("AboutPage.MainBanner");
-  const tBannerSubHeading = tMainBanner.raw('BannerSubHeading');
+  const tBannerSubHeading = tMainBanner.raw("BannerSubHeading");
   return (
     <>
-                 <MainBanner bannerMainHeading={tMainBanner('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tMainBanner('BannerImageDesktop')} bannerMobile={tMainBanner('BannerImageMobile')} bannerBtnLabel={tMainBanner('MainBannerBtnLabel')} bannerBtnLink={tMainBanner('MainBannerBtnLink')}/>
+      <MainBanner
+        bannerMainHeading={tMainBanner("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tMainBanner("BannerImageDesktop")}
+        bannerMobile={tMainBanner("BannerImageMobile")}
+        bannerBtnLabel={tMainBanner("MainBannerBtnLabel")}
+        bannerBtnLink={tMainBanner("MainBannerBtnLink")}
+      />
 
       <div className="container mx-auto px-4 py-8 sm:py-10 md:py-12">
         <BrandPosIntro />
-       <AboutCredibility/>
-       <OurMisstion/>
-       <OurTeam />
+        <AboutCredibility />
+        <OurMisstion />
+        <OurTeam />
       </div>
     </>
   );

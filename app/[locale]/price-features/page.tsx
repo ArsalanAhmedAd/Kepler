@@ -11,38 +11,84 @@ import { useTranslations } from "next-intl";
 import { getMessages } from "next-intl/server";
 import React from "react";
 
-
-export async function generateMetadata({params: { locale },}: {params: { locale: string }}) {
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   const messages: any = await getMessages({ locale });
-  const title = messages.NavbarLinks.homeTitle;
-  const description = messages.NavbarLinks.aboutDescription;
+  const title = messages.Page.Home.Title;
+  const description = messages.Page.Home.Description;
+  const keywords = messages.Page.Home.keywords;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const path = `/price-features`;
+  const canonicalUrl = `${baseUrl}/${locale}${path}`;
 
   return {
     title,
-    description
+    description,
+    keywords,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
+    openGraph: {
+      title: title,
+      description: description,
+      images: [
+        {
+          url: "/logo.svg", // Use a default image if none provided
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: title,
+      description: description,
+      images: "/logo.svg", // Use a default image if none provided
+    },
   };
 }
 
 const Pricefeatures = () => {
   const tFeaturesCharacteristics = useTranslations("FeaturesCharacteristics");
   // const FeatureSectionDiscover = useTranslations("FeatureSectionDiscover");
-  const tFeaturesPagePaymentsSection = useTranslations("FeaturesPagePaymentsSection");
-  const tFeaturesPageWalletPaymentsSection = useTranslations("FeaturesPageWalletPaymentsSection");
-  const tFeaturesPageBrandposSection = useTranslations("FeaturesPageBrandposSection");
-  const tFeaturesPageBankPaySection = useTranslations("FeaturesPageBankPaySection");
-  const tFeaturesPageSecuritySection = useTranslations("FeaturesPageSecuritySection");
+  const tFeaturesPagePaymentsSection = useTranslations(
+    "FeaturesPagePaymentsSection"
+  );
+  const tFeaturesPageWalletPaymentsSection = useTranslations(
+    "FeaturesPageWalletPaymentsSection"
+  );
+  const tFeaturesPageBrandposSection = useTranslations(
+    "FeaturesPageBrandposSection"
+  );
+  const tFeaturesPageBankPaySection = useTranslations(
+    "FeaturesPageBankPaySection"
+  );
+  const tFeaturesPageSecuritySection = useTranslations(
+    "FeaturesPageSecuritySection"
+  );
   const tPriceFeatures = useTranslations("PriceFeatures.MainBanner");
-  const tBannerSubHeading = tPriceFeatures.raw('BannerSubHeading');
+  const tBannerSubHeading = tPriceFeatures.raw("BannerSubHeading");
 
   return (
     <div>
-        <MainBanner bannerMainHeading={tPriceFeatures('BannerHeading')} BannerSubHeading={tBannerSubHeading} bannerDesktop={tPriceFeatures('BannerImageDesktop')} bannerMobile={tPriceFeatures('BannerImageMobile')} bannerBtnLabel={tPriceFeatures('MainBannerBtnLabel')} bannerBtnLink={tPriceFeatures('MainBannerBtnLink')}/>
+      <MainBanner
+        bannerMainHeading={tPriceFeatures("BannerHeading")}
+        BannerSubHeading={tBannerSubHeading}
+        bannerDesktop={tPriceFeatures("BannerImageDesktop")}
+        bannerMobile={tPriceFeatures("BannerImageMobile")}
+        bannerBtnLabel={tPriceFeatures("MainBannerBtnLabel")}
+        bannerBtnLink={tPriceFeatures("MainBannerBtnLink")}
+      />
       <CharacteristicsSection
         CharacteristicsImage={tFeaturesCharacteristics("Image")}
         CharacteristicsTitle={tFeaturesCharacteristics("title")}
         CharacteristicsDescription={tFeaturesCharacteristics("description")}
-       
-        
       />
       <PricePlan />
       <FeaturesSectionLeft
@@ -65,7 +111,7 @@ const Pricefeatures = () => {
         buttonEnabled={true}
         ButtonLabel={tFeaturesPageWalletPaymentsSection("BtnLabel")}
       />
-         <FeaturesSectionLeft
+      <FeaturesSectionLeft
         features={tFeaturesPageBrandposSection("title")}
         description={tFeaturesPageBrandposSection("Description")}
         FeatureImage={tFeaturesPageBrandposSection("Image")}
@@ -84,10 +130,10 @@ const Pricefeatures = () => {
         buttonEnabled={true}
         ButtonLabel={tFeaturesPageBankPaySection("BtnLabel")}
       />
-      <OrderPlace/>
+      <OrderPlace />
       <AppFeatures />
       <PaymentSection />
-      <WeCanFindSlider/>
+      <WeCanFindSlider />
       <FeaturesSectionRight
         features={tFeaturesPageSecuritySection("title")}
         description={tFeaturesPageSecuritySection("Description")}

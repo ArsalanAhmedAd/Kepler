@@ -13,10 +13,17 @@
     "Resources": "Ressourcen",
     "about": "Über",
     "signUp": "Anmeldung",
-    "aboutTitle": "About page",
-    "aboutDescription": "about Description",
+    "aboutTitle": "Über die Seite",
+    "aboutDescription": "Über Beschreibung",
     "contact": "Kontakt",
     "contactTitle": "contact page"
+  },
+  "Page": {
+    "Home" : {
+     "Title" : "BrandPos | Title Lorem Ipsum is simply dummy text of the printing and",
+      "Description" : "Description Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "keywords" : "Lorem Ipsum is simply dummy text of the printing and"
+    }
   },
   "HomePage": {
     "title": "Page d'atterrissage",

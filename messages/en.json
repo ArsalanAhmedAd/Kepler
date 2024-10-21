@@ -18,6 +18,14 @@
     "contact": "Contact Us",
     "contactTitle": "contact page"
   },
+
+  "Page": {
+    "Home" : {
+      "Title" : "BrandPos | Title Lorem Ipsum is simply dummy text of the printing and",
+      "Description" : "Description Lorem Ipsum is simply dummy text of the printing and",
+      "keywords" : "Lorem Ipsum is simply dummy text of the printing and"
+    }
+  },
   "HomePage": {
     "title": "Testing Lang",
     "MainBanner": {
