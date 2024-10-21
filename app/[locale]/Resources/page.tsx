@@ -52,7 +52,7 @@ export async function generateMetadata({
   };
 }
 
-const Resources = ({ params: { locale } }: { params: { locale: string } }) => {
+const Resources = () => {
   const tResources = useTranslations("Resources");
   const HowItWorks = {
     BrandPOS: "",
