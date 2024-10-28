@@ -42,9 +42,7 @@ export default function DesktopMenu({ menu, locale }) {
       key={menu.name}
     >
       <span className="flex-center gap-1 hover:bg-[#E5F2FF] cursor-pointer px-3 py-1 rounded-full">
-        {/* <Link href={menu.link}> {menu.name}</Link> */}
         <Link
-          // href={menu.link}
           href={`/${locale}/${menu.link}`}
           className="font-semibold text-[17px] transition-all group py-2 relative"
         >
@@ -83,11 +81,7 @@ export default function DesktopMenu({ menu, locale }) {
                     {submenu.icon && <submenu.icon />}
                   </div>
                   <div>
-                    {/* <h6 className="font-semibold">{submenu.name}</h6> */}
-                    <Link
-                      // href={menu.link}
-                      href={`/${locale}/${submenu.link}`}
-                    >
+                    <Link href={`/${locale}/${submenu.link}`}>
                       <div className="font-semibold">{submenu.name}</div>
                     </Link>
                     <p className="text-sm text-gray-400">{submenu.desc}</p>
@@ -101,4 +95,3 @@ export default function DesktopMenu({ menu, locale }) {
     </motion.li>
   );
 }
-  

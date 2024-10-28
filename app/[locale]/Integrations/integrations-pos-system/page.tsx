@@ -16,7 +16,7 @@ export async function generateMetadata({
   const description = messages.Page.Home.Description;
   const keywords = messages.Page.Home.keywords;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const path = `/integrations-pos-system`;
+  const path = `/integrations/integrations-pos-system`;
   const canonicalUrl = `${baseUrl}/${locale}${path}`;
 
   return {

@@ -31,14 +31,14 @@ export async function generateMetadata({
   const title = messages.NavbarLinks.aboutTitle;
 
   const baseUrl = 'https://www.yoursite.com';
-  const currentPath = `/${locale}/${slug}`; // Dynamic path based on slug
+  const currentPath = `/${locale}/${slug}`; 
   const canonicalUrl = `${baseUrl}${currentPath}`;
 
 
   return {
     title,
     alternates: {
-      canonical: canonicalUrl, // Adding canonical URL dynamically
+      canonical: canonicalUrl, 
     },
    
   };

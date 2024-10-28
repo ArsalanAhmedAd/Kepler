@@ -19,7 +19,7 @@ export async function generateMetadata({
   const description = messages.Page.Home.Description;
   const keywords = messages.Page.Home.keywords;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const path = `/integrations-accounting`;
+  const path = `/integrations/integrations-accounting`;
   const canonicalUrl = `${baseUrl}/${locale}${path}`;
 
   return {

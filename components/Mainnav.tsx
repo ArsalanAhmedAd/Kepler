@@ -77,7 +77,7 @@ const Mainnav = ({ locale }: { locale: string }) => {
 
   return (
     <div className="container mx-auto w-full -translate-x-2/4 translate-y-5 absolute left-2/4 px-4 z-[1000]">
-      <header className="flex justify-between py-4 pl-3 items-center bg-nav-transparent text-blue-default rounded-full">
+      <header className="flex justify-between py-4 pl-3 items-center bg-nav-transparent text-blue-default rounded-full backdrop-blur-[]">
         <nav className="px-3.5 flex justify-between w-full container mx-auto">
           <div className="flex items-center gap-x-3 z-[999] relative">
             <Link href={`/${locale}/`}>
