@@ -37,7 +37,7 @@ export async function generateMetadata({
       description: description,
       images: [
         {
-          url: {OgImage}, // Use a default image if none provided
+          // url: {OgImage}, // Use a default image if none provided
           width: 1200,
           height: 630,
           alt: title,

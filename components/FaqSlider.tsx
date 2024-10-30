@@ -59,9 +59,13 @@ const FaqSlider = () => {
                   768: {
                     slidesPerView: 2,
                   },
-                  1024: {
-                    slidesPerView: 4,
+                  
+                  1200: {
+                    slidesPerView: 3,
                   },
+                  1400: {
+                    slidesPerView: 4,
+                  }
                 }}
               >
                 {Object.entries(tFaqCategoerySlider).map(([key], i) => (
@@ -77,7 +81,7 @@ const FaqSlider = () => {
                             height={60}
                             className="w-14 h-14"
                           />
-                          <div className="leading-9 text-20 lg:text-[26px] text-gray-100 font-semibold text-center mt-3">
+                          <div className="leading-9 text-20 lg:text-[22px] text-gray-100 font-semibold text-center mt-3">
                             
                             {tFaqPage(
                               `FaqCategoery.FaqCategoerySlider.${key}.FaqCategoeryName`
